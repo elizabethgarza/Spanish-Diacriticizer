@@ -39,9 +39,9 @@ Because the computer will only be able to interpret written text, the pronunciat
 
 ## Data and methods 
 
-### Description of data
+### Data
 
-### Overview of workflow
+### Methods
 
 ## Description of algorithm 
 
