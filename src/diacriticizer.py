@@ -1,9 +1,11 @@
-import pandas
-from tqdm import tqdm
-import unidecode 
-import pickle
 import json
 import nltk
+import os
+import pandas
+import pickle
+from tqdm import tqdm
+import unidecode 
+
 
 class Diacriticizer: 
          
@@ -11,6 +13,8 @@ class Diacriticizer:
     def __init__(self):
         
         self.melliza_and_clsfr_dict = {}
+        os.chdir('..')
+        os.chdir('data') 
         counts_of_mellizas = pandas.read_csv("top_200_mellizas.csv", sep=",")
         new_counts = counts_of_mellizas.head(1)
         max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"] 
