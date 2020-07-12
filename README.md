@@ -22,18 +22,14 @@ Unlike computers, humans would quickly be able to decide which of the two words 
 Outside of a grammatical context, there are also three simple pronunciation-based rules which humans can rely on, as long as the word is not a homophone: 
 
 1. Words ending in a vowel, -n, or -s are stressed on the next to the last (penultimate) syllable--e.g.: 
-   
    *na-da* is pronounced **na**-*da*.
 
 2. Words ending in any consonant except -n or -s are stressed on the last syllable.--e.g. 
-   
    *doc-tor* is pronounced *doc*–**tor**
 
 3. When rules #1 and #2 above are not followed, a written accent is used--e.g.
-
-*com-pró* is pronounced *com*–**pró**; 
-
-*álbum* is pronounced *ál*–**bum**.
+   *com-pró* is pronounced *com*–**pró**; 
+   *álbum* is pronounced *ál*–**bum**.
 
 For a non-homophonic unidecoded word like *calculo*, which can appear in three different forms {*calculo*, *cálculo*, *calculó*}, humans could also think about how the word is pronounced to determine the correct spelling.
 
