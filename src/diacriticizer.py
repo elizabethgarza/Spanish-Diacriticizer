@@ -25,7 +25,8 @@ class Diacriticizer:
             read_clsfr = open(f"{unidecode.unidecode(tokenized_row[0])}.pickle", "rb") 
             DECODED_TKN_clsfr = pickle.load(read_clsfr)
             self.melliza_and_clsfr_dict[unidecode.unidecode(tokenized_row[0])] =  DECODED_TKN_clsfr  
-            
+
+        os.chdir('..')    
         with open("invariantly_diacriticized_tokens_dict.json", "r") as source: 
             self.invariantly_diacriticized_tokens_dict = json.load(source)
     
