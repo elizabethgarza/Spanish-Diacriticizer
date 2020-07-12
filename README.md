@@ -8,7 +8,7 @@ The purpose of this project is to design model based on a supervised machine lea
 
 Once you clone this repo, you will be able to do two things:
 
-  1.  diacriticize Spanish texts based on the two models that have been made available on this repo.
+  1.  diacriticize Spanish texts based on the trained model that is already available in this repo.
   2.  use your own Spanish data to train and evaluate your own model.
 
 ## Background 
