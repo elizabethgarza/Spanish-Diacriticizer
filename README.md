@@ -13,14 +13,23 @@ Once you clone this repo, you will be able to do two things:
   
 See **1.** and **2.** directly below for specific instructions on how to do these things.
   
-**1.  To diacriticize a sequence of unidecoded Spanish tokens**:
+**1.  To diacriticize a sequence of unidecoded Spanish tokens:**
 
-- [ ] go to the terminal and run the following:
+- [ ] Go to the terminal and run the following:
      
       ~ % cd ~/Desktop 
           git clone https://github.com/elizabethgarza/Spanish-diacriticizer.git
           cd ~/Desktop/Spanish-diacriticizer/src
-          python3 diacriticizer.py "your sequence of tokens"
+          python3 diacriticizer.py "ella esta enojada"
+     
+   You will get an output that looks something like this: 
+      
+          100%|██████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 12.10it/s]
+          ['ella', 'está', 'enojada']
+        
+ - [ ] Now try your own! 
+ 
+       ~ %  python3 diacriticizer.py "your own unidecoded sequence of tokens"   
      
 ## Background 
 
