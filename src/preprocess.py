@@ -1,5 +1,6 @@
-from tqdm import tqdm
+import os
 from nltk import word_tokenize
+from tqdm import tqdm
 
 """
 TODOs:  
@@ -17,7 +18,8 @@ class Preprocess:
         self.token2 = token2 
         
     def find_sentences_for_token1(self): 
-        
+
+        os.chdir('/Users/mariagarza/Desktop/nltk-Spanish-diacriticizer/data')
         with open(self.corpus, "r") as source: 
             sentence_set = set()
             lines = []
