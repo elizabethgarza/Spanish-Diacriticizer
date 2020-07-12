@@ -1,3 +1,4 @@
+import argparse
 import json
 import nltk
 import os
@@ -109,4 +110,9 @@ class Diacriticizer:
             
         return predicted_tokens
 
-print(Diacriticizer().predict_sentence(nltk.word_tokenize("donde esta el libro.")))
+if __name__ =="__main__": 
+    parser = argparse.ArgumentParser(description="Diacriticizes a sequence of unidecoded Spanish tokens.")
+    parser.add_argument("tokens", help="a string sequence of unidecoded Spanish tokens without quotes")
+    args = parser.parse_args()
+
+    print(Diacriticizer().predict_sentence(nltk.word_tokenize(str(args.tokens))))
