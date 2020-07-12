@@ -29,8 +29,8 @@ if __name__ =="__main__":
     os.chdir('..')
     os.chdir('data')
     nrows = int(args.no_of_clsfrs)
-    # changes the rows that you want to iterate over by adding the argument, e.g. skiprows=(23, 23 +nrows, 1)
-    mellizas = pandas.read_csv("top_200_mellizas.csv", sep=",", nrows=nrows)
+    # changes the rows that you want to iterate over by adding the argument, e.g. skiprows=(1, 23, 1)
+    mellizas = pandas.read_csv("top_200_mellizas.csv", sep=",", skiprows = [i for i in range(1, 23)], nrows=nrows)
     max1_max2_tokens = mellizas["MAX1_TOKEN"] + "\t"+ mellizas["MAX2_TOKEN"] 
     for row in tqdm(max1_max2_tokens): 
         tokenized_row = row.split()
