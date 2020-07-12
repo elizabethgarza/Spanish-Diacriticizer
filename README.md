@@ -43,7 +43,7 @@ Because the computer will only be able to interpret written text, the pronunciat
 
 ## Methodology
 
-## Evaluation and future work.
+## Evaluation and future work
 
 
 
