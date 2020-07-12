@@ -8,8 +8,10 @@ As such, you will see two directories, titled `nltk` and `sk-learn`, which conta
 1.  diacriticize Spanish texts based on the two models that have been made available on this repo.
 2.  use your own Spanish data to train and evaluate your own model.
 
+## Usage
 
-### Background 
+
+## Background 
 
 For some unidecoded words, like "espanol", the model simply has to perform a dictionary lookup to determine whether or not the "n" should have a diacritic. But for others, like "esta", this operation will not suffice because there are two viable word forms stored in the value entry: "está" and "esta". In such cases, the model has to be given more information about the words before it can predict whether or not to add a diacritic to the letter "a".  
 
@@ -35,9 +37,13 @@ For a non-homophonic unidecoded word like *calculo*, which can appear in three d
 
 Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not be able to disambiguate frequently used homophones like {*si*, *sí*}, {*cómo*, *como*}, {*sólo*, *solo*}, etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. One popular alternative which I've decided to use for this project is the Naive Bayes classification algorithm, which can learn to make predictions without explicit instruction. Aside from designing a model that correctly adds diacritics to unidecoded words in a sentence, the other purpose of this project is to explore the pros and cons of using both the NLTK and Scikit multinomial versions of this algorithm.
 
-## Data 
+## Data and methods 
 
+### Description of data
+
+### Overview of workflow
 
 ## Description of algorithm 
+
 ## Results and discussion 
-## Usage
+
