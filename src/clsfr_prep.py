@@ -1,5 +1,4 @@
 import nltk
-import sentences
 from typing import Dict
 
 
