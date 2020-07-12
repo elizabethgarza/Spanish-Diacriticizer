@@ -18,8 +18,8 @@ See **1.** and **2.** directly below for specific instructions on how to do thes
 - [ ] Go to the terminal and run the following:
      
       ~ % cd ~/Desktop 
-          git clone https://github.com/elizabethgarza/Spanish-diacriticizer.git
-          cd ~/Desktop/Spanish-diacriticizer/src
+          git clone https://github.com/elizabethgarza/nltk-Spanish-diacriticizer.git
+          cd ~/Desktop/nltk-Spanish-diacriticizer/src
           python3 diacriticizer.py "ella esta enojada"
      
    You will get an output that looks something like this: 
