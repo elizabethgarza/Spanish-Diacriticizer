@@ -13,7 +13,7 @@ Once you clone this repo, you will be able to do two things:
   
 See **1.** and **2.** directly below for specific instructions on how to do these things.
   
-**1.  To diacriticize unidecoded Spanish tokens**:
+**1.  To diacriticize a sequence of unidecoded Spanish tokens**:
 
 - [ ] go to the terminal and run the following:
      
