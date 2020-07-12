@@ -1,0 +1,16 @@
+To download all Spanish wikipedia data used to train this model, titled, `full.txt`: 
+
+1.  go to: https://sites.google.com/site/rmyeid/projects/polyglot
+
+2.  scroll down to `Download Wikipedia Text Dumps`
+
+3.  download `es_wiki_text.tar.lzma`
+
+4.  to compress the file, run: 
+
+      % unxz ~/Downloads/es_wiki_text.tar.lzma
+      
+5.  compress the file by clicking on it, and a new directory titled `es` will appear, inside of which will appear the data, titled `full.txt  
+
+
+      
