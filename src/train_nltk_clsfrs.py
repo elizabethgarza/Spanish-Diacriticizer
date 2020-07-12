@@ -33,6 +33,7 @@ if __name__ =="__main__":
     max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"] 
     for row in tqdm(max1_max2_tokens): 
         tokenized_row = row.split()
+        os.chdir('pickles')
         saved_clsfr = open(f"{unidecode.unidecode(tokenized_row[0])}.pickle", "wb") 
         pickle.dump(mk_clsfr(args.corpus_path, tokenized_row[0], tokenized_row[-1]), saved_clsfr)
         saved_clsfr.close()
