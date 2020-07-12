@@ -15,7 +15,7 @@ See **1.** and **2.** directly below for specific instructions on how to do thes
   
 **1.  To diacriticize a sequence of unidecoded Spanish tokens:**
 
-- [ ] Go to the terminal and run the following:
+- [ ] Open a new terminal and run the following:
      
       ~ % cd ~/Desktop 
           git clone https://github.com/elizabethgarza/nltk-Spanish-diacriticizer.git
