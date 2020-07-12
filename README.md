@@ -28,7 +28,7 @@ See **1.** and **2.** directly below for specific instructions on how to do thes
         
  - [ ] Now try your own! 
  
-       ~ %  python3 diacriticizer.py "your own unidecoded sequence of tokens"   
+       ~ %  python3 diacriticizer.py "Your own unidecoded sequence of tokens."   
      
 ## Background 
 
