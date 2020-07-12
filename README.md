@@ -1,4 +1,4 @@
-# Spanish-diacriticizer | Supervised machine learning using the Naive Bayes classification algorithm.
+# nltk-Spanish-diacriticizer | Supervised machine learning using the Naive Bayes classification algorithm.
 
 ## Purpose 
 
