@@ -7,11 +7,11 @@ To download all Spanish wikipedia data used to train this model:
 
 3.  download `es_wiki_text.tar.lzma`
 
-4.  to compress the file, run: 
+4.  compress the file in the terminal by running: 
 
       % unxz ~/Downloads/es_wiki_text.tar.lzma
       
-5.  compress the file by clicking on it, and a new directory titled `es` will appear, inside of which will appear the data, titled `full.txt  
+5.  decompress the file by clicking on it, and a new directory titled `es` will appear, inside of which will appear the data, titled `full.txt  
 
 
       
