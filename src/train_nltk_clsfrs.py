@@ -25,6 +25,8 @@ if __name__ =="__main__":
     parser.add_argument("no_of_clsfrs", help="int: number of classifiers that you want to train; recommended amount: 200")
     args = parser.parse_args()
 
+    os.chdir('..')
+    os.chdir('data')
     counts_of_mellizas = pandas.read_csv("top_200_mellizas.csv", sep=",")
     new_counts = counts_of_mellizas.head(int(args.no_of_clsfrs))
     max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"] 
