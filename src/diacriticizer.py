@@ -20,6 +20,7 @@ class Diacriticizer:
         max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"] 
         for row in tqdm(max1_max2_tokens): 
             tokenized_row = row.split()
+            os.chdir('pickles')
             read_clsfr = open(f"{unidecode.unidecode(tokenized_row[0])}.pickle", "rb") 
             DECODED_TKN_clsfr = pickle.load(read_clsfr)
             self.melliza_and_clsfr_dict[unidecode.unidecode(tokenized_row[0])] =  DECODED_TKN_clsfr  
