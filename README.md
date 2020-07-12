@@ -11,7 +11,7 @@ Once you clone this repo, you will be able to do two things:
   1.  diacriticize a sequence of unidecoded Spanish tokens based on the trained model that is already available in this repo.
   2.  use your own Spanish data to train and evaluate your own model.
   
-**To diacriticize unidecoded Spanish tokens:
+**To diacriticize unidecoded Spanish tokens**:
 
 - [ ] go to the terminal and run the following:
      
