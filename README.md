@@ -24,8 +24,7 @@ See **1.** and **2.** directly below for specific instructions on how to do thes
      
    You will get an output that looks something like this: 
       
-          100%|██████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 12.10it/s]
-          ['ella', 'está', 'enojada']
+          Ella está enojada.
         
  - [ ] Now try your own! 
  

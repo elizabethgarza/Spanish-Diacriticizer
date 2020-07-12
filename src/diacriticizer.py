@@ -19,7 +19,7 @@ class Diacriticizer:
         counts_of_mellizas = pandas.read_csv("top_200_mellizas.csv", sep=",")
         new_counts = counts_of_mellizas.head(1)
         max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"] 
-        for row in tqdm(max1_max2_tokens): 
+        for row in max1_max2_tokens: 
             tokenized_row = row.split()
             os.chdir('pickles')
             read_clsfr = open(f"{unidecode.unidecode(tokenized_row[0])}.pickle", "rb") 
