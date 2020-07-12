@@ -2,11 +2,10 @@
 
 ## Purpose 
 
-The purpose of this project is to design a supervised machine learning Naive Bayes classification algorithm that can predict whether or not a letter in a Spanish word should have a diacritic.  Aside from designing a `SpanishDiacriticizer`--i.e. a model that correctly adds diacritics to unidecoded Spanish words in a sentence--the other purpose of this project is to explore the pros and cons of using both the NLTK and Scikit versions of this algorithm.  
+The purpose of this project is to design a supervised machine learning Naive Bayes classification algorithm that can predict whether or not a letter in a Spanish word should have a diacritic--i.e. a `SpanishDiacriticizer`.  As such, once you clone this repo, you will be able to do two things:
 
-As such, you will see two directories, titled `nltk` and `sk-learn`, which contain python scripts that will give you the option to: 
-1.  diacriticize Spanish texts based on the two models that have been made available on this repo.
-2.  use your own Spanish data to train and evaluate your own model.
+  1.  diacriticize Spanish texts based on the two models that have been made available on this repo.
+  2.  use your own Spanish data to train and evaluate your own model.
 
 ## Usage
 
