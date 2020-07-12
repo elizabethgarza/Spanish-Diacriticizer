@@ -116,4 +116,25 @@ if __name__ =="__main__":
     parser.add_argument("tokens", help="a string sequence of unidecoded Spanish tokens without quotes")
     args = parser.parse_args()
 
-    print(Diacriticizer().predict_sentence(nltk.word_tokenize(str(args.tokens))))
+    #predicted_tokens = Diacriticizer().predict_sentence(nltk.word_tokenize(str(args.tokens)))
+    #rejoined_tokens = " ".join(predicted_tokens)
+    #print(rejoined_tokens)
+
+    #predicted_tokens = Diacriticizer().predict_sentence(nltk.word_tokenize(str(args.tokens)))
+    #glue_punct = "".join(predicted_tokens[-2:])
+    #predicted_tokens[-2] = glue_punct
+    #predicted_tokens.pop()
+    #print(" ".join(predicted_tokens))
+
+    predicted_tokens = Diacriticizer().predict_sentence(nltk.word_tokenize(str(args.tokens)))
+    glue_punct = "".join(predicted_tokens[-2:])
+    predicted_tokens[-2] = glue_punct
+    predicted_tokens.pop()
+    i=0
+    for token, predicted_token in zip(nltk.word_tokenize(str(args.tokens)), predicted_tokens): 
+        if token == token.capitalize(): 
+            predicted_tokens[i] = predicted_token.capitalize()
+        else: 
+            continue 
+        i+=1
+    print(" ".join(predicted_tokens))
