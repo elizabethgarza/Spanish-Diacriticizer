@@ -8,9 +8,18 @@ The purpose of this project is to design model based on a supervised machine lea
 
 Once you clone this repo, you will be able to do two things:
 
-  1.  diacriticize Spanish texts based on the trained model that is already available in this repo.
+  1.  diacriticize a sequence of unidecoded Spanish tokens based on the trained model that is already available in this repo.
   2.  use your own Spanish data to train and evaluate your own model.
+  
+**To diacriticize unidecoded Spanish tokens:
 
+- [ ] go to the terminal and run the following:
+     
+      ~ % cd ~/Desktop 
+          git clone https://github.com/elizabethgarza/Spanish-diacriticizer.git
+          cd ~/Desktop/Spanish-diacriticizer/src
+          python3 diacriticizer.py your sequence of tokens
+     
 ## Background 
 
 For some unidecoded words, like "espanol", the model simply has to perform a dictionary lookup to determine whether or not the "n" should have a diacritic. But for others, like "esta", this operation will not suffice because there are two viable word forms stored in the value entry: "está" and "esta". In such cases, the model has to be given more information about the words before it can predict whether or not to add a diacritic to the letter "a".  
