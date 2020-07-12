@@ -20,7 +20,7 @@ See **1.** and **2.** directly below for specific instructions on how to do thes
       ~ % cd ~/Desktop 
           git clone https://github.com/elizabethgarza/Spanish-diacriticizer.git
           cd ~/Desktop/Spanish-diacriticizer/src
-          python3 diacriticizer.py your sequence of tokens
+          python3 diacriticizer.py "your sequence of tokens"
      
 ## Background 
 
