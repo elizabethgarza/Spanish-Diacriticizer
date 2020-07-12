@@ -39,7 +39,7 @@ Because the computer will only be able to interpret written text, the pronunciat
 
 ### Description of algorithm 
 
-### Data of data
+### Data collection
 
 ### Methodology
 
