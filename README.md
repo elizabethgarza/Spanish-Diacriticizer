@@ -6,7 +6,7 @@ The purpose of this project is to design a supervised machine learning Naive Bay
 
 As such, you will see two directories, titled `nltk` and `sk-learn`, which contain python scripts that will give you the option to: 
 1.  diacriticize Spanish texts based on the two models that have been made available on this repo.
-2.  use their own Spanish data to train and evaluate their own model.
+2.  use your own Spanish data to train and evaluate your own model.
 
 
 ### Background 
