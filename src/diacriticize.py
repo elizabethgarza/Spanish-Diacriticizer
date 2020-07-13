@@ -1,3 +1,5 @@
+"""Diacriticizes a sequence of Spanish tokens."""
+
 import argparse
 import json
 import nltk
@@ -7,8 +9,7 @@ import pickle
 import unidecode 
 
 
-class Diacriticizer: 
-         
+class Diacriticize:
     
     def __init__(self):
         
@@ -16,16 +17,16 @@ class Diacriticizer:
         os.chdir('..')
         os.chdir('data') 
         counts_of_mellizas = pandas.read_csv("top_200_mellizas.csv", sep=",")
-        new_counts = counts_of_mellizas.head(1)
+        new_counts = counts_of_mellizas.head(20)
         max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"] 
         for row in max1_max2_tokens: 
             tokenized_row = row.split()
             os.chdir('pickles')
             read_clsfr = open(f"{unidecode.unidecode(tokenized_row[0])}.pickle", "rb") 
             DECODED_TKN_clsfr = pickle.load(read_clsfr)
-            self.melliza_and_clsfr_dict[unidecode.unidecode(tokenized_row[0])] =  DECODED_TKN_clsfr  
-
-        os.chdir('..')    
+            self.melliza_and_clsfr_dict[unidecode.unidecode(tokenized_row[0])] =  DECODED_TKN_clsfr
+            os.chdir('..')
+                 
         with open("invariantly_diacriticized_tokens_dict.json", "r") as source: 
             self.invariantly_diacriticized_tokens_dict = json.load(source)
     
@@ -88,7 +89,7 @@ class Diacriticizer:
         self.index = index
         self.decoded_lowercased_token = decoded_lowercased_token
         
-        sentence_features = Diacriticizer.extract_features(self.tokenized_sentence, self.index)
+        sentence_features = Diacriticize.extract_features(self.tokenized_sentence, self.index)
         predicted_token = self.melliza_and_clsfr_dict[self.decoded_lowercased_token].classify(sentence_features)
         
         return predicted_token
@@ -115,17 +116,17 @@ if __name__ =="__main__":
     parser.add_argument("tokens", help="a string sequence of unidecoded Spanish tokens without quotes")
     args = parser.parse_args()
 
-    #predicted_tokens = Diacriticizer().predict_sentence(nltk.word_tokenize(str(args.tokens)))
+    #predicted_tokens = Diacriticize.predict_sentence(nltk.word_tokenize(str(args.tokens)))
     #rejoined_tokens = " ".join(predicted_tokens)
     #print(rejoined_tokens)
 
-    #predicted_tokens = Diacriticizer().predict_sentence(nltk.word_tokenize(str(args.tokens)))
+    #predicted_tokens = Diacriticize.predict_sentence(nltk.word_tokenize(str(args.tokens)))
     #glue_punct = "".join(predicted_tokens[-2:])
     #predicted_tokens[-2] = glue_punct
     #predicted_tokens.pop()
     #print(" ".join(predicted_tokens))
 
-    predicted_tokens = Diacriticizer().predict_sentence(nltk.word_tokenize(str(args.tokens)))
+    predicted_tokens = Diacriticize().predict_sentence(nltk.word_tokenize(str(args.tokens)))
     glue_punct = "".join(predicted_tokens[-2:])
     predicted_tokens[-2] = glue_punct
     predicted_tokens.pop()
