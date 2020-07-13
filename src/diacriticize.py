@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Diacriticizes a sequence of Spanish tokens."""
 
 import argparse
