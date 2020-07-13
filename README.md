@@ -20,7 +20,7 @@ See **1.** and **2.** directly below for specific instructions on how to do thes
       ~ % cd ~/Desktop 
           git clone https://github.com/elizabethgarza/nltk-Spanish-diacriticizer.git
           cd ~/Desktop/nltk-Spanish-diacriticizer/src
-          python3 diacriticize.py "Ella esta enojada."
+          ./diacriticize.py "Ella esta enojada."
      
    You will get an output that looks something like this: 
       
@@ -28,7 +28,7 @@ See **1.** and **2.** directly below for specific instructions on how to do thes
         
  - [ ] Now try your own! 
  
-       ~ %  python3 diacriticize.py "Your own unidecoded sequence of tokens."   
+       ~ %  ./diacriticize.py "Your own unidecoded sequence of tokens."   
      
 ## Background 
 
