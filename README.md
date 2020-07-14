@@ -63,12 +63,12 @@ Because the computer will only be able to interpret written text, the pronunciat
   1. Preprocessing revisions: 
      - Make sure that both mellizas have the same number of sentences for all sets. 
      - Speed up preprocessing by refining for-loops.
-  2. Split data into train-micro_dev-micro_test-baseline sets.  
-  3. Consider k-folding to calculate micro-accuracies. 
+  2. Split data into 70-10-10-10 train, micro_dev, micro_test, test_baseline sets.  
+  3. Consider calculating micro-accuracies with k-folding. 
   4. Add Spanish punctuation to make output of `diacriticize.py` more consumer friendly.
   4. Consider making invariant dictionary more robust by systematically scraping *wiktionary*. 
   5. Add a set of grammar rules to account for invariantly diacriticized suffixes.
-  6. Train or concatenate `Fisher` corpus of Spanish conversations to training data to add less academic sentences.
+  6. Concatenate `Fisher` corpus of Spanish telephone conversations to data_set to add less academic sentences, or more data where needed.
   
 **Future iterations of this project.** 
   1. Optimize training and prediction speeds by experimenting with Naive Bayes sk-learn classifiers. 
