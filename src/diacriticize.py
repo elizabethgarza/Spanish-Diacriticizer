@@ -18,12 +18,16 @@ class Diacriticize:
         os.chdir('..')
         os.chdir('data') 
         counts_of_mellizas = pandas.read_csv("top_200_mellizas.csv", sep=",")
-        new_counts = counts_of_mellizas.head(20)
-        max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"] 
+        new_counts = counts_of_mellizas.head(141)
+        max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"]
+        i=0 
         for row in max1_max2_tokens: 
             tokenized_row = row.split()
             os.chdir('pickles')
             read_clsfr = open(f"{unidecode.unidecode(tokenized_row[0])}.pickle", "rb") 
+            print(f"{unidecode.unidecode(tokenized_row[0])}.pickle")
+            i += 1
+            print(i)
             DECODED_TKN_clsfr = pickle.load(read_clsfr)
             self.melliza_and_clsfr_dict[unidecode.unidecode(tokenized_row[0])] =  DECODED_TKN_clsfr
             os.chdir('..')
