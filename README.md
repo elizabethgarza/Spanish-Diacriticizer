@@ -94,7 +94,7 @@ Because the computer will only be able to interpret written text, the pronunciat
    
 **Medium priority**
   - [ ] Consider calculating micro-accuracies with k-folding. 
-  - [ ] Write a clean script for extracting mellizas from any given corpus.
+  - [ ] Write a clean script for extracting mellizas from any given corpus so that users can train on their own corpus.
   - [ ] Make .py scripts more readable by import `typing`, and adding comments and descriptions to functions.
   
 **Low priority**
