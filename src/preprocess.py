@@ -28,12 +28,8 @@ class Preprocess:
                 tokenized_line = line.split()
                 for token in tokenized_line: 
                     lowercased_token = token.casefold()
-                    if self.token1 == lowercased_token: 
-                        i+=1
-                        if i<500001:
-                            lines.append(" ".join(tokenized_line))
-                        else: 
-                            continue
+                    if self.token1 == lowercased_token:
+                        lines.append(" ".join(tokenized_line))
             for line in lines: 
                 sentence_set.add(line)
 
@@ -50,11 +46,7 @@ class Preprocess:
                 for token in tokenized_line: 
                     lowercased_token = token.casefold()
                     if self.token2 == lowercased_token:
-                        i+=1 
-                        if i<500001:
-                            lines.append(" ".join(tokenized_line))
-                        else: 
-                            continue
+                        lines.append(" ".join(tokenized_line))
             for line in lines: 
                 sentence_set.add(line)
 
