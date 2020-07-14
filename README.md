@@ -78,6 +78,7 @@ Because the computer will only be able to interpret written text, the pronunciat
   - [ ] Split data into 70-10-10-10 `train`, `micro_dev`, `micro_test`, `test_baseline`.  
      - Be sure to print `micro_dev` to a separate file for development phase error analysis.
      - Print `micro-test` results to a separate file for future reference, and see if there's a way to print errors to a separate file as well.
+     - Write directions for how to unidecode `test_baseline` and `micro_dev` and post on github.
   - [ ] Preprocessing revisions: 
      - Make sure that both mellizas have the same number of sentences for all sets, except `baseline_test_set`. 
      - Speed up preprocessing by refining for-loops.
@@ -85,16 +86,19 @@ Because the computer will only be able to interpret written text, the pronunciat
   - [ ] Add optional argparse arguments to `nltk-train-clsfrs.py`:
      - No. of clsfrs to train
      - Train a specific melliza;
+  - [ ] Add optional argparse argument to `diacriticize.py`:
+     - Allow user to diacriticize a file via an file_path argument.
   - [ ] Add a set of grammar rules to account for invariantly diacriticized suffixes.
    
 **Medium priority**
   - [ ] Consider calculating micro-accuracies with k-folding. 
+  - [ ] Make .py scripts more readable by import `typing`, and adding comments and descriptions to functions.
   
 **Low priority**
   - [ ] Add Spanish punctuation to make output of `diacriticize.py` more consumer friendly.
   - [ ] Consider making invariant dictionary more robust by systematically scraping *wiktionary*. 
   - [ ] Concatenate `Fisher` corpus of Spanish telephone conversations to data_set to add less academic sentences, or more data where needed.
-  - [ ] Refine `extract-features` function.
+  - [ ] Optimize `extract_features` function.
   
 
   
