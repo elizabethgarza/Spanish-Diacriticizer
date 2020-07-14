@@ -25,6 +25,8 @@ The purpose of this project is to design model based on a supervised machine lea
      
 ## Background 
 
+#TODO formatting edits on tokens.
+
 For some unidecoded words, like "espanol", the model simply has to perform a dictionary lookup to determine whether or not the "n" should have a diacritic. But for others, like "esta", this operation will not suffice because there are two viable word forms stored in the value entry: "está" and "esta". In such cases, the model has to be given more information about the words before it can predict whether or not to add a diacritic to the letter "a".  
 
 Unlike computers, humans would quickly be able to decide which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
