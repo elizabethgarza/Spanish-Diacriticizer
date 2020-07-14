@@ -88,11 +88,11 @@ Because the computer will only be able to interpret written text, the pronunciat
   - [ ] Add optional argparse arguments to `nltk-train-clsfrs.py`:
      - `args.no_of_clsfrs` to train
      - `args.melliza1` and `args.melliza2` to train a specific pair of mellizas;
+   
+**Medium priority**
   - [ ] Add optional argparse argument to `diacriticize.py`:
      - Allow user to diacriticize a file via a `args.file_path` argument.
   - [ ] Add a set of grammar rules to account for invariantly diacriticized suffixes.
-   
-**Medium priority**
   - [ ] Consider calculating micro-accuracies with k-folding. 
   - [ ] Write a clean script for extracting mellizas from any given corpus so that users can train on their own corpus.
   - [ ] Make .py scripts more readable by import `typing`, and adding comments and descriptions to functions.
