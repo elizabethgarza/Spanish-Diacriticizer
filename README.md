@@ -74,6 +74,7 @@ Because the computer will only be able to interpret written text, the pronunciat
   1. Optimize training and prediction speeds by experimenting with Naive Bayes sk-learn classifiers. 
   2. Include POS tags and suffix endings as features in `extract features`.
   3. Perform the same experiment with neural networks.
+  4. Package everything up if you can achieve accuracies above 98%.
   
   
   
