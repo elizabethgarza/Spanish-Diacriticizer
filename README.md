@@ -5,13 +5,6 @@
 The purpose of this project is to design model based on a supervised machine learning Naive Bayes classification algorithm that can predict whether or not a letter in a Spanish word should have a diacritic--i.e. a *Spanish-diacriticizer*.  
 
 ## Usage
-
-Once you clone this repo, you will be able to do two things:
-
-  1.  diacriticize a sequence of unidecoded Spanish tokens based on the trained model that is already available in this repo.
-  2.  use your own Spanish data to train and evaluate your own model.
-  
-See **1.** and **2.** directly below for specific instructions on how to do these things.
   
 **1.  To diacriticize a sequence of unidecoded Spanish tokens:**
 
@@ -66,5 +59,23 @@ Because the computer will only be able to interpret written text, the pronunciat
 
 ## #TODOs
 
+**High priority**
+  1. Preprocessing revisions: 
+     - Make sure that both mellizas have the same number of sentences for all sets. 
+     - Speed up preprocessing by refining for-loops.
+  2. Split data into train-micro_dev-micro_test-baseline sets.  
+  3. Consider k-folding to calculate micro-accuracies. 
+  4. Add Spanish punctuation to make output of `diacriticize.py` more consumer friendly.
+  4. Consider making invariant dictionary more robust by systematically scraping *wiktionary*. 
+  5. Add a set of grammar rules to account for invariantly diacriticized suffixes.
+  6. Train or concatenate `Fisher` corpus of Spanish conversations to training data to add less academic sentences.
+  
+**Future iterations of this project.** 
+  1. Optimize training and prediction speeds by experimenting with Naive Bayes sk-learn classifiers. 
+  2. Include POS tags and suffix endings as features in `extract features`.
+  3. Perform the same experiment with neural networks.
+  
+  
+  
 
 
