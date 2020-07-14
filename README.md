@@ -6,7 +6,7 @@ The purpose of this project is to design model based on a supervised machine lea
 
 ## Usage
   
-**1.  To diacriticize a sequence of unidecoded Spanish tokens:**
+**To diacriticize a sequence of unidecoded Spanish tokens:**
 
 - [ ] Open a new terminal and run the following:
      
