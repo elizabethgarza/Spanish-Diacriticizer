@@ -63,11 +63,15 @@ Because the computer will only be able to interpret written text, the pronunciat
   1. Preprocessing revisions: 
      - Make sure that both mellizas have the same number of sentences for all sets. 
      - Speed up preprocessing by refining for-loops.
-  2. Split data into 70-10-10-10 train, micro_dev, micro_test, test_baseline sets.  
+  2. Clean up `top_200_mellizas` by deleting irrelevant entries and adding a numbered column. 
+  3. Add optional argparse arguments to `nltk-train-clsfrs.py`.
+  4. Split data into 70-10-10-10 train, micro_dev, micro_test, test_baseline sets.  
+  5. Add a set of grammar rules to account for invariantly diacriticized suffixes.
+   
+**Medium priority**
   3. Consider calculating micro-accuracies with k-folding. 
   4. Add Spanish punctuation to make output of `diacriticize.py` more consumer friendly.
   4. Consider making invariant dictionary more robust by systematically scraping *wiktionary*. 
-  5. Add a set of grammar rules to account for invariantly diacriticized suffixes.
   6. Concatenate `Fisher` corpus of Spanish telephone conversations to data_set to add less academic sentences, or more data where needed.
   
 **Future iterations of this project.** 
