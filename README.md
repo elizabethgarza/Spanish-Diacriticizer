@@ -68,16 +68,16 @@ Because the computer will only be able to interpret written text, the pronunciat
 ## Future work 
 
   - [ ] Optimize training and prediction speeds running the same experiment with multinomial Naive Bayes sk-learn classifiers . 
-  - [ ] Train a Spanish POS tagger and include tags and suffix endings as features in `extract features`.
+  - [ ] Train a Spanish POS tagger and include tags and suffix endings as features in `extract_features`.
   - [ ] Perform the same experiment with neural networks.
-  - [ ] Package everything up if you can achieve accuracies above 98%.
+  - [ ] Package everything up if you can achieve a baseline accuracy above 98%.
 
 ## #TODOs
 
 **High priority**
   - [ ] Split data into 70-10-10-10 `train`, `micro_dev`, `micro_test`, `test_baseline`.  
      - Be sure to print `micro_dev` to a separate file for development phase error analysis.
-     - Print `micro-test` results to a separate file for future reference, and see if there's a way to print errors to a separate file as well.
+     - Print `micro_test` results to a separate file for future reference, and see if there's a way to print errors to a separate file as well.
      - Write directions for how to unidecode `test_baseline` and `micro_dev` and post on github.
   - [ ] Preprocessing revisions: 
      - Make sure that both mellizas have the same number of sentences for all sets, except `baseline_test_set`. 
