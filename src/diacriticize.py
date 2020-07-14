@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Diacriticizes a sequence of Spanish tokens."""
+'''Diacriticizes a sequence of Spanish tokens.'''
 
 import argparse
 import json
@@ -17,21 +17,20 @@ class Diacriticize:
         self.melliza_and_clsfr_dict = {}
         os.chdir('..')
         os.chdir('data') 
-        counts_of_mellizas = pandas.read_csv("top_200_mellizas.csv", sep=",")
-        new_counts = counts_of_mellizas.head(141)
-        max1_max2_tokens = new_counts["MAX1_TOKEN"] + "\t"+ new_counts["MAX2_TOKEN"]
+        mellizas = pandas.read_csv('top_200_mellizas.csv', sep=',')
+        mellizas = mellizas.head(141)
+        max1_max2_tokens = mellizas['MAX1_MELLIZA'] + '\t'+ mellizas['MAX2_MELLIZA']
         i=0 
         for row in max1_max2_tokens: 
             tokenized_row = row.split()
+            melliza1 = tokenized_row[0]
             os.chdir('pickles')
-            read_clsfr = open(f"{unidecode.unidecode(tokenized_row[0])}.pickle", "rb") 
-            i += 1
-            print(i, f"{unidecode.unidecode(tokenized_row[0])}.pickle")
-            DECODED_TKN_clsfr = pickle.load(read_clsfr)
-            self.melliza_and_clsfr_dict[unidecode.unidecode(tokenized_row[0])] =  DECODED_TKN_clsfr
+            read_clsfr = open(f'{unidecode.unidecode(melliza1)}.pickle', 'rb') 
+            melliza_clsfr = pickle.load(read_clsfr)
+            self.melliza_and_clsfr_dict[unidecode.unidecode(melliza1)] =  melliza_clsfr
             os.chdir('..')
                  
-        with open("invariantly_diacriticized_tokens_dict.json", "r") as source: 
+        with open('invariantly_diacriticized_tokens_dict.json', 'r') as source: 
             self.invariantly_diacriticized_tokens_dict = json.load(source)
     
     @staticmethod
@@ -39,50 +38,50 @@ class Diacriticize:
 
         features = {} 
 
-        features["is initial token"] = (index == 0)
+        features['is initial token'] = (index == 0)
         if index == 0: 
             if len(tokenized_sentence)==1: 
-                features["is only token"] = (len(tokenized_sentence)==1)
+                features['is only token'] = (len(tokenized_sentence)==1)
             if len(tokenized_sentence)==2:
-                features["one token after:"] = tokenized_sentence[index+1]
+                features['one token after:'] = tokenized_sentence[index+1]
             if len(tokenized_sentence)>3: 
-                features["one token after:"] = tokenized_sentence[index+1]
-                features["two tokens after:"] = tokenized_sentence[index+2] 
+                features['one token after:'] = tokenized_sentence[index+1]
+                features['two tokens after:'] = tokenized_sentence[index+2] 
         if index==1: 
-            features["is 2nd token"] = (index == 1)
+            features['is 2nd token'] = (index == 1)
             if len(tokenized_sentence)==2: 
-                features["one token before:"] = tokenized_sentence[index-1]
+                features['one token before:'] = tokenized_sentence[index-1]
             if len(tokenized_sentence)==3: 
-                features["one token before:"] = tokenized_sentence[index-1]
-                features["one token after:"] = tokenized_sentence[index+1]
+                features['one token before:'] = tokenized_sentence[index-1]
+                features['one token after:'] = tokenized_sentence[index+1]
             if len(tokenized_sentence)>3: 
-                features["one token before:"] = tokenized_sentence[index-1] 
-                features["one token after:"] = tokenized_sentence[index+1]
-                features["two tokens after:"] = tokenized_sentence[index+2] 
+                features['one token before:'] = tokenized_sentence[index-1] 
+                features['one token after:'] = tokenized_sentence[index+1]
+                features['two tokens after:'] = tokenized_sentence[index+2] 
         if index>1: 
             if index==2:
                 if len(tokenized_sentence) == 3:
-                    features["one token before:"] = tokenized_sentence[index-1]
-                    features["two tokens before:"] = tokenized_sentence[index-2]
-                    features["is 3rd token"] = (index==2)
+                    features['one token before:'] = tokenized_sentence[index-1]
+                    features['two tokens before:'] = tokenized_sentence[index-2]
+                    features['is 3rd token'] = (index==2)
                 if len(tokenized_sentence)==4: 
-                    features["one token before:"] = tokenized_sentence[index-1]
-                    features["two tokens before:"] = tokenized_sentence[index-2], 
-                    features["one token after:"] = tokenized_sentence[index+1]
+                    features['one token before:'] = tokenized_sentence[index-1]
+                    features['two tokens before:'] = tokenized_sentence[index-2], 
+                    features['one token after:'] = tokenized_sentence[index+1]
             if index<(len(tokenized_sentence)-2): 
-                features["one token before:"] = tokenized_sentence[index-1]
-                features["two tokens before:"] = tokenized_sentence[index-2]
-                features["one token after:"] = tokenized_sentence[index+1]
-                features["two tokens after:"] = tokenized_sentence[index+2] 
+                features['one token before:'] = tokenized_sentence[index-1]
+                features['two tokens before:'] = tokenized_sentence[index-2]
+                features['one token after:'] = tokenized_sentence[index+1]
+                features['two tokens after:'] = tokenized_sentence[index+2] 
             if index==(len(tokenized_sentence)-2): 
-                features["one token before:"] = tokenized_sentence[index-1]
-                features["two tokens before:"] = tokenized_sentence[index-2]
-                features["one token after:"] = tokenized_sentence[index+1]
-                features["is penultimate token"] = (index == len(tokenized_sentence)-2)
+                features['one token before:'] = tokenized_sentence[index-1]
+                features['two tokens before:'] = tokenized_sentence[index-2]
+                features['one token after:'] = tokenized_sentence[index+1]
+                features['is penultimate token'] = (index == len(tokenized_sentence)-2)
             if index==(len(tokenized_sentence)-1):
-                features["one token before:"] = tokenized_sentence[index-1]
-                features["two tokens before:"] = tokenized_sentence[index-2]
-        features["is last token"] = (index == len(tokenized_sentence)-1)     
+                features['one token before:'] = tokenized_sentence[index-1]
+                features['two tokens before:'] = tokenized_sentence[index-2]
+        features['is last token'] = (index == len(tokenized_sentence)-1)     
 
         return features
 
@@ -115,23 +114,23 @@ class Diacriticize:
             
         return predicted_tokens
 
-if __name__ =="__main__": 
-    parser = argparse.ArgumentParser(description="Diacriticizes a sequence of unidecoded Spanish tokens.")
-    parser.add_argument("tokens", help="a string sequence of unidecoded Spanish tokens without quotes")
+if __name__ =='__main__': 
+    parser = argparse.ArgumentParser(description='Diacriticizes a sequence of unidecoded Spanish tokens.')
+    parser.add_argument('tokens', help='a string sequence of unidecoded Spanish tokens without quotes')
     args = parser.parse_args()
 
     #predicted_tokens = Diacriticize.predict_sentence(nltk.word_tokenize(str(args.tokens)))
-    #rejoined_tokens = " ".join(predicted_tokens)
+    #rejoined_tokens = ' '.join(predicted_tokens)
     #print(rejoined_tokens)
 
     #predicted_tokens = Diacriticize.predict_sentence(nltk.word_tokenize(str(args.tokens)))
-    #glue_punct = "".join(predicted_tokens[-2:])
+    #glue_punct = ''.join(predicted_tokens[-2:])
     #predicted_tokens[-2] = glue_punct
     #predicted_tokens.pop()
-    #print(" ".join(predicted_tokens))
+    #print(' '.join(predicted_tokens))
 
     predicted_tokens = Diacriticize().predict_sentence(nltk.word_tokenize(str(args.tokens)))
-    glue_punct = "".join(predicted_tokens[-2:])
+    glue_punct = ''.join(predicted_tokens[-2:])
     predicted_tokens[-2] = glue_punct
     predicted_tokens.pop()
     i=0
@@ -141,4 +140,4 @@ if __name__ =="__main__":
         else: 
             continue 
         i+=1
-    print(" ".join(predicted_tokens))
+    print(' '.join(predicted_tokens))

@@ -16,7 +16,7 @@ def mk_clsfr(corpus_path, melliza1, melliza2):
     train = clsfr_prep.Clsfr_Prep(train_prep, test_prep).mk_nltk_train_set()
     test = clsfr_prep.Clsfr_Prep(train_prep, test_prep).mk_nltk_test_set()
     nltk_clsfr = nltk.classify.naivebayes.NaiveBayesClassifier.train(train)
-    print(f"{unidecode.unidecode(melliza1)} accuracy:  {nltk.classify.util.accuracy(nltk_clsfr, test):.4f}")
+    print(f'{unidecode.unidecode(melliza1)} accuracy:  {nltk.classify.util.accuracy(nltk_clsfr, test):.4f}')
     
     return nltk_clsfr
 
@@ -58,7 +58,7 @@ if __name__ =='__main__':
         # if you are making classifiers in batches, add argument `skiprows = [i for i in range(1,23)]` if you want to, 
         # e.g. skip the first 23 rows.
         mellizas = pandas.read_csv('top_200_mellizas.csv', sep=',')
-        max1_max2_tokens = mellizas['MAX1_TOKEN'] + "\t"+ mellizas['MAX2_TOKEN'] 
+        max1_max2_tokens = mellizas['MAX1_MELLIZA'] + '\t'+ mellizas['MAX2_MELLIZA'] 
         for row in tqdm(max1_max2_tokens): 
             tokenized_row = row.split()
             os.chdir('pickles')
@@ -75,19 +75,19 @@ if __name__ =='__main__':
 
 #parser = argparse.ArgumentParser()
 #group = parser.add_mutually_exclusive_group()
-#group.add_argument("-v", "--verbose", action="store_true")
-#group.add_argument("-q", "--quiet", action="store_true")
-#parser.add_argument("x", type=int, help="the base")
-#parser.add_argument("y", type=int, help="the exponent")
+#group.add_argument('-v', '--verbose', action='store_true')
+#group.add_argument('-q', '--quiet', action='store_true')
+#parser.add_argument('x', type=int, help='the base')
+#parser.add_argument('y', type=int, help='the exponent')
 #args = parser.parse_args()
 #answer = args.x**args.y
 
 #if args.quiet:
  #   print answer
 #elif args.verbose:
- #   print "{} to the power {} equals {}".format(args.x, args.y, answer)
+ #   print '{} to the power {} equals {}'.format(args.x, args.y, answer)
 #else:
-#    print "{}^{} == {}".format(args.x, args.y, answer)
+#    print '{}^{} == {}'.format(args.x, args.y, answer)
 
         
 
