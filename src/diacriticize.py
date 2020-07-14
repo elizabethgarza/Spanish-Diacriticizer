@@ -25,9 +25,8 @@ class Diacriticize:
             tokenized_row = row.split()
             os.chdir('pickles')
             read_clsfr = open(f"{unidecode.unidecode(tokenized_row[0])}.pickle", "rb") 
-            print(f"{unidecode.unidecode(tokenized_row[0])}.pickle")
             i += 1
-            print(i)
+            print(i, f"{unidecode.unidecode(tokenized_row[0])}.pickle")
             DECODED_TKN_clsfr = pickle.load(read_clsfr)
             self.melliza_and_clsfr_dict[unidecode.unidecode(tokenized_row[0])] =  DECODED_TKN_clsfr
             os.chdir('..')
