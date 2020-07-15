@@ -85,9 +85,7 @@ Because the computer will only be able to interpret written text, the pronunciat
      - Make sure that both mellizas have the same number of sentences for all sets, except `baseline_test_set`. 
      - Speed up preprocessing by refining for-loops.
   - [ ] Clean up `top_200_mellizas` by deleting irrelevant entries and adding a numbered column. 
-  - [ ] Add optional argparse arguments to `nltk-train-clsfrs.py`:
-     - `args.no_of_clsfrs` to train
-     - `args.melliza1` and `args.melliza2` to train a specific pair of mellizas;
+
    
 **Medium priority**
   - [ ] Add optional argparse argument to `diacriticize.py`:
