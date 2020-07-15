@@ -49,7 +49,8 @@ if __name__ =='__main__':
         melliza1 = args.m1_m2.split('_')[0]
         melliza2 = args.m1_m2.split('_')[-1]
         clsfr = mk_clsfr(args.corpus_path, melliza1, melliza2)
-        saved_clsfr = open(clsfr, saved_clsfr)
+        saved_clsfr = open(f'{unidecode.unidecode(melliza1)}.pickle', 'wb') 
+        pickle.dump(clsfr, saved_clsfr)
         saved_clsfr.close()
     # default algorithm to classify top 200 mellizas.
     else:
@@ -64,30 +65,15 @@ if __name__ =='__main__':
             os.chdir('pickles')
             melliza1 = tokenized_row[0]
             melliza2 = tokenized_row[-1]
+            clsfr = mk_clsfr(args.corpus_path, melliza1, melliza2)
             saved_clsfr = open(f'{unidecode.unidecode(melliza1)}.pickle', 'wb') 
-            pickle.dump(mk_clsfr(args.corpus_path, melliza1, melliza2), saved_clsfr)
+            pickle.dump(clsfr, saved_clsfr)
             saved_clsfr.close()
 
 
 
 
 
-
-#parser = argparse.ArgumentParser()
-#group = parser.add_mutually_exclusive_group()
-#group.add_argument('-v', '--verbose', action='store_true')
-#group.add_argument('-q', '--quiet', action='store_true')
-#parser.add_argument('x', type=int, help='the base')
-#parser.add_argument('y', type=int, help='the exponent')
-#args = parser.parse_args()
-#answer = args.x**args.y
-
-#if args.quiet:
- #   print answer
-#elif args.verbose:
- #   print '{} to the power {} equals {}'.format(args.x, args.y, answer)
-#else:
-#    print '{}^{} == {}'.format(args.x, args.y, answer)
 
         
 
