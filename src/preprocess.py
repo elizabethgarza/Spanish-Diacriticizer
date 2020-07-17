@@ -1,6 +1,7 @@
 from nltk import word_tokenize
 import os
 import pandas as pd
+import subprocess
 from tqdm import tqdm
 import unidecode
 import random
@@ -8,9 +9,9 @@ import random
 
 class Preprocess: 
     
-    def __init__(self, corpus, melliza1, melliza2): 
+    def __init__(self, corpus_path, melliza1, melliza2): 
         
-        self.corpus = corpus 
+        self.corpus_path = corpus_path 
         self.melliza1 = melliza1 
         self.melliza2 = melliza2
         
@@ -39,7 +40,7 @@ class Preprocess:
         max_no_of_sents = Preprocess.no_of_sents(self)
         sent_set = set()
         lines = []
-        with open(self.corpus, 'r') as source: 
+        with open(self.corpus_path, 'r') as source: 
             for line in tqdm(source):
                 tokenized_line = line.split()
                 for token in tokenized_line: 
@@ -61,7 +62,7 @@ class Preprocess:
         max_no_of_sents = Preprocess.no_of_sents(self)
         sent_set = set()
         lines = []
-        with open(self.corpus, 'r') as source: 
+        with open(self.corpus_path, 'r') as source: 
             for line in tqdm(source):
                 tokenized_line = line.split()
                 for token in tokenized_line: 
@@ -105,16 +106,23 @@ class Preprocess:
         melliza1_melliza2_sent_info = melliza1_sent_info + melliza2_sent_info
         
         return melliza1_melliza2_sent_info 
-
-    def mk_train_and_test_set(self): 
+    
+    def train_dev_test(self): 
         
         melliza1_melliza2_sents_and_labels = Preprocess.melliza1_melliza2_list(self)
         random.seed(5228554)
         random.shuffle(melliza1_melliza2_sents_and_labels)
-        train_length = round(.8 * len(melliza1_melliza2_sents_and_labels))    
+        train_length = round(.8 * len(melliza1_melliza2_sents_and_labels))   
         train = melliza1_melliza2_sents_and_labels[:train_length]
-        test = melliza1_melliza2_sents_and_labels[train_length:]
+        dev_and_test = melliza1_melliza2_sents_and_labels[train_length:]
+        print(len(dev_and_test))
+        # computes the middle index of dev_and_test
+        dev_and_test_len = round(len(dev_and_test) * .5)
+        dev = melliza1_melliza2_sents_and_labels[:dev_and_test_len]
+        test = melliza1_melliza2_sents_and_labels[dev_and_test_len:]
         
-        return train, test
+        return train, dev, test
+
+
 
         

@@ -6,29 +6,39 @@ from typing import Dict
 
 class Clsfr_Prep: 
     
-    def __init__(self, train, test): 
+    def __init__(self, train, dev, test): 
         
         self.train = train 
+        self.dev = dev
         self.test = test
         
-    def mk_nltk_train_set(self): 
+    def train_prep(self): 
         
-        nltk_train_set = []
+        train_prep = []
         
-        for (sentence_info, label) in self.train: 
-            nltk_train_set.append((Clsfr_Prep.extract_features(sentence_info[0], sentence_info[-1]), label))
+        for (sent_info, label) in self.train: 
+            train_prep.append((Clsfr_Prep.extract_features(sent_info[0], sent_info[-1]), label))
             
-        return nltk_train_set 
-    
-    
-    def mk_nltk_test_set(self):
+        return train_prep 
+
+    def dev_prep(self):
        
-        nltk_test_set = []
+        dev_prep = []
         
-        for (sentence_info, label) in self.test: 
-            nltk_test_set.append((Clsfr_Prep.extract_features(sentence_info[0], sentence_info[-1]), label))
+        for (sent_info, label) in self.dev: 
+            dev_prep.append((Clsfr_Prep.extract_features(sent_info[0], sent_info[-1]), label))
         
-        return nltk_test_set   
+        return dev_prep   
+    
+    
+    def test_prep(self):
+       
+        test_prep = []
+        
+        for (sent_info, label) in self.test: 
+            test_prep.append((Clsfr_Prep.extract_features(sent_info[0], sent_info[-1]), label))
+        
+        return test_prep   
         
     @staticmethod
     def extract_features(tokenized_sentence, index: int):
