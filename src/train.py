@@ -25,9 +25,6 @@ if __name__ =='__main__':
 
     if args.m1_m2:
 
-        os.chdir('..')
-        os.chdir('data/pickles') 
-        
         melliza1 = args.m1_m2.split('_')[0]
         melliza2 = args.m1_m2.split('_')[-1]
         
@@ -40,13 +37,21 @@ if __name__ =='__main__':
         # trains clsfr 
         clsfr = nltk.classify.naivebayes.NaiveBayesClassifier.train(train)
 
+        # loads the clfr onto a pickle file
+        os.chdir('..')
+        os.chdir('data/pickles') 
+        saved_clsfr = open(f'{unidecode.unidecode(melliza1)}.pickle', 'wb')
+        pickle.dump(clsfr, saved_clsfr)
+        saved_clsfr.close()
+
         # calculates micro `dev` and `test`accuracies
         # prints dev accuracies to a file for error analysis
         if args.eval_md == 'dev':
+            os.chdir('..')
             os.chdir('micro_devs')
             with open(f'{unidecode.unidecode(melliza1)}_dev.txt', 'w') as sink: 
                 for item in dev: 
-                    print(item[0][0], file=sink)   # to join the tokenized_sents into one big list, the line is:  `print(list(itertools.chain.from_iterable(list_object)))`
+                    print(' '.join(item[0][0]), file=sink)   # to join the tokenized_sents into one big list, the sent is:  `print(list(itertools.chain.from_iterable(list_object)))`
                 print(file=sink)   
             dev = clsfr_prep.Clsfr_Prep(train, dev, test).dev_prep()
             clsfr_accuracy = nltk.classify.util.accuracy(clsfr, dev)
@@ -91,11 +96,14 @@ if __name__ =='__main__':
                 os.chdir('micro_devs')
                 with open(f'{unidecode.unidecode(melliza1)}_dev.txt', 'w') as sink: 
                     for item in dev: 
-                        print(item[0][0], file=sink)   # to join the tokenized_sents into one big list, the line is:  `print(list(itertools.chain.from_iterable(list_object)))`
+                        print(item[0][0], file=sink)   # to join the tokenized_sents into one big list, the sent is:  `print(list(itertools.chain.from_iterable(list_object)))`
                     print(file=sink)   
                 dev = clsfr_prep.Clsfr_Prep(train, dev, test).dev_prep()
                 clsfr_accuracy = nltk.classify.util.accuracy(clsfr, dev)
-                print(f'{unidecode.unidecode(melliza1)} accuracy:  {clsfr_accuracy:.4f}')          
+                print(f'{unidecode.unidecode(melliza1)} accuracy:  {clsfr_accuracy:.4f}')     
+
+                #with open('person.txt', 'w') as json_file:
+  #json.dump(person_dict, json_file)     
             
             elif args.eval_md == 'test':
                 test = clsfr_prep.Clsfr_Prep(train, dev, test).test_prep()
