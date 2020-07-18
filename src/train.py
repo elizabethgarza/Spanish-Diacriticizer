@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+"""Trains melliza nltk Naive Bayes classifiers, loads them into pickle files, and prints accuracy results of either `dev` or `test` to a separate file, titled `micro_accuracies.txt`."""
+
 import argparse
 import itertools
 import nltk
@@ -10,34 +13,13 @@ import unidecode
 import preprocess
 import clsfr_prep
 
-"""
-TODOs for branch = `split`:
-
---fix code under optional args
---try optional args on `baby_data_sets`
---fix code so that files print to the correct directories
---train `ESTA` on `full.txt`
---git commit
-
-TODOS for branch = `optimize for-loops`
---start optimizing for-loops in preprocess.py 
-
-TODOS for branch = `melliza clean-up`
---get rid of bad entries 
---re-run code to regenerate CSV file
---draw a histogram to see the distribution of mellizas 
---update READ.me on data based on all of this work
-
-LASTLY: 
---start retraining clsfrs
-"""
 
 if __name__ =='__main__': 
-    parser = argparse.ArgumentParser(description='Trains nltk naive bayes classifiers and loads them into pickle files')
-    parser.add_argument('corpus_path', help='str: path to corpus file')
-    parser.add_argument('eval_data', help='must input either `dev` or `test` as arguments; this indicates whether to evaluate on dev or test ')
-    parser.add_argument('-no', help='int: number of classifiers that are to be trained')
-    parser.add_argument('-m1_m2', help='str: melliza pair to be classified with dash in between; e.g. `él_el` ')
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('corpus_path', help='str: path to corpus file that you wish to train on')
+    parser.add_argument('eval_md', help='str: must input either `dev` or `test` to indicate whether or not to evaluate in `dev` or `test` mode')
+    parser.add_argument('-no', help='int: number of classifiers that you wish to train; If you wish to classify only a small number of clsfrs rather than the default number of 200, use this optional argument.')
+    parser.add_argument('-m1_m2', help='str: melliza pair with underscore in between; e.g. él_el; If you wish to classify a single clsfr on one pair of mellizas, use this optional argument.')
     args = parser.parse_args()
 
 
@@ -60,7 +42,7 @@ if __name__ =='__main__':
 
         # calculates micro `dev` and `test`accuracies
         # prints dev accuracies to a file for error analysis
-        if args.eval_data == 'dev':
+        if args.eval_md == 'dev':
             os.chdir('micro_devs')
             with open(f'{unidecode.unidecode(melliza1)}_dev.txt', 'w') as sink: 
                 for item in dev: 
@@ -69,7 +51,7 @@ if __name__ =='__main__':
             dev = clsfr_prep.Clsfr_Prep(train, dev, test).dev_prep()
             clsfr_accuracy = nltk.classify.util.accuracy(clsfr, dev)
             print(f'{unidecode.unidecode(melliza1)} accuracy:  {clsfr_accuracy:.4f}')          
-        elif args.eval_data == 'test':
+        elif args.eval_md == 'test':
             test = clsfr_prep.Clsfr_Prep(train, dev, test).test_prep()
             clsfr_accuracy = nltk.classify.util.accuracy(clsfr, dev)
             print(f'{unidecode.unidecode(melliza1)} accuracy:  {clsfr_accuracy:.4f}')
@@ -105,7 +87,7 @@ if __name__ =='__main__':
             
             # calculates micro `dev` and `test`accuracies
             # prints dev accuracies to a file for error analysis
-            if args.eval_data == 'dev':
+            if args.eval_md == 'dev':
                 os.chdir('micro_devs')
                 with open(f'{unidecode.unidecode(melliza1)}_dev.txt', 'w') as sink: 
                     for item in dev: 
@@ -115,7 +97,7 @@ if __name__ =='__main__':
                 clsfr_accuracy = nltk.classify.util.accuracy(clsfr, dev)
                 print(f'{unidecode.unidecode(melliza1)} accuracy:  {clsfr_accuracy:.4f}')          
             
-            elif args.eval_data == 'test':
+            elif args.eval_md == 'test':
                 test = clsfr_prep.Clsfr_Prep(train, dev, test).test_prep()
                 clsfr_accuracy = nltk.classify.util.accuracy(clsfr, dev)
                 print(f'{unidecode.unidecode(melliza1)} accuracy:  {clsfr_accuracy:.4f}')
@@ -129,7 +111,7 @@ if __name__ =='__main__':
             saved_clsfr.close()
 
         # prints evaluation results to a file 
-        with open('dev_eval.txt', 'w') as sink:
+        with open('micro_accuracies.txt', 'w') as sink:
             for clsfr_accuracy in clsfr_accuracies:  
                 print(clsfr_accuracy, file=sink)
             print(file=sink)
