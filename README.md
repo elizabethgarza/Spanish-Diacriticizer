@@ -77,14 +77,22 @@ Because the computer will only be able to interpret written text, the pronunciat
 ## #TODOs
 
 **High priority**
-  - [ ] Split data into 70-10-10-10 `train`, `micro_dev`, `micro_test`, `test_baseline`.  
-     - Be sure to print `micro_dev` to a separate file for development phase error analysis.
-     - Print `micro_test` results to a separate file for future reference, and see if there's a way to print errors to a separate file as well.
-     - Write directions for how to unidecode `test_baseline` and `micro_dev` and post on github.
-  - [ ] Preprocessing revisions: 
-     - Make sure that both mellizas have the same number of sentences for all sets, except `baseline_test_set`. 
-     - Speed up preprocessing by refining for-loops.
-  - [ ] Clean up `top_200_mellizas` by deleting irrelevant entries and adding a numbered column. 
+
+... for branch = 'csv-cleanup':
+    - [ ] write an optional argument that prints evaluation results to either 'DEV_ACCURACY' or 'TEST_ACCURACY' on the csv file
+    - [ ] delete irrelevant entries and make a list of them separately
+    - [ ] add the two columns 
+
+... for branch = 'rerun-csv-code': 
+    - [ ] re-run code to regenerate CSV file without the bad entries 
+    - [ ] add a snippet to print out a histogram of melliza distribution 
+    - [ ] update the data section of READ.ME 
+
+... for branch = `optimize for-loops`
+    - [ ] start optimizing for-loops in preprocess.py 
+
+... for branch = `retrain-clsfrs`
+    - [ ] start retraining clsfrss
 
    
 **Medium priority**
