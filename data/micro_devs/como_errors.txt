@@ -1,0 +1,1024 @@
+ORIGINAL: ['una', 'cantidad', 'diversa', 'de', 'animales', 'cómo', 'vacas', ',', 'caballos', ',']
+PREDICTION: ['una', 'cantidad', 'diversa', 'de', 'animales', 'como', 'vacas', ',', 'caballos', ',']
+
+ORIGINAL: ['signatarios', 'que', 'además', 'de', 'supervisar', 'cómo', 'los', 'Estados', 'implementan', 'sus']
+PREDICTION: ['signatarios', 'que', 'además', 'de', 'supervisar', 'como', 'los', 'Estados', 'implementan', 'sus']
+
+ORIGINAL: ['código', 'es', 'la', 'imagen', 'de', 'como', 'mucho', 'un', 'mensaje', ',']
+PREDICTION: ['código', 'es', 'la', 'imagen', 'de', 'cómo', 'mucho', 'un', 'mensaje', ',']
+
+ORIGINAL: ['la', 'tecnología', 'LCoS', ',', 'que', 'cómo', 'su', 'propio', 'nombre', 'indica']
+PREDICTION: ['la', 'tecnología', 'LCoS', ',', 'que', 'como', 'su', 'propio', 'nombre', 'indica']
+
+ORIGINAL: ['.', 'Desde', '1890', ',', 'ya', 'cómo', 'primera', 'actriz', 'del', 'Teatro']
+PREDICTION: ['.', 'Desde', '1890', ',', 'ya', 'como', 'primera', 'actriz', 'del', 'Teatro']
+
+ORIGINAL: ['referencia', 'en', 'tal', 'sociedad', ',', 'como', 'lo', 'que', 'beneficia', 'a']
+PREDICTION: ['referencia', 'en', 'tal', 'sociedad', ',', 'cómo', 'lo', 'que', 'beneficia', 'a']
+
+ORIGINAL: ['de', 'piel', '-', 'le', 'representa', 'como', 'un', 'hombre', 'de', 'valor']
+PREDICTION: ['de', 'piel', '-', 'le', 'representa', 'cómo', 'un', 'hombre', 'de', 'valor']
+
+ORIGINAL: ['y', '1986', ',', 'y', 'luego', 'como', 'carrera', 'profesional', 'desde', '1987']
+PREDICTION: ['y', '1986', ',', 'y', 'luego', 'cómo', 'carrera', 'profesional', 'desde', '1987']
+
+ORIGINAL: ['los', 'más', 'populares', ',', 'así', 'cómo', 'los', 'más', 'respetados', 'y']
+PREDICTION: ['los', 'más', 'populares', ',', 'así', 'como', 'los', 'más', 'respetados', 'y']
+
+ORIGINAL: ['aumentado', 'su', 'participación', ',', 'tanto', 'como', 'cantante', 'cómo', 'tocando', 'un']
+PREDICTION: ['aumentado', 'su', 'participación', ',', 'tanto', 'cómo', 'cantante', 'cómo', 'tocando', 'un']
+
+ORIGINAL: ['mirái', 'Maruxina', ',', 'mirái', 'mirái', 'como', 'vengo', 'yo', 'Traigo', 'la']
+PREDICTION: ['mirái', 'Maruxina', ',', 'mirái', 'mirái', 'cómo', 'vengo', 'yo', 'Traigo', 'la']
+
+ORIGINAL: ['mirái', 'Maruxina', ',', 'mirái', 'mirái', 'como', 'vengo', 'yo', 'Patrona', 'de']
+PREDICTION: ['mirái', 'Maruxina', ',', 'mirái', 'mirái', 'cómo', 'vengo', 'yo', 'Patrona', 'de']
+
+ORIGINAL: ['mirái', 'Maruxina', ',', 'mirái', 'mirái', 'como', 'vengo', 'yo', 'En', 'Portugal']
+PREDICTION: ['mirái', 'Maruxina', ',', 'mirái', 'mirái', 'cómo', 'vengo', 'yo', 'En', 'Portugal']
+
+ORIGINAL: ['de', 'enero', 'y', 'febrero', ',', 'como', 'se', 'explica', 'más', 'adelante']
+PREDICTION: ['de', 'enero', 'y', 'febrero', ',', 'cómo', 'se', 'explica', 'más', 'adelante']
+
+ORIGINAL: ['social', 'La', 'psicología', 'social', 'investiga', 'como', 'las', 'personas', 'piensan', 'unas']
+PREDICTION: ['social', 'La', 'psicología', 'social', 'investiga', 'cómo', 'las', 'personas', 'piensan', 'unas']
+
+ORIGINAL: ['de', 'las', 'Fuerzas', 'de', 'Autodefensa', 'como', 'unas', 'fuerzas', 'armadas', ',']
+PREDICTION: ['de', 'las', 'Fuerzas', 'de', 'Autodefensa', 'cómo', 'unas', 'fuerzas', 'armadas', ',']
+
+ORIGINAL: ['Teatro', 'Metropólitan', ',', 'tomó', 'posesión', 'cómo', 'candidato', 'oficial', 'del', 'partido']
+PREDICTION: ['Teatro', 'Metropólitan', ',', 'tomó', 'posesión', 'como', 'candidato', 'oficial', 'del', 'partido']
+
+ORIGINAL: ['a', 'mediados', 'del', '2000', ',', 'cómo', 'una', 'doble', 'cara', 'A']
+PREDICTION: ['a', 'mediados', 'del', '2000', ',', 'como', 'una', 'doble', 'cara', 'A']
+
+ORIGINAL: ['desarrollado', 'en', 'un', 'computador', 'personal', 'como', 'su', 'TRS', '-', '80']
+PREDICTION: ['desarrollado', 'en', 'un', 'computador', 'personal', 'cómo', 'su', 'TRS', '-', '80']
+
+ORIGINAL: ['masa', 'del', 'cuerpo', 'y', 'de', 'como', 'cómo', 'está', 'distribuida', 'en']
+PREDICTION: ['masa', 'del', 'cuerpo', 'y', 'de', 'cómo', 'cómo', 'está', 'distribuida', 'en']
+
+ORIGINAL: [',', 'pues', 'es', 'una', 'metáfora', 'como', ',', 'a', 'su', 'vez']
+PREDICTION: [',', 'pues', 'es', 'una', 'metáfora', 'cómo', ',', 'a', 'su', 'vez']
+
+ORIGINAL: ['lugar', 'a', 'preguntarse', 'el', '``', 'cómo', '``', ',', 'como', 'son']
+PREDICTION: ['lugar', 'a', 'preguntarse', 'el', '``', 'como', '``', ',', 'cómo', 'son']
+
+ORIGINAL: ['el', '``', 'cómo', '``', ',', 'como', 'son', 'los', 'zahirí', 'es']
+PREDICTION: ['el', '``', 'como', '``', ',', 'cómo', 'son', 'los', 'zahirí', 'es']
+
+ORIGINAL: ['de', 'la', 'comida', ',', 'y', 'como', 'era', 'nueva', ',', 'las']
+PREDICTION: ['de', 'la', 'comida', ',', 'y', 'cómo', 'era', 'nueva', ',', 'las']
+
+ORIGINAL: ['Ashley', 'se', 'preocupa', 'acerca', 'de', 'como', 'lucirá', 'su', 'cuerpo', ',']
+PREDICTION: ['Ashley', 'se', 'preocupa', 'acerca', 'de', 'cómo', 'lucirá', 'su', 'cuerpo', ',']
+
+ORIGINAL: ['Knew', 'it', 'Was', 'You', 'funciona', 'cómo', 'una', 'maravillosa', 'retospectiva', 'de']
+PREDICTION: ['Knew', 'it', 'Was', 'You', 'funciona', 'como', 'una', 'maravillosa', 'retospectiva', 'de']
+
+ORIGINAL: ['luego', 'se', 'hicieron', 'igual', 'que', 'como', 'se', 'encuentra', 'en', 'el']
+PREDICTION: ['luego', 'se', 'hicieron', 'igual', 'que', 'cómo', 'se', 'encuentra', 'en', 'el']
+
+ORIGINAL: ['del', 'río', 'Duero', ',', 'sea', 'cómo', 'fuere', ',', 'este', 'nombre']
+PREDICTION: ['del', 'río', 'Duero', ',', 'sea', 'como', 'fuere', ',', 'este', 'nombre']
+
+ORIGINAL: ['monetaria', 'era', 'inexistente', ',', 'surge', 'cómo', 'tal', 'vez', ',', 'la']
+PREDICTION: ['monetaria', 'era', 'inexistente', ',', 'surge', 'como', 'tal', 'vez', ',', 'la']
+
+ORIGINAL: ['de', 'su', 'nombre', 'y', 'trabajó', 'como', 'adivino', 'poco', 'antes', 'de']
+PREDICTION: ['de', 'su', 'nombre', 'y', 'trabajó', 'cómo', 'adivino', 'poco', 'antes', 'de']
+
+ORIGINAL: ['Marco', 'Antonio', 'y', 'Rex', 'Harrison', 'como', 'César', '.', 'Editó', 'un']
+PREDICTION: ['Marco', 'Antonio', 'y', 'Rex', 'Harrison', 'cómo', 'César', '.', 'Editó', 'un']
+
+ORIGINAL: ['intérpretes', 'teatrales', ',', 'amigos', 'que', 'como', 'él', 'se', 'habían', 'mudado']
+PREDICTION: ['intérpretes', 'teatrales', ',', 'amigos', 'que', 'cómo', 'él', 'se', 'habían', 'mudado']
+
+ORIGINAL: ['PROFEPA', ',', 'INE', ',', 'o', 'como', 'CONAE', 'que', 'apoya', 'a']
+PREDICTION: ['PROFEPA', ',', 'INE', ',', 'o', 'cómo', 'CONAE', 'que', 'apoya', 'a']
+
+ORIGINAL: ['las', 'propias', 'plantas', ',', 'materias', 'cómo', 'Fitopatología', ',', 'Entomología', ',']
+PREDICTION: ['las', 'propias', 'plantas', ',', 'materias', 'como', 'Fitopatología', ',', 'Entomología', ',']
+
+ORIGINAL: ['.', 'La', 'capa', 'básica', 'define', 'como', 'debe', 'ser', 'la', 'interfaz']
+PREDICTION: ['.', 'La', 'capa', 'básica', 'define', 'cómo', 'debe', 'ser', 'la', 'interfaz']
+
+ORIGINAL: ['en', 'el', 'país', ',', 'así', 'como', 'hay', 'una', 'falta', 'de']
+PREDICTION: ['en', 'el', 'país', ',', 'así', 'cómo', 'hay', 'una', 'falta', 'de']
+
+ORIGINAL: ['porque', 'la', 'gravedad', 'no', 'es', 'como', 'tal', 'en', 'relatividad', 'general']
+PREDICTION: ['porque', 'la', 'gravedad', 'no', 'es', 'cómo', 'tal', 'en', 'relatividad', 'general']
+
+ORIGINAL: ['acosada', 'en', 'la', 'secundaria', 'y', 'cómo', 'quienes', '«', 'arrastraban', 'su']
+PREDICTION: ['acosada', 'en', 'la', 'secundaria', 'y', 'como', 'quienes', '«', 'arrastraban', 'su']
+
+ORIGINAL: ['las', 'galaxias', 'M87', '(', 'conocido', 'cómo', 'Virgo', 'A', ')', ',']
+PREDICTION: ['las', 'galaxias', 'M87', '(', 'conocido', 'como', 'Virgo', 'A', ')', ',']
+
+ORIGINAL: [')', 'y', 'M49', '(', 'conocido', 'cómo', 'Virgo', 'B', ',', 'aunque']
+PREDICTION: [')', 'y', 'M49', '(', 'conocido', 'como', 'Virgo', 'B', ',', 'aunque']
+
+ORIGINAL: ['general', ',', 'es', 'decir', ',', 'cómo', 'de', 'estable', 'es', 'la']
+PREDICTION: ['general', ',', 'es', 'decir', ',', 'como', 'de', 'estable', 'es', 'la']
+
+ORIGINAL: ['de', 'los', 'Andes', 'se', 'muestra', 'como', 'un', 'relieve', 'deprimido', 'cuyas']
+PREDICTION: ['de', 'los', 'Andes', 'se', 'muestra', 'cómo', 'un', 'relieve', 'deprimido', 'cuyas']
+
+ORIGINAL: ['referencia', 'en', 'la', 'serie', ',', 'como', 'los', 'blogs', 'o', 'perfiles']
+PREDICTION: ['referencia', 'en', 'la', 'serie', ',', 'cómo', 'los', 'blogs', 'o', 'perfiles']
+
+ORIGINAL: ['regional', 'más', 'que', 'panhelénico', 'y', 'como', 'no', 'se', 'permitía', 'a']
+PREDICTION: ['regional', 'más', 'que', 'panhelénico', 'y', 'cómo', 'no', 'se', 'permitía', 'a']
+
+ORIGINAL: ['Se', 'debe', 'de', 'calcular', 'también', 'cómo', 'de', 'grandes', 'son', 'las']
+PREDICTION: ['Se', 'debe', 'de', 'calcular', 'también', 'como', 'de', 'grandes', 'son', 'las']
+
+ORIGINAL: ['no', 'supo', 'en', 'ese', 'momento', 'cómo', 'salir', 'del', 'trance', ',']
+PREDICTION: ['no', 'supo', 'en', 'ese', 'momento', 'como', 'salir', 'del', 'trance', ',']
+
+ORIGINAL: ['en', 'la', 'televisión', 'cuando', 'ella', 'como', 'actriz', 'invitada', 'en', 'funciones']
+PREDICTION: ['en', 'la', 'televisión', 'cuando', 'ella', 'cómo', 'actriz', 'invitada', 'en', 'funciones']
+
+ORIGINAL: ['presenta', 'la', 'marca', 'Quam', '(', 'cómo', 'en', 'latín', ')', '.']
+PREDICTION: ['presenta', 'la', 'marca', 'Quam', '(', 'como', 'en', 'latín', ')', '.']
+
+ORIGINAL: ['incas', 'sobre', 'los', 'qollas', ',', 'como', 'conocemos', 'hasta', 'nuestros', 'días']
+PREDICTION: ['incas', 'sobre', 'los', 'qollas', ',', 'cómo', 'conocemos', 'hasta', 'nuestros', 'días']
+
+ORIGINAL: ['del', 'PSOE', ',', 'tal', 'y', 'como', 'se', 'conoce', 'actualmente', ',']
+PREDICTION: ['del', 'PSOE', ',', 'tal', 'y', 'cómo', 'se', 'conoce', 'actualmente', ',']
+
+ORIGINAL: [',', 'enfocándose', 'en', 'el', '``', 'cómo', '``', 'e', 'indicando', 'el']
+PREDICTION: [',', 'enfocándose', 'en', 'el', '``', 'como', '``', 'e', 'indicando', 'el']
+
+ORIGINAL: [',', 'pero', 'que', 'también', 'siente', 'cómo', 'la', '«', 'Institución', '»']
+PREDICTION: [',', 'pero', 'que', 'también', 'siente', 'como', 'la', '«', 'Institución', '»']
+
+ORIGINAL: ['The', 'Vampire', 'Diaries', '(', 'conocida', 'cómo', ':', 'The', 'vampire', 'diaries']
+PREDICTION: ['The', 'Vampire', 'Diaries', '(', 'conocida', 'como', ':', 'The', 'vampire', 'diaries']
+
+ORIGINAL: ['todos', 'los', 'griegos', '``', ',', 'como', 'lo', 'pinta', 'Heráclito', '(']
+PREDICTION: ['todos', 'los', 'griegos', '``', ',', 'cómo', 'lo', 'pinta', 'Heráclito', '(']
+
+ORIGINAL: ['2018', ',', 'inició', 'su', 'gestión', 'cómo', 'gobernador', 'del', 'Estado', 'el']
+PREDICTION: ['2018', ',', 'inició', 'su', 'gestión', 'como', 'gobernador', 'del', 'Estado', 'el']
+
+ORIGINAL: ['de', 'célula', 's', 'para', 'explicar', 'como', 'éstas', 'asimilan', 'el', 'dióxido']
+PREDICTION: ['de', 'célula', 's', 'para', 'explicar', 'cómo', 'éstas', 'asimilan', 'el', 'dióxido']
+
+ORIGINAL: ['también', 'de', 'otros', 'territorios', ',', 'cómo', 'Belice', ',', 'Centroamérica', ',']
+PREDICTION: ['también', 'de', 'otros', 'territorios', ',', 'como', 'Belice', ',', 'Centroamérica', ',']
+
+ORIGINAL: ['Harvard', ',', '(', 'publicada', 'después', 'como', '``', 'Cómo', 'Iniciar', 'una']
+PREDICTION: ['Harvard', ',', '(', 'publicada', 'después', 'cómo', '``', 'Cómo', 'Iniciar', 'una']
+
+ORIGINAL: ['decisión', '.', 'Este', 'festival', 'tenía', 'cómo', 'objetivo', 'poner', 'de', 'relieve']
+PREDICTION: ['decisión', '.', 'Este', 'festival', 'tenía', 'como', 'objetivo', 'poner', 'de', 'relieve']
+
+ORIGINAL: ['conoce', 'un', 'poco', 'más', 'de', 'como', 'es', 'un', 'gato', ',']
+PREDICTION: ['conoce', 'un', 'poco', 'más', 'de', 'cómo', 'es', 'un', 'gato', ',']
+
+ORIGINAL: [':', 'dónde', 'encontrar', 'mujeres', ',', 'cómo', 'cortejarlas', ',', 'cómo', 'conquistarlas']
+PREDICTION: [':', 'dónde', 'encontrar', 'mujeres', ',', 'como', 'cortejarlas', ',', 'como', 'conquistarlas']
+
+ORIGINAL: ['mujeres', ',', 'cómo', 'cortejarlas', ',', 'cómo', 'conquistarlas', ',', 'cómo', 'mantener']
+PREDICTION: ['mujeres', ',', 'como', 'cortejarlas', ',', 'como', 'conquistarlas', ',', 'cómo', 'mantener']
+
+ORIGINAL: ['cómo', 'mantener', 'el', 'amor', ',', 'cómo', 'recuperarlo', ',', 'cómo', 'evitar']
+PREDICTION: ['cómo', 'mantener', 'el', 'amor', ',', 'como', 'recuperarlo', ',', 'cómo', 'evitar']
+
+ORIGINAL: ['rodarla', ';', 'en', 'él', 'vemos', 'como', 'si', 'de', 'un', 'cómic']
+PREDICTION: ['rodarla', ';', 'en', 'él', 'vemos', 'cómo', 'si', 'de', 'un', 'cómic']
+
+ORIGINAL: ['.', '¿', 'Sería', 'realmente', 'válida', 'como', 'demostración', '?', 'A', 'partir']
+PREDICTION: ['.', '¿', 'Sería', 'realmente', 'válida', 'cómo', 'demostración', '?', 'A', 'partir']
+
+ORIGINAL: ['los', 'vecinos', 'de', 'Langen', 'asi', 'como', 'disfrutarón', 'como', 'cosa', 'normal']
+PREDICTION: ['los', 'vecinos', 'de', 'Langen', 'asi', 'cómo', 'disfrutarón', 'cómo', 'cosa', 'normal']
+
+ORIGINAL: ['de', 'Langen', 'asi', 'como', 'disfrutarón', 'como', 'cosa', 'normal', ',', 'de']
+PREDICTION: ['de', 'Langen', 'asi', 'cómo', 'disfrutarón', 'cómo', 'cosa', 'normal', ',', 'de']
+
+ORIGINAL: ['con', 'otras', 'de', 'las', 'consideradas', 'cómo', 'Reinas', 'de', 'las', 'telenovelas']
+PREDICTION: ['con', 'otras', 'de', 'las', 'consideradas', 'como', 'Reinas', 'de', 'las', 'telenovelas']
+
+ORIGINAL: ['your', 'dreams', '(', 'Me', 'describes', 'como', 'en', 'tus', 'sueños', ')']
+PREDICTION: ['your', 'dreams', '(', 'Me', 'describes', 'cómo', 'en', 'tus', 'sueños', ')']
+
+ORIGINAL: ['``', '3', '.', "''", 'Tú', 'como', 'yo', '``', '4', '.']
+PREDICTION: ['``', '3', '.', "''", 'Tú', 'cómo', 'yo', '``', '4', '.']
+
+ORIGINAL: ['la', 'cocina', ',', 'tal', 'y', 'como', 'el', 'personaje', 'de', 'Rosemary']
+PREDICTION: ['la', 'cocina', ',', 'tal', 'y', 'cómo', 'el', 'personaje', 'de', 'Rosemary']
+
+ORIGINAL: ['así', 'que', 'sólo', 'se', 'usó', 'cómo', 'promoción', '.', 'En', 'noviembre']
+PREDICTION: ['así', 'que', 'sólo', 'se', 'usó', 'como', 'promoción', '.', 'En', 'noviembre']
+
+ORIGINAL: ['mismo', 'a', 'tantas', 'muchachas', 'jóvenes', 'como', 'pudiera', '.', "''", 'Cuando']
+PREDICTION: ['mismo', 'a', 'tantas', 'muchachas', 'jóvenes', 'cómo', 'pudiera', '.', "''", 'Cuando']
+
+ORIGINAL: ['/', 'o', 'puntos', 'sensibles', ',', 'como', 'podría', 'ser', 'el', 'ascendente']
+PREDICTION: ['/', 'o', 'puntos', 'sensibles', ',', 'cómo', 'podría', 'ser', 'el', 'ascendente']
+
+ORIGINAL: ['Ofrecía', 'a', 'la', 'venta', 'productos', 'cómo', 'ropa', ',', 'zapatos', ',']
+PREDICTION: ['Ofrecía', 'a', 'la', 'venta', 'productos', 'como', 'ropa', ',', 'zapatos', ',']
+
+ORIGINAL: ['en', 'la', 'más', 'notable', 'aparece', 'cómo', 'un', 'policía', 'dispara', 'a']
+PREDICTION: ['en', 'la', 'más', 'notable', 'aparece', 'como', 'un', 'policía', 'dispara', 'a']
+
+ORIGINAL: ['antes', 'vistos', 'en', 'la', 'saga', 'cómo', 'la', 'Princesa', 'Estela', '/']
+PREDICTION: ['antes', 'vistos', 'en', 'la', 'saga', 'como', 'la', 'Princesa', 'Estela', '/']
+
+ORIGINAL: ['lugar', 'de', 'usar', 'el', 'neutro', 'como', 'se', 'hace', ',', 'por']
+PREDICTION: ['lugar', 'de', 'usar', 'el', 'neutro', 'cómo', 'se', 'hace', ',', 'por']
+
+ORIGINAL: ['de', 'chamanes', 'hombres', ',', 'otras', 'como', 'las', 'culturas', 'coreanas', 'nativas']
+PREDICTION: ['de', 'chamanes', 'hombres', ',', 'otras', 'cómo', 'las', 'culturas', 'coreanas', 'nativas']
+
+ORIGINAL: ['usando', 'sus', 'manos', 'y', 'moviéndolas', 'como', 'haría', 'un', 'titiritero', '.']
+PREDICTION: ['usando', 'sus', 'manos', 'y', 'moviéndolas', 'cómo', 'haría', 'un', 'titiritero', '.']
+
+ORIGINAL: ['Hemos', 'visto', 'en', 'el', 'mito', 'cómo', 'Narciso', 'es', 'el', 'producto']
+PREDICTION: ['Hemos', 'visto', 'en', 'el', 'mito', 'como', 'Narciso', 'es', 'el', 'producto']
+
+ORIGINAL: ['en', 'su', 'producción', ',', 'y', 'como', 'su', 'nombre', 'indica', ',']
+PREDICTION: ['en', 'su', 'producción', ',', 'y', 'cómo', 'su', 'nombre', 'indica', ',']
+
+ORIGINAL: ['de', 'tener', 'algún', 'significado', '(', 'cómo', '«', 'Smells', 'Like', 'Teen']
+PREDICTION: ['de', 'tener', 'algún', 'significado', '(', 'como', '«', 'Smells', 'Like', 'Teen']
+
+ORIGINAL: ['a', 'la', 'Generación', 'Próxima', ';', 'cómo', 'Dientes', 'de', 'Sable', 'conoció']
+PREDICTION: ['a', 'la', 'Generación', 'Próxima', ';', 'como', 'Dientes', 'de', 'Sable', 'conoció']
+
+ORIGINAL: ['articulos', ',', 'etc', ';', 'y', 'como', 'editora', 'en', 'jefe', 'a']
+PREDICTION: ['articulos', ',', 'etc', ';', 'y', 'cómo', 'editora', 'en', 'jefe', 'a']
+
+ORIGINAL: ['cubo', 'particular', '.', 'Nadie', 'vio', 'como', 'murió', ',', 'ni', 'quién']
+PREDICTION: ['cubo', 'particular', '.', 'Nadie', 'vio', 'cómo', 'murió', ',', 'ni', 'quién']
+
+ORIGINAL: ['lo', 'es', 'porque', 'no', 'es', 'como', 'los', 'otros', 'álbumes', ',']
+PREDICTION: ['lo', 'es', 'porque', 'no', 'es', 'cómo', 'los', 'otros', 'álbumes', ',']
+
+ORIGINAL: ['colaboraciones', 'con', 'El', 'Pueblo', 'Gallego', 'cómo', 'corresponsal', 'del', 'periódico', 'en']
+PREDICTION: ['colaboraciones', 'con', 'El', 'Pueblo', 'Gallego', 'como', 'corresponsal', 'del', 'periódico', 'en']
+
+ORIGINAL: ['2000', ')', '.', 'Esto', 'trajo', 'cómo', 'consecuencia', 'un', 'nuevo', 'diseño']
+PREDICTION: ['2000', ')', '.', 'Esto', 'trajo', 'como', 'consecuencia', 'un', 'nuevo', 'diseño']
+
+ORIGINAL: ['con', 'grandes', 'dotes', 'tanto', 'ofensivas', 'cómo', 'defensivas', ',', 'que', 'formó']
+PREDICTION: ['con', 'grandes', 'dotes', 'tanto', 'ofensivas', 'como', 'defensivas', ',', 'que', 'formó']
+
+ORIGINAL: ['.', 'La', 'infantería', 'cesariana', 'respondió', 'como', 'pudo', ',', 'pero', 'empezó']
+PREDICTION: ['.', 'La', 'infantería', 'cesariana', 'respondió', 'cómo', 'pudo', ',', 'pero', 'empezó']
+
+ORIGINAL: ['El', 'paisaje', 'huertano', 'se', 'muestra', 'como', 'un', 'inmenso', 'mosaico', 'de']
+PREDICTION: ['El', 'paisaje', 'huertano', 'se', 'muestra', 'cómo', 'un', 'inmenso', 'mosaico', 'de']
+
+ORIGINAL: ['futuros', ',', 'y', 'se', 'define', 'como', 'superior', 'a', 'los', 'individuos']
+PREDICTION: ['futuros', ',', 'y', 'se', 'define', 'cómo', 'superior', 'a', 'los', 'individuos']
+
+ORIGINAL: ['hizo', 'adoptar', 'una', 'postura', 'anticlerical', 'como', 'se', 'pudo', 'comprobar', 'en']
+PREDICTION: ['hizo', 'adoptar', 'una', 'postura', 'anticlerical', 'cómo', 'se', 'pudo', 'comprobar', 'en']
+
+ORIGINAL: ['ofreció', 'un', 'puesto', 'de', 'trabajo', 'cómo', 'cañonero', '(', 'aprendiz', 'al']
+PREDICTION: ['ofreció', 'un', 'puesto', 'de', 'trabajo', 'como', 'cañonero', '(', 'aprendiz', 'al']
+
+ORIGINAL: ['mayor', 'relevancia', 'debido', 'a', 'factores', 'cómo', 'el', 'origen', 'de', 'ambos']
+PREDICTION: ['mayor', 'relevancia', 'debido', 'a', 'factores', 'como', 'el', 'origen', 'de', 'ambos']
+
+ORIGINAL: ['entre', 'sí', ',', 'y', 'otros', 'como', 'Tan', 'Tao', 'y', 'Qian']
+PREDICTION: ['entre', 'sí', ',', 'y', 'otros', 'cómo', 'Tan', 'Tao', 'y', 'Qian']
+
+ORIGINAL: ['Un', 'algoritmo', 'se', 'puede', 'concebir', 'como', 'una', 'función', 'que', 'transforma']
+PREDICTION: ['Un', 'algoritmo', 'se', 'puede', 'concebir', 'cómo', 'una', 'función', 'que', 'transforma']
+
+ORIGINAL: ['aeropuerto', '.', 'Es', 'en', 'eventos', 'cómo', 'el', 'Mifkad', '-', 'Esh']
+PREDICTION: ['aeropuerto', '.', 'Es', 'en', 'eventos', 'como', 'el', 'Mifkad', '-', 'Esh']
+
+ORIGINAL: ['numérico', 'a', 'una', 'idea', 'intuitiva', 'como', 'es', 'lo', 'frío', 'o']
+PREDICTION: ['numérico', 'a', 'una', 'idea', 'intuitiva', 'cómo', 'es', 'lo', 'frío', 'o']
+
+ORIGINAL: ['Telecommunications', ')', '.', 'Así', 'fue', 'como', 'surgieron', 'personajes', 'ambiciosos', 'cuyo']
+PREDICTION: ['Telecommunications', ')', '.', 'Así', 'fue', 'cómo', 'surgieron', 'personajes', 'ambiciosos', 'cuyo']
+
+ORIGINAL: ['primera', 'parte', 'y', 'realmente', ',', 'como', 'había', 'hecho', 'el', 'autor']
+PREDICTION: ['primera', 'parte', 'y', 'realmente', ',', 'cómo', 'había', 'hecho', 'el', 'autor']
+
+ORIGINAL: ['aumentar', 'su', 'fuerza', 'y', 'velocidad', 'cómo', 'la', 'apertura', 'de', 'las']
+PREDICTION: ['aumentar', 'su', 'fuerza', 'y', 'velocidad', 'como', 'la', 'apertura', 'de', 'las']
+
+ORIGINAL: ['grabados', 'rupestres', ')', 'relevantes', '(', 'cómo', 'los', 'de', 'Montealegre', ',']
+PREDICTION: ['grabados', 'rupestres', ')', 'relevantes', '(', 'como', 'los', 'de', 'Montealegre', ',']
+
+ORIGINAL: ['padres', 'reales', ',', 'y', 'no', 'como', '``', 'adultos', 'en', 'cuerpos']
+PREDICTION: ['padres', 'reales', ',', 'y', 'no', 'cómo', '``', 'adultos', 'en', 'cuerpos']
+
+ORIGINAL: ['1986', ',', 'y', 'tal', 'y', 'como', 'se', 'había', 'acordado', 'en']
+PREDICTION: ['1986', ',', 'y', 'tal', 'y', 'cómo', 'se', 'había', 'acordado', 'en']
+
+ORIGINAL: ['tocó', 'en', 'algunos', 'otros', 'grupos', 'cómo', '``', 'Blind', 'Oppression', '``']
+PREDICTION: ['tocó', 'en', 'algunos', 'otros', 'grupos', 'como', '``', 'Blind', 'Oppression', '``']
+
+ORIGINAL: ['capacidad', 'humana', 'de', 'aprendizaje', 'o', 'como', 'él', 'lo', 'llamaba', ':']
+PREDICTION: ['capacidad', 'humana', 'de', 'aprendizaje', 'o', 'cómo', 'él', 'lo', 'llamaba', ':']
+
+ORIGINAL: ['``', 'fueron', 'lanzados', 'más', 'tarde', 'cómo', 'sencillos', 'para', 'radios', 'en']
+PREDICTION: ['``', 'fueron', 'lanzados', 'más', 'tarde', 'como', 'sencillos', 'para', 'radios', 'en']
+
+ORIGINAL: ['también', 'para', 'no', 'olvidar', 'detalles', 'como', 'sus', 'cumpleaños', 'o', 'el']
+PREDICTION: ['también', 'para', 'no', 'olvidar', 'detalles', 'cómo', 'sus', 'cumpleaños', 'o', 'el']
+
+ORIGINAL: ['gritandole', 'dierghergf8yui', "'", '9h', 'uiperu89grecciones', 'como', '!', '!', 'izquierda', '!']
+PREDICTION: ['gritandole', 'dierghergf8yui', "'", '9h', 'uiperu89grecciones', 'cómo', '!', '!', 'izquierda', '!']
+
+ORIGINAL: ['de', 'cerradura', 'y', 'al', 'sustrato', 'como', 'a', 'una', 'llave', 'que']
+PREDICTION: ['de', 'cerradura', 'y', 'al', 'sustrato', 'cómo', 'a', 'una', 'llave', 'que']
+
+ORIGINAL: ['hace', 'una', 'serie', 'de', 'interrogantes', 'como', '¿', 'cuáles', 'son', 'mis']
+PREDICTION: ['hace', 'una', 'serie', 'de', 'interrogantes', 'cómo', '¿', 'cuáles', 'son', 'mis']
+
+ORIGINAL: [',', 'este', 'imaginario', 'se', 'usa', 'cómo', 'crítica', 'al', 'mundo', 'social']
+PREDICTION: [',', 'este', 'imaginario', 'se', 'usa', 'como', 'crítica', 'al', 'mundo', 'social']
+
+ORIGINAL: ['en', 'casa', '.', 'Así', 'fue', 'como', 'los', 'monjes', 'disponían', 'los']
+PREDICTION: ['en', 'casa', '.', 'Así', 'fue', 'cómo', 'los', 'monjes', 'disponían', 'los']
+
+ORIGINAL: ['Eburo', ')', ',', 'que', 'explicaba', 'como', 'las', 'heridas', 'podían', 'ser']
+PREDICTION: ['Eburo', ')', ',', 'que', 'explicaba', 'cómo', 'las', 'heridas', 'podían', 'ser']
+
+ORIGINAL: ['el', 'gobierno', 'de', 'Franco', ',', 'cómo', 'por', 'ejemplo', 'la', 'serie']
+PREDICTION: ['el', 'gobierno', 'de', 'Franco', ',', 'como', 'por', 'ejemplo', 'la', 'serie']
+
+ORIGINAL: ['franquista', 'en', 'numerosos', 'periódicos', 'gallegos', 'cómo', 'El', 'Pueblo', 'Gallego', ',']
+PREDICTION: ['franquista', 'en', 'numerosos', 'periódicos', 'gallegos', 'como', 'El', 'Pueblo', 'Gallego', ',']
+
+ORIGINAL: ['postura', ',', 'la', 'estabilidad', 'así', 'cómo', 'unas', 'caderas', ',', 'piernas']
+PREDICTION: ['postura', ',', 'la', 'estabilidad', 'así', 'como', 'unas', 'caderas', ',', 'piernas']
+
+ORIGINAL: [',', 'etc', '.', ')', ';', 'como', 'la', 'plusvalía', 'deriva', 'del']
+PREDICTION: [',', 'etc', '.', ')', ';', 'cómo', 'la', 'plusvalía', 'deriva', 'del']
+
+ORIGINAL: ['otras', 'los', 'oros', 'se', 'representan', 'cómo', 'monedas', 'con', 'flores', 'grabadas']
+PREDICTION: ['otras', 'los', 'oros', 'se', 'representan', 'como', 'monedas', 'con', 'flores', 'grabadas']
+
+ORIGINAL: ['información', 'fresca', 'y', 'actualizada', 'sobre', 'como', 'redactar', 'un', 'buen', 'currículum']
+PREDICTION: ['información', 'fresca', 'y', 'actualizada', 'sobre', 'cómo', 'redactar', 'un', 'buen', 'currículum']
+
+ORIGINAL: ['redactar', 'un', 'buen', 'currículum', ',', 'como', 'afrontar', 'una', 'entrevista', 'de']
+PREDICTION: ['redactar', 'un', 'buen', 'currículum', ',', 'cómo', 'afrontar', 'una', 'entrevista', 'de']
+
+ORIGINAL: ['cantante', 'y', 'multi', '-', 'instrumentista', 'cómo', 'única', 'representante', 'del', 'área']
+PREDICTION: ['cantante', 'y', 'multi', '-', 'instrumentista', 'como', 'única', 'representante', 'del', 'área']
+
+ORIGINAL: ['mercado', '.', 'Televisión', 'Se', 'estrenó', 'cómo', 'actor', 'en', 'un', 'capítulo']
+PREDICTION: ['mercado', '.', 'Televisión', 'Se', 'estrenó', 'como', 'actor', 'en', 'un', 'capítulo']
+
+ORIGINAL: ['Biblia', 'fue', 'escrita', 'para', 'mostrarnos', 'como', 'llegar', 'al', 'Cielo', ',']
+PREDICTION: ['Biblia', 'fue', 'escrita', 'para', 'mostrarnos', 'cómo', 'llegar', 'al', 'Cielo', ',']
+
+ORIGINAL: ['Rowling', 'que', 'señalan', 'a', 'Dumbledore', 'como', 'homosexual', 'han', 'aumentado', 'las']
+PREDICTION: ['Rowling', 'que', 'señalan', 'a', 'Dumbledore', 'cómo', 'homosexual', 'han', 'aumentado', 'las']
+
+ORIGINAL: [')', 'y', ',', 'posteriormente', ',', 'cómo', 'cerca', 'de', 'esta', 'ciudad']
+PREDICTION: [')', 'y', ',', 'posteriormente', ',', 'como', 'cerca', 'de', 'esta', 'ciudad']
+
+ORIGINAL: [',', 'a', 'continuación', ',', 'elegir', 'como', 'virrey', 'a', 'Santiago', 'de']
+PREDICTION: [',', 'a', 'continuación', ',', 'elegir', 'cómo', 'virrey', 'a', 'Santiago', 'de']
+
+ORIGINAL: ['de', '1945', 'a', '1977', 'y', 'como', 'un', 'miembro', 'del', 'Cuerpo']
+PREDICTION: ['de', '1945', 'a', '1977', 'y', 'cómo', 'un', 'miembro', 'del', 'Cuerpo']
+
+ORIGINAL: ['imaginar', 'en', 'pleno', 'siglo', 'XXI', 'cómo', 'pueblos', 'aislados', 'se', 'veían']
+PREDICTION: ['imaginar', 'en', 'pleno', 'siglo', 'XXI', 'como', 'pueblos', 'aislados', 'se', 'veían']
+
+ORIGINAL: ['embargo', ',', 'por', 'algunos', 'autores', 'cómo', 'galaxia', 'lenticular', '-', 'de']
+PREDICTION: ['embargo', ',', 'por', 'algunos', 'autores', 'como', 'galaxia', 'lenticular', '-', 'de']
+
+ORIGINAL: ['concepto', 'mismo', 'de', 'arte', ':', 'como', 'se', 'ha', 'visto', 'anteriormente']
+PREDICTION: ['concepto', 'mismo', 'de', 'arte', ':', 'cómo', 'se', 'ha', 'visto', 'anteriormente']
+
+ORIGINAL: ['y', 'se', 'oyen', '2', 'chasquidos', 'cómo', 'los', 'de', 'The', 'Addams']
+PREDICTION: ['y', 'se', 'oyen', '2', 'chasquidos', 'como', 'los', 'de', 'The', 'Addams']
+
+ORIGINAL: ['serie', 'de', 'actividades', 'independientes', '(', 'cómo', 'el', 'Campamento', 'Independencia', 'en']
+PREDICTION: ['serie', 'de', 'actividades', 'independientes', '(', 'como', 'el', 'Campamento', 'Independencia', 'en']
+
+ORIGINAL: ['capilla', 'en', '1717', '.', 'Vive', 'como', 'un', 'ser', 'moral', 'a']
+PREDICTION: ['capilla', 'en', '1717', '.', 'Vive', 'cómo', 'un', 'ser', 'moral', 'a']
+
+ORIGINAL: ['collage', ',', 'que', 'no', 'realizó', 'como', 'habían', 'hecho', 'los', 'cubistas']
+PREDICTION: ['collage', ',', 'que', 'no', 'realizó', 'cómo', 'habían', 'hecho', 'los', 'cubistas']
+
+ORIGINAL: ['represión', 'política', '.', 'Se', 'representa', 'cómo', 'un', 'grupo', 'de', 'ladrones']
+PREDICTION: ['represión', 'política', '.', 'Se', 'representa', 'como', 'un', 'grupo', 'de', 'ladrones']
+
+ORIGINAL: ['continental', ')', 'tiende', 'a', 'entender', 'como', 'fuentes', 'las', 'siguientes', ':']
+PREDICTION: ['continental', ')', 'tiende', 'a', 'entender', 'cómo', 'fuentes', 'las', 'siguientes', ':']
+
+ORIGINAL: ['maravillosamente', 'ambiguo', 'y', 'bellamente', 'incierto', 'como', 'es', 'la', 'vida', 'misma']
+PREDICTION: ['maravillosamente', 'ambiguo', 'y', 'bellamente', 'incierto', 'cómo', 'es', 'la', 'vida', 'misma']
+
+ORIGINAL: ['la', 'vida', 'misma', '»', 'y', 'cómo', 'Bennett', '«', 'pintó', 'el']
+PREDICTION: ['la', 'vida', 'misma', '»', 'y', 'como', 'Bennett', '«', 'pintó', 'el']
+
+ORIGINAL: ['lado', 'Este', 'del', 'estadio', ',', 'cómo', 'bien', 'indica', 'su', 'actual']
+PREDICTION: ['lado', 'Este', 'del', 'estadio', ',', 'como', 'bien', 'indica', 'su', 'actual']
+
+ORIGINAL: ['cómo', 'el', 'BARB', 'británico', ',', 'cómo', 'un', 'claro', 'desafio', 'a']
+PREDICTION: ['cómo', 'el', 'BARB', 'británico', ',', 'como', 'un', 'claro', 'desafio', 'a']
+
+ORIGINAL: ['la', 'Logística', '.', 'Está', 'considerado', 'cómo', 'una', 'paráfrasis', 'del', 'cuento']
+PREDICTION: ['la', 'Logística', '.', 'Está', 'considerado', 'como', 'una', 'paráfrasis', 'del', 'cuento']
+
+ORIGINAL: ['lanzado', 'en', 'los', 'Estados', 'Unidos', 'cómo', 'un', 'CD', 'Maxi', 'Single']
+PREDICTION: ['lanzado', 'en', 'los', 'Estados', 'Unidos', 'como', 'un', 'CD', 'Maxi', 'Single']
+
+ORIGINAL: ['la', 'existencia', 'de', 'abundantes', 'endemismos', 'como', 'es', 'el', 'caso', 'de']
+PREDICTION: ['la', 'existencia', 'de', 'abundantes', 'endemismos', 'cómo', 'es', 'el', 'caso', 'de']
+
+ORIGINAL: ['lectores', 'y', 'críticos', 'han', 'advertido', 'cómo', 'el', 'estado', 'de', 'los']
+PREDICTION: ['lectores', 'y', 'críticos', 'han', 'advertido', 'como', 'el', 'estado', 'de', 'los']
+
+ORIGINAL: ['aspecto', 'de', 'capucha', 'puntiaguda', ',', 'como', 'se', 've', 'en', 'el']
+PREDICTION: ['aspecto', 'de', 'capucha', 'puntiaguda', ',', 'cómo', 'se', 've', 'en', 'el']
+
+ORIGINAL: ['en', 'su', 'día', 'fue', 'usado', 'cómo', 'hípica', '.', 'Cuando', 'una']
+PREDICTION: ['en', 'su', 'día', 'fue', 'usado', 'como', 'hípica', '.', 'Cuando', 'una']
+
+ORIGINAL: [',', '2003', '-', '2009', ')', 'cómo', 'Guille', '.', 'Los', 'ambientes']
+PREDICTION: [',', '2003', '-', '2009', ')', 'como', 'Guille', '.', 'Los', 'ambientes']
+
+ORIGINAL: ['que', 'identifica', 'al', 'señor', 'Armas', 'cómo', 'un', 'verdadero', 'artista', ',']
+PREDICTION: ['que', 'identifica', 'al', 'señor', 'Armas', 'como', 'un', 'verdadero', 'artista', ',']
+
+ORIGINAL: ['Pimentón', 'de', 'la', 'Vera', ',', 'cómo', 'crece', ',', 'se', 'recolecta']
+PREDICTION: ['Pimentón', 'de', 'la', 'Vera', ',', 'como', 'crece', ',', 'se', 'recolecta']
+
+ORIGINAL: ['más', 'importante', 'que', 'el', '``', 'cómo', '``', '.', 'La', 'conversación']
+PREDICTION: ['más', 'importante', 'que', 'el', '``', 'como', '``', '.', 'La', 'conversación']
+
+ORIGINAL: ['de', 'versos', 'de', 'amor', ',', 'como', 'es', 'el', 'caso', 'de']
+PREDICTION: ['de', 'versos', 'de', 'amor', ',', 'cómo', 'es', 'el', 'caso', 'de']
+
+ORIGINAL: ['14', 'UK', 'Chart', ')', ',', 'cómo', 'tampoco', 'los', 'discos', 'sencillos']
+PREDICTION: ['14', 'UK', 'Chart', ')', ',', 'como', 'tampoco', 'los', 'discos', 'sencillos']
+
+ORIGINAL: ['ingresara', 'en', 'un', 'monasterio', 'cisterciense', 'como', 'era', 'costumbre', 'en', 'un']
+PREDICTION: ['ingresara', 'en', 'un', 'monasterio', 'cisterciense', 'cómo', 'era', 'costumbre', 'en', 'un']
+
+ORIGINAL: [',', 'pero', 'con', 'canciones', 'afiladas', 'como', 'éstas', ',', 'están', 'listos']
+PREDICTION: [',', 'pero', 'con', 'canciones', 'afiladas', 'cómo', 'éstas', ',', 'están', 'listos']
+
+ORIGINAL: [')', 'o', 'la', 'inmigración', 'ilegal', 'como', 'es', 'el', 'caso', 'de']
+PREDICTION: [')', 'o', 'la', 'inmigración', 'ilegal', 'cómo', 'es', 'el', 'caso', 'de']
+
+ORIGINAL: ['como', 'un', 'vagabundo', ',', 'y', 'cómo', 'varias', 'de', 'sus', 'aventuras']
+PREDICTION: ['como', 'un', 'vagabundo', ',', 'y', 'como', 'varias', 'de', 'sus', 'aventuras']
+
+ORIGINAL: ['artistas', 'importantes', 'de', 'la', 'época', 'cómo', 'The', 'Grateful', 'Dead', ',']
+PREDICTION: ['artistas', 'importantes', 'de', 'la', 'época', 'como', 'The', 'Grateful', 'Dead', ',']
+
+ORIGINAL: ['de', 'un', 'Asparagaceae', 'sensu', 'stricto', 'como', 'la', 'familia', 'Agavaceae', '.']
+PREDICTION: ['de', 'un', 'Asparagaceae', 'sensu', 'stricto', 'cómo', 'la', 'familia', 'Agavaceae', '.']
+
+ORIGINAL: ['de', 'una', 'obra', 'que', 'describe', 'como', 'Historia', 'de', 'Cardenio', ',']
+PREDICTION: ['de', 'una', 'obra', 'que', 'describe', 'cómo', 'Historia', 'de', 'Cardenio', ',']
+
+ORIGINAL: ['de', 'Selene', 'con', 'la', 'Luna', 'cómo', 'fondo', '.', 'James', 'Robert']
+PREDICTION: ['de', 'Selene', 'con', 'la', 'Luna', 'como', 'fondo', '.', 'James', 'Robert']
+
+ORIGINAL: ['Indiana', ')', ',', 'más', 'conocido', 'cómo', 'Jim', 'Davis', ',', 'es']
+PREDICTION: ['Indiana', ')', ',', 'más', 'conocido', 'como', 'Jim', 'Davis', ',', 'es']
+
+ORIGINAL: ['jóvenes', 'labriegos', 'al', 'levantarse', 'preparan', 'como', 'desayuno', 'un', 'pan', 'de']
+PREDICTION: ['jóvenes', 'labriegos', 'al', 'levantarse', 'preparan', 'cómo', 'desayuno', 'un', 'pan', 'de']
+
+ORIGINAL: ['las', 'causas', 'del', 'sufrimiento', 'y', 'como', 'hacer', 'para', 'que', 'no']
+PREDICTION: ['las', 'causas', 'del', 'sufrimiento', 'y', 'cómo', 'hacer', 'para', 'que', 'no']
+
+ORIGINAL: ['a', 'la', 'galaxia', ',', 'así', 'cómo', 'que', 'las', 'estrellas', 'que']
+PREDICTION: ['a', 'la', 'galaxia', ',', 'así', 'como', 'que', 'las', 'estrellas', 'que']
+
+ORIGINAL: ['una', 'serie', 'de', 'preceptos', 'sobre', 'como', 'hablar', 'elocuentemente', '.', 'Después']
+PREDICTION: ['una', 'serie', 'de', 'preceptos', 'sobre', 'cómo', 'hablar', 'elocuentemente', '.', 'Después']
+
+ORIGINAL: ['para', 'exponer', 'sus', 'inquietudes', 'y', 'como', 'espejo', 'de', 'su', 'nueva']
+PREDICTION: ['para', 'exponer', 'sus', 'inquietudes', 'y', 'cómo', 'espejo', 'de', 'su', 'nueva']
+
+ORIGINAL: ['al', 'Estado', 'pirenaico', ',', 'presenta', 'cómo', 'una', 'sociedad', 'cerrada', 'puede']
+PREDICTION: ['al', 'Estado', 'pirenaico', ',', 'presenta', 'como', 'una', 'sociedad', 'cerrada', 'puede']
+
+ORIGINAL: ['tradicionales', 'para', 'niños', 'y', 'adultos', 'como', 'el', 'yo', '-', 'yo']
+PREDICTION: ['tradicionales', 'para', 'niños', 'y', 'adultos', 'cómo', 'el', 'yo', '-', 'yo']
+
+ORIGINAL: ['son', 'de', 'Microsoft', ',', 'tales', 'cómo', 'Mono', 'y', 'DotGNU', '.']
+PREDICTION: ['son', 'de', 'Microsoft', ',', 'tales', 'como', 'Mono', 'y', 'DotGNU', '.']
+
+ORIGINAL: ['veo', 'yo', 'el', 'mundo', 'y', 'como', 'éste', 'me', 've', 'a']
+PREDICTION: ['veo', 'yo', 'el', 'mundo', 'y', 'cómo', 'éste', 'me', 've', 'a']
+
+ORIGINAL: [',', 'a', 'la', 'que', 'consideraría', 'como', 'una', 'igual', ';', 'sin']
+PREDICTION: [',', 'a', 'la', 'que', 'consideraría', 'cómo', 'una', 'igual', ';', 'sin']
+
+ORIGINAL: ['caballo', ',', 'tal', 'y', 'lo', 'como', 'veía', 'en', 'sus', 'pesadillas']
+PREDICTION: ['caballo', ',', 'tal', 'y', 'lo', 'cómo', 'veía', 'en', 'sus', 'pesadillas']
+
+ORIGINAL: ['!', 'Cómo', 'una', 'pequeña', 'nación', 'como', 'ésta', 'pudo', 'crear', ',']
+PREDICTION: ['!', 'Cómo', 'una', 'pequeña', 'nación', 'cómo', 'ésta', 'pudo', 'crear', ',']
+
+ORIGINAL: ['Club', 'y', 'en', 'juke', 'joints', 'como', 'los', 'que', 'se', 'podían']
+PREDICTION: ['Club', 'y', 'en', 'juke', 'joints', 'cómo', 'los', 'que', 'se', 'podían']
+
+ORIGINAL: ['otra', 'parte', ',', 'dado', 'que', 'como', 'es', 'bien', 'conocido', ',']
+PREDICTION: ['otra', 'parte', ',', 'dado', 'que', 'cómo', 'es', 'bien', 'conocido', ',']
+
+ORIGINAL: ['seguridad', 'y', 'a', 'su', 'vez', 'cómo', 'Pete', 'ha', 'podido', 'entrar']
+PREDICTION: ['seguridad', 'y', 'a', 'su', 'vez', 'como', 'Pete', 'ha', 'podido', 'entrar']
+
+ORIGINAL: ['de', 'la', 'misma', 'expedición', ',', 'como', 'fue', 'el', 'caso', 'de']
+PREDICTION: ['de', 'la', 'misma', 'expedición', ',', 'cómo', 'fue', 'el', 'caso', 'de']
+
+ORIGINAL: [',', 'califico', 'a', 'Casino', 'Royale', 'cómo', 'una', '«', 'épica', 'novela']
+PREDICTION: [',', 'califico', 'a', 'Casino', 'Royale', 'como', 'una', '«', 'épica', 'novela']
+
+ORIGINAL: ['santa', 'trinosofía', '—', 'más', 'conocida', 'cómo', 'La', 'santísima', 'trinosofía', '—']
+PREDICTION: ['santa', 'trinosofía', '—', 'más', 'conocida', 'como', 'La', 'santísima', 'trinosofía', '—']
+
+ORIGINAL: ['la', 'Teoría', 'de', 'Dow', 'y', 'como', 'complementó', 'a', 'ésta', ',']
+PREDICTION: ['la', 'Teoría', 'de', 'Dow', 'y', 'cómo', 'complementó', 'a', 'ésta', ',']
+
+ORIGINAL: ['en', 'general', 'no', 'se', 'asocien', 'cómo', 'tal', 'a', 'otras', 'especies']
+PREDICTION: ['en', 'general', 'no', 'se', 'asocien', 'como', 'tal', 'a', 'otras', 'especies']
+
+ORIGINAL: ['conjunciones', 'que', ',', 'quien', ',', 'como', ',', 'cual', ',', 'cuando']
+PREDICTION: ['conjunciones', 'que', ',', 'quien', ',', 'cómo', ',', 'cual', ',', 'cuando']
+
+ORIGINAL: ['``', 'El', 'Estado', 'se', 'muestra', 'como', 'la', 'única', 'forma', 'de']
+PREDICTION: ['``', 'El', 'Estado', 'se', 'muestra', 'cómo', 'la', 'única', 'forma', 'de']
+
+ORIGINAL: ['metrópoli', ',', 'se', 'ha', 'revelado', 'como', 'una', 'diferencia', 'insuperable', '.']
+PREDICTION: ['metrópoli', ',', 'se', 'ha', 'revelado', 'cómo', 'una', 'diferencia', 'insuperable', '.']
+
+ORIGINAL: ['Frontera', '.', '¿', 'Cómo', ',', 'como', '...', 'Consiste', 'en', 'una']
+PREDICTION: ['Frontera', '.', '¿', 'Cómo', ',', 'cómo', '...', 'Consiste', 'en', 'una']
+
+ORIGINAL: ['música', ',', 'pero', 'lo', 'desestimó', 'cómo', '``', 'un', 'tiempo', 'extraño']
+PREDICTION: ['música', ',', 'pero', 'lo', 'desestimó', 'como', '``', 'un', 'tiempo', 'extraño']
+
+ORIGINAL: [',', 'pero', 'orgullosamente', 'me', 'identifico', 'como', 'ese', 'Indio', 'corriendo', 'en']
+PREDICTION: [',', 'pero', 'orgullosamente', 'me', 'identifico', 'cómo', 'ese', 'Indio', 'corriendo', 'en']
+
+ORIGINAL: ['tanto', 'en', 'dirección', 'a', 'Bilbao', 'cómo', 'a', 'San', 'Sebastián', ',']
+PREDICTION: ['tanto', 'en', 'dirección', 'a', 'Bilbao', 'como', 'a', 'San', 'Sebastián', ',']
+
+ORIGINAL: ['de', 'la', 'fisura', 'posterolateral', 'y', 'como', 'su', 'propio', 'nombre', 'indica']
+PREDICTION: ['de', 'la', 'fisura', 'posterolateral', 'y', 'cómo', 'su', 'propio', 'nombre', 'indica']
+
+ORIGINAL: ['las', 'demandas', 'tanto', 'de', 'diálogo', 'como', 'de', 'canciones', '.', 'La']
+PREDICTION: ['las', 'demandas', 'tanto', 'de', 'diálogo', 'cómo', 'de', 'canciones', '.', 'La']
+
+ORIGINAL: ['un', 'pseudobulbo', ',', 'siendo', 'considerada', 'cómo', 'una', 'galaxia', 'espiral', 'floculenta']
+PREDICTION: ['un', 'pseudobulbo', ',', 'siendo', 'considerada', 'como', 'una', 'galaxia', 'espiral', 'floculenta']
+
+ORIGINAL: ['vida', 'de', 'Jesús', 'tal', 'y', 'como', 'aparece', 'en', 'los', 'cuatro']
+PREDICTION: ['vida', 'de', 'Jesús', 'tal', 'y', 'cómo', 'aparece', 'en', 'los', 'cuatro']
+
+ORIGINAL: ['/', 'o', 'sociedad', 'dada', ',', 'como', 'más', 'que', 'suficientes', 'y']
+PREDICTION: ['/', 'o', 'sociedad', 'dada', ',', 'cómo', 'más', 'que', 'suficientes', 'y']
+
+ORIGINAL: ['Ruanda', 'y', 'sus', 'aliados', ',', 'cómo', 'para', 'dedicarse', 'al', 'pillaje']
+PREDICTION: ['Ruanda', 'y', 'sus', 'aliados', ',', 'como', 'para', 'dedicarse', 'al', 'pillaje']
+
+ORIGINAL: ['titulada', 'Calle', 'de', 'Amargura', ',', 'cómo', 'habemos', 'de', 'seguir', 'a']
+PREDICTION: ['titulada', 'Calle', 'de', 'Amargura', ',', 'como', 'habemos', 'de', 'seguir', 'a']
+
+ORIGINAL: ['suyo', 'que', 'había', 'sido', 'entregado', 'como', 'rehén', 'sólo', 'porque', 'que']
+PREDICTION: ['suyo', 'que', 'había', 'sido', 'entregado', 'cómo', 'rehén', 'sólo', 'porque', 'que']
+
+ORIGINAL: ['taloide', ')', '.', 'Se', 'coloca', 'como', 'subíndice', 'a', 'la', 'izquierda']
+PREDICTION: ['taloide', ')', '.', 'Se', 'coloca', 'cómo', 'subíndice', 'a', 'la', 'izquierda']
+
+ORIGINAL: ['igual', 'que', 'Hot', 'Fuzz', ',', 'cómo', 'nosotros', 'tenemos', 'grandes', 'personas']
+PREDICTION: ['igual', 'que', 'Hot', 'Fuzz', ',', 'como', 'nosotros', 'tenemos', 'grandes', 'personas']
+
+ORIGINAL: ['recuperar', 'el', 'modelo', 'proponiendo', ',', 'como', 'Alfvén', 'hace', ',', 'que']
+PREDICTION: ['recuperar', 'el', 'modelo', 'proponiendo', ',', 'cómo', 'Alfvén', 'hace', ',', 'que']
+
+ORIGINAL: ['Los', 'cazas', 'espaciales', 'son', 'habituales', 'cómo', 'naves', 'manejables', 'en', 'juegos']
+PREDICTION: ['Los', 'cazas', 'espaciales', 'son', 'habituales', 'como', 'naves', 'manejables', 'en', 'juegos']
+
+ORIGINAL: ['la', 'visualización', 'de', 'la', 'historieta', 'cómo', 'lo', 'más', 'importante', 'del']
+PREDICTION: ['la', 'visualización', 'de', 'la', 'historieta', 'como', 'lo', 'más', 'importante', 'del']
+
+ORIGINAL: ['de', 'FTC', ',', 'pues', 'daba', 'cómo', 'resultado', 'cantidades', 'de', 'nicotina']
+PREDICTION: ['de', 'FTC', ',', 'pues', 'daba', 'como', 'resultado', 'cantidades', 'de', 'nicotina']
+
+ORIGINAL: ['que', 'parece', 'haber', 'sido', 'concebida', 'cómo', 'una', 'antología', 'de', 'actitudes']
+PREDICTION: ['que', 'parece', 'haber', 'sido', 'concebida', 'como', 'una', 'antología', 'de', 'actitudes']
+
+ORIGINAL: ['del', 'presidente', 'Truman', 'y', ',', 'como', 'era', 'de', 'esperarse', ',']
+PREDICTION: ['del', 'presidente', 'Truman', 'y', ',', 'cómo', 'era', 'de', 'esperarse', ',']
+
+ORIGINAL: ['así', 'acaban', 'por', 'tocar', 'éxitos', 'como', '«', 'A', 'quien', 'le']
+PREDICTION: ['así', 'acaban', 'por', 'tocar', 'éxitos', 'cómo', '«', 'A', 'quien', 'le']
+
+ORIGINAL: ['«', 'de', 'provocar', 'fuertes', 'emociones', 'como', 'Giotto', '»', '.', 'Recuerda']
+PREDICTION: ['«', 'de', 'provocar', 'fuertes', 'emociones', 'cómo', 'Giotto', '»', '.', 'Recuerda']
+
+ORIGINAL: ['se', 'siente', 'atraído', 'al', 'comprobar', 'como', 'su', 'movimiento', 'afecta', 'a']
+PREDICTION: ['se', 'siente', 'atraído', 'al', 'comprobar', 'cómo', 'su', 'movimiento', 'afecta', 'a']
+
+ORIGINAL: ['.', 'Estas', 'líneas', 'maestras', 'establecen', 'cómo', 'en', 'que', 'más', 'habitualmente']
+PREDICTION: ['.', 'Estas', 'líneas', 'maestras', 'establecen', 'como', 'en', 'que', 'más', 'habitualmente']
+
+ORIGINAL: ['frecuentemente', 'comparada', 'con', 'otras', 'artistas', 'cómo', 'Mariah', 'Carey', 'y', 'Whitney']
+PREDICTION: ['frecuentemente', 'comparada', 'con', 'otras', 'artistas', 'como', 'Mariah', 'Carey', 'y', 'Whitney']
+
+ORIGINAL: ['otras', 'características', 'no', 'visuales', ',', 'como', 'definir', 'el', 'volumen', 'de']
+PREDICTION: ['otras', 'características', 'no', 'visuales', ',', 'cómo', 'definir', 'el', 'volumen', 'de']
+
+ORIGINAL: ['muerte', 'clínica', 'y', 'se', 'muestra', 'como', 'Joe', 'revive', 'luego', 'de']
+PREDICTION: ['muerte', 'clínica', 'y', 'se', 'muestra', 'cómo', 'Joe', 'revive', 'luego', 'de']
+
+ORIGINAL: ['caso', ',', 'no', 'se', 'conoce', 'cómo', 'las', 'parafinas', 'podrían', 'formar']
+PREDICTION: ['caso', ',', 'no', 'se', 'conoce', 'como', 'las', 'parafinas', 'podrían', 'formar']
+
+ORIGINAL: ['una', 'forma', 'casi', 'tan', 'sencilla', 'como', 'administrar', 'el', 'correo', 'electrónico']
+PREDICTION: ['una', 'forma', 'casi', 'tan', 'sencilla', 'cómo', 'administrar', 'el', 'correo', 'electrónico']
+
+ORIGINAL: ['un', 'fenómeno', 'cultural', 'particular', '(', 'como', 'puede', 'ser', 'un', 'género']
+PREDICTION: ['un', 'fenómeno', 'cultural', 'particular', '(', 'cómo', 'puede', 'ser', 'un', 'género']
+
+ORIGINAL: ['de', 'la', 'música', ',', 'tales', 'cómo', 'Michael', 'Jackson', 'y', 'Madonna']
+PREDICTION: ['de', 'la', 'música', ',', 'tales', 'como', 'Michael', 'Jackson', 'y', 'Madonna']
+
+ORIGINAL: ['Michael', 'Jackson', 'y', 'Madonna', 'nombrados', 'como', 'el', 'rey', 'y', 'la']
+PREDICTION: ['Michael', 'Jackson', 'y', 'Madonna', 'nombrados', 'cómo', 'el', 'rey', 'y', 'la']
+
+ORIGINAL: ['una', 'situación', 'de', 'terror', 'intenso', 'como', 'el', 'que', 'se', 'experimenta']
+PREDICTION: ['una', 'situación', 'de', 'terror', 'intenso', 'cómo', 'el', 'que', 'se', 'experimenta']
+
+ORIGINAL: ['colocan', 'en', 'orden', 'inverso', 'a', 'como', 'aparecen', 'en', 'la', 'división']
+PREDICTION: ['colocan', 'en', 'orden', 'inverso', 'a', 'cómo', 'aparecen', 'en', 'la', 'división']
+
+ORIGINAL: ['audaz', '.', "''", 'Jolie', 'debutó', 'como', 'directora', 'con', 'el', 'documental']
+PREDICTION: ['audaz', '.', "''", 'Jolie', 'debutó', 'cómo', 'directora', 'con', 'el', 'documental']
+
+ORIGINAL: ['espécimen', 'postmortum', '.', 'Así', 'fue', 'como', 'los', 'francos', 'dividieron', 'ese']
+PREDICTION: ['espécimen', 'postmortum', '.', 'Así', 'fue', 'cómo', 'los', 'francos', 'dividieron', 'ese']
+
+ORIGINAL: ['en', 'varios', 'zoológicos', ',', 'tal', 'cómo', 'el', 'zoológico', 'Ocarros', 'en']
+PREDICTION: ['en', 'varios', 'zoológicos', ',', 'tal', 'como', 'el', 'zoológico', 'Ocarros', 'en']
+
+ORIGINAL: ['Reino', 'Unido', ',', 'y', ',', 'cómo', 'resultado', ',', 'los', 'canales']
+PREDICTION: ['Reino', 'Unido', ',', 'y', ',', 'como', 'resultado', ',', 'los', 'canales']
+
+ORIGINAL: ['The', 'Young', 'and', 'the', 'Hopeless', 'como', 'el', 'álbum', 'debut', 'de']
+PREDICTION: ['The', 'Young', 'and', 'the', 'Hopeless', 'cómo', 'el', 'álbum', 'debut', 'de']
+
+ORIGINAL: ['o', 'menos', 'crítica', '.', 'Algunos', 'como', 'Me', 'encuentran', 'en', 'San']
+PREDICTION: ['o', 'menos', 'crítica', '.', 'Algunos', 'cómo', 'Me', 'encuentran', 'en', 'San']
+
+ORIGINAL: ['dejó', 'huella', 'por', 'reportajes', 'políticos', 'cómo', 'los', 'del', 'periodista', 'extremo']
+PREDICTION: ['dejó', 'huella', 'por', 'reportajes', 'políticos', 'como', 'los', 'del', 'periodista', 'extremo']
+
+ORIGINAL: ['-', ',', 'considerándose', 'éste', 'rasgo', 'cómo', 'la', 'causa', 'de', 'sus']
+PREDICTION: ['-', ',', 'considerándose', 'éste', 'rasgo', 'como', 'la', 'causa', 'de', 'sus']
+
+ORIGINAL: ['mueven', 'en', 'direcciones', 'opuestas', '(', 'como', 'es', 'el', 'caso', 'de']
+PREDICTION: ['mueven', 'en', 'direcciones', 'opuestas', '(', 'cómo', 'es', 'el', 'caso', 'de']
+
+ORIGINAL: ['limpieza', 'del', 'cementerio', 'les', 'cuenta', 'como', 'murió', 'John', 'Sheppard', 'y']
+PREDICTION: ['limpieza', 'del', 'cementerio', 'les', 'cuenta', 'cómo', 'murió', 'John', 'Sheppard', 'y']
+
+ORIGINAL: ['cómo', 'proteger', 'un', 'elemento', 'arquitectónico', 'como', 'este', 'contra', 'graffiteros', '(']
+PREDICTION: ['cómo', 'proteger', 'un', 'elemento', 'arquitectónico', 'cómo', 'este', 'contra', 'graffiteros', '(']
+
+ORIGINAL: ['Del', 'aire', 'cabe', 'decir', ',', 'como', 'hemos', 'dicho', 'del', 'agua']
+PREDICTION: ['Del', 'aire', 'cabe', 'decir', ',', 'cómo', 'hemos', 'dicho', 'del', 'agua']
+
+ORIGINAL: ['otro', 'menos', 'apretado', ',', 'así', 'cómo', 'un', 'tercer', 'brazo', 'más']
+PREDICTION: ['otro', 'menos', 'apretado', ',', 'así', 'como', 'un', 'tercer', 'brazo', 'más']
+
+ORIGINAL: [',', 'tanto', 'a', 'nivel', 'artístico', 'cómo', 'económico', '.', 'Con', 'el']
+PREDICTION: [',', 'tanto', 'a', 'nivel', 'artístico', 'como', 'económico', '.', 'Con', 'el']
+
+ORIGINAL: ['de', 'Inglaterra', '``', 'sea', 'usada', 'cómo', 'es', 'debido', '.', 'Su']
+PREDICTION: ['de', 'Inglaterra', '``', 'sea', 'usada', 'como', 'es', 'debido', '.', 'Su']
+
+ORIGINAL: ['era', 'cómo', 'diseñar', 'un', 'edificio', 'como', 'cuatro', 'proyectos', 'autónomos', ',']
+PREDICTION: ['era', 'cómo', 'diseñar', 'un', 'edificio', 'cómo', 'cuatro', 'proyectos', 'autónomos', ',']
+
+ORIGINAL: [',', 'en', 'otras', 'palabras', ',', 'cómo', 'imaginarse', 'una', 'hélice', 'en']
+PREDICTION: [',', 'en', 'otras', 'palabras', ',', 'como', 'imaginarse', 'una', 'hélice', 'en']
+
+ORIGINAL: ['han', 'pasado', 'rostros', 'tan', 'conocidos', 'cómo', 'Jesús', 'Hermida', ',', 'Mercedes']
+PREDICTION: ['han', 'pasado', 'rostros', 'tan', 'conocidos', 'como', 'Jesús', 'Hermida', ',', 'Mercedes']
+
+ORIGINAL: ['las', 'bacterias', 'y', 'eucariotas', ';', 'como', 'estas', 'enzimas', 'se', 'desarrollaron']
+PREDICTION: ['las', 'bacterias', 'y', 'eucariotas', ';', 'cómo', 'estas', 'enzimas', 'se', 'desarrollaron']
+
+ORIGINAL: ['espacio', '.', 'Fushún', 'es', 'conocida', 'cómo', '``', 'la', 'capital', 'del']
+PREDICTION: ['espacio', '.', 'Fushún', 'es', 'conocida', 'como', '``', 'la', 'capital', 'del']
+
+ORIGINAL: ['lo', 'suficientemente', 'sencillo', 'y', 'claro', 'como', 'para', 'que', 'cualquiera', 'pueda']
+PREDICTION: ['lo', 'suficientemente', 'sencillo', 'y', 'claro', 'cómo', 'para', 'que', 'cualquiera', 'pueda']
+
+ORIGINAL: ['un', 'por', 'qué', ',', 'mostrando', 'como', 'el', 'Tao', 'no', 'hace']
+PREDICTION: ['un', 'por', 'qué', ',', 'mostrando', 'cómo', 'el', 'Tao', 'no', 'hace']
+
+ORIGINAL: ['mezcla', 'de', 'líquidos', 'y', 'sólidos', 'como', 'puede', 'ser', 'el', 'hormigón']
+PREDICTION: ['mezcla', 'de', 'líquidos', 'y', 'sólidos', 'cómo', 'puede', 'ser', 'el', 'hormigón']
+
+ORIGINAL: ['embrionaria', '—', 'meníngeos', 'y', 'otros', 'como', 'los', 'linfoma', 's', ',']
+PREDICTION: ['embrionaria', '—', 'meníngeos', 'y', 'otros', 'cómo', 'los', 'linfoma', 's', ',']
+
+ORIGINAL: ['por', 'las', 'criaturas', 'mismas', ',', 'cómo', 'nadie', 'está', 'enterado', 'de']
+PREDICTION: ['por', 'las', 'criaturas', 'mismas', ',', 'como', 'nadie', 'está', 'enterado', 'de']
+
+ORIGINAL: ['en', 'el', 'mar', '.', 'Y', 'como', 'todo', 'el', 'movimiento', 'socialdemócrata']
+PREDICTION: ['en', 'el', 'mar', '.', 'Y', 'cómo', 'todo', 'el', 'movimiento', 'socialdemócrata']
+
+ORIGINAL: ['Talk', '``', 'se', 'basa', 'en', 'como', 'Martin', '``', 'quiere', 'enseñarnos']
+PREDICTION: ['Talk', '``', 'se', 'basa', 'en', 'cómo', 'Martin', '``', 'quiere', 'enseñarnos']
+
+ORIGINAL: ['que', 'la', 'ame', 'tal', 'y', 'como', 'ama', 'a', 'su', 'dinero']
+PREDICTION: ['que', 'la', 'ame', 'tal', 'y', 'cómo', 'ama', 'a', 'su', 'dinero']
+
+ORIGINAL: ['no', 'es', 'lo', 'suficientemente', 'grande', 'cómo', 'para', 'elevar', 'el', 'material']
+PREDICTION: ['no', 'es', 'lo', 'suficientemente', 'grande', 'como', 'para', 'elevar', 'el', 'material']
+
+ORIGINAL: ['formatos', 'de', 'archivo', ',', 'incluyendo', 'como', 'predeterminado', 'el', 'formato', 'estándar']
+PREDICTION: ['formatos', 'de', 'archivo', ',', 'incluyendo', 'cómo', 'predeterminado', 'el', 'formato', 'estándar']
+
+ORIGINAL: ['.', 'Otros', 'no', 'consideran', 'Obàtálá', 'cómo', 'uno', 'de', 'los', '16']
+PREDICTION: ['.', 'Otros', 'no', 'consideran', 'Obàtálá', 'como', 'uno', 'de', 'los', '16']
+
+ORIGINAL: ['baladas', 'que', 'recrean', 'un', 'tema', 'como', 'si', 'se', 'tratase', 'de']
+PREDICTION: ['baladas', 'que', 'recrean', 'un', 'tema', 'cómo', 'si', 'se', 'tratase', 'de']
+
+ORIGINAL: ['de', '``', 'música', 'canaria', '``', 'como', 'Los', 'Sabandeños', 'o', 'Los']
+PREDICTION: ['de', '``', 'música', 'canaria', '``', 'cómo', 'Los', 'Sabandeños', 'o', 'Los']
+
+ORIGINAL: ['cámara', 'de', '1926', 'se', 'percibe', 'cómo', 'la', 'influencia', 'de', 'la']
+PREDICTION: ['cámara', 'de', '1926', 'se', 'percibe', 'como', 'la', 'influencia', 'de', 'la']
+
+ORIGINAL: [',', 'le', 'impresionó', 'lo', 'suficiente', 'cómo', 'para', 'ser', 'transferido', 'al']
+PREDICTION: [',', 'le', 'impresionó', 'lo', 'suficiente', 'como', 'para', 'ser', 'transferido', 'al']
+
+ORIGINAL: ['alejaban', 'de', 'él', 'y', 'empeoraba', 'como', 'persona', 'quiere', 'sacarse', 'el']
+PREDICTION: ['alejaban', 'de', 'él', 'y', 'empeoraba', 'cómo', 'persona', 'quiere', 'sacarse', 'el']
+
+ORIGINAL: ['determinístico', 'será', 'su', 'comportamiento', '(', 'cómo', 'de', 'predecibles', 'serán', 'los']
+PREDICTION: ['determinístico', 'será', 'su', 'comportamiento', '(', 'como', 'de', 'predecibles', 'serán', 'los']
+
+ORIGINAL: ['factores', 'que', 'determinan', 'ese', 'momento', 'como', 'puede', 'ser', 'la', 'transición']
+PREDICTION: ['factores', 'que', 'determinan', 'ese', 'momento', 'cómo', 'puede', 'ser', 'la', 'transición']
+
+ORIGINAL: ['de', 'Asturias', ',', 'se', 'describe', 'como', 'una', 'mujer', 'muy', 'delgada']
+PREDICTION: ['de', 'Asturias', ',', 'se', 'describe', 'cómo', 'una', 'mujer', 'muy', 'delgada']
+
+ORIGINAL: ['se', 'ejecuta', 'en', 'sistemas', 'UNIX', 'cómo', 'GNU', '/', 'Linux', '.']
+PREDICTION: ['se', 'ejecuta', 'en', 'sistemas', 'UNIX', 'como', 'GNU', '/', 'Linux', '.']
+
+ORIGINAL: ['Inteligencia', 'Artificial', '.', 'Podemos', 'ver', 'como', 'durante', 'estos', 'años', 'la']
+PREDICTION: ['Inteligencia', 'Artificial', '.', 'Podemos', 'ver', 'cómo', 'durante', 'estos', 'años', 'la']
+
+ORIGINAL: ['tomábamos', 'medicamentos', 'juntos', ',', 'era', 'como', 'él', 'tratando', 'de', 'expresar']
+PREDICTION: ['tomábamos', 'medicamentos', 'juntos', ',', 'era', 'cómo', 'él', 'tratando', 'de', 'expresar']
+
+ORIGINAL: ['Cervantes', 'relata', 'en', 'el', 'Quijote', 'cómo', 'el', 'ingenioso', 'hidalgo', 'vestía']
+PREDICTION: ['Cervantes', 'relata', 'en', 'el', 'Quijote', 'como', 'el', 'ingenioso', 'hidalgo', 'vestía']
+
+ORIGINAL: ['malaria', '.', 'Juan', 'Pablo', 'II', 'como', 'amenaza', 'al', 'poder', 'soviético']
+PREDICTION: ['malaria', '.', 'Juan', 'Pablo', 'II', 'cómo', 'amenaza', 'al', 'poder', 'soviético']
+
+ORIGINAL: ['en', 'Varsovia', 'echándole', 'en', 'cara', 'cómo', 'un', 'ciudadano', 'de', 'un']
+PREDICTION: ['en', 'Varsovia', 'echándole', 'en', 'cara', 'como', 'un', 'ciudadano', 'de', 'un']
+
+ORIGINAL: ['Occidental', '.', 'Los', 'problemas', 'sobre', 'como', 'deben', 'entenderse', 'ciertos', 'aspectos']
+PREDICTION: ['Occidental', '.', 'Los', 'problemas', 'sobre', 'cómo', 'deben', 'entenderse', 'ciertos', 'aspectos']
+
+ORIGINAL: ['textura', 'y', 'puede', 'entenderse', 'también', 'cómo', 'una', 'manera', 'de', 'ejecutar']
+PREDICTION: ['textura', 'y', 'puede', 'entenderse', 'también', 'como', 'una', 'manera', 'de', 'ejecutar']
+
+ORIGINAL: ['acostar', 'con', 'él', '?', 'Problemas', 'como', 'asignar', 'los', 'recursos', 'de']
+PREDICTION: ['acostar', 'con', 'él', '?', 'Problemas', 'cómo', 'asignar', 'los', 'recursos', 'de']
+
+ORIGINAL: ['no', 'programadas', '.', 'Ello', 'tendría', 'cómo', 'consecuencia', 'que', 'el', 'tiempo']
+PREDICTION: ['no', 'programadas', '.', 'Ello', 'tendría', 'como', 'consecuencia', 'que', 'el', 'tiempo']
+
+ORIGINAL: ['no', 'fuera', 'homogéneo', ',', 'sino', 'cómo', 'parece', 'más', 'probable', 'desigual']
+PREDICTION: ['no', 'fuera', 'homogéneo', ',', 'sino', 'como', 'parece', 'más', 'probable', 'desigual']
+
+ORIGINAL: ['me', 'decía', 'cómo', 'revelaba', ',', 'cómo', 'pintaba', '[', '...', ']']
+PREDICTION: ['me', 'decía', 'cómo', 'revelaba', ',', 'como', 'pintaba', '[', '...', ']']
+
+ORIGINAL: ['el', 'documental', 'también', 'se', 'aprecia', 'como', 'Google', 'puede', 'seguir', 'a']
+PREDICTION: ['el', 'documental', 'también', 'se', 'aprecia', 'cómo', 'Google', 'puede', 'seguir', 'a']
+
+ORIGINAL: ['de', 'google', ',', 'determinando', 'así', 'como', 'se', 'mueve', 'cada', 'usuario']
+PREDICTION: ['de', 'google', ',', 'determinando', 'así', 'cómo', 'se', 'mueve', 'cada', 'usuario']
+
+ORIGINAL: ['gaseosa', '(', 'elementos', 'atmófilo', 's', 'cómo', 'el', 'hidrógeno', 'y', 'el']
+PREDICTION: ['gaseosa', '(', 'elementos', 'atmófilo', 's', 'como', 'el', 'hidrógeno', 'y', 'el']
+
+ORIGINAL: ['lo', 'que', 'se', 'nos', 'aparece', 'como', 'nuestra', 'personalidad', 'o', 'carácter']
+PREDICTION: ['lo', 'que', 'se', 'nos', 'aparece', 'cómo', 'nuestra', 'personalidad', 'o', 'carácter']
+
+ORIGINAL: ['ella', 'describió', 'en', 'su', 'autobiografía', 'cómo', 'la', 'industria', 'cinematográfica', 'infringía']
+PREDICTION: ['ella', 'describió', 'en', 'su', 'autobiografía', 'como', 'la', 'industria', 'cinematográfica', 'infringía']
+
+ORIGINAL: ['especialistas', 'de', 'diversas', 'áreas', ',', 'cómo', 'la', 'Inteligencia', 'Artificial', ',']
+PREDICTION: ['especialistas', 'de', 'diversas', 'áreas', ',', 'como', 'la', 'Inteligencia', 'Artificial', ',']
+
+ORIGINAL: ['fue', 'expulsado', 'quedando', 'para', 'siempre', 'como', 'un', 'hombre', 'mortal', '.']
+PREDICTION: ['fue', 'expulsado', 'quedando', 'para', 'siempre', 'cómo', 'un', 'hombre', 'mortal', '.']
+
+ORIGINAL: ['Primavera', '.', 'Muchos', 'la', 'vieron', 'como', 'a', 'una', 'pionera', 'del']
+PREDICTION: ['Primavera', '.', 'Muchos', 'la', 'vieron', 'cómo', 'a', 'una', 'pionera', 'del']
+
+ORIGINAL: ['la', 'información', ',', 'tal', 'y', 'como', 'se', 'hacía', 'antiguamente', '.']
+PREDICTION: ['la', 'información', ',', 'tal', 'y', 'cómo', 'se', 'hacía', 'antiguamente', '.']
+
+ORIGINAL: ['y', 'no', 'en', 'cualquier', 'momento', 'como', 'puede', 'ser', 'en', 'el']
+PREDICTION: ['y', 'no', 'en', 'cualquier', 'momento', 'cómo', 'puede', 'ser', 'en', 'el']
+
+ORIGINAL: ['de', 'la', 'región', ',', 'así', 'cómo', 'para', 'su', 'independencia', 'política']
+PREDICTION: ['de', 'la', 'región', ',', 'así', 'como', 'para', 'su', 'independencia', 'política']
+
+ORIGINAL: ['Ya', 'nada', 'volverá', 'a', 'ser', 'cómo', 'antes', 'de', 'El', 'canto']
+PREDICTION: ['Ya', 'nada', 'volverá', 'a', 'ser', 'como', 'antes', 'de', 'El', 'canto']
+
+ORIGINAL: ['años', ',', 'claramente', 'se', 'establece', 'cómo', 'modelo', 'y', 'símbolo', 'sexual']
+PREDICTION: ['años', ',', 'claramente', 'se', 'establece', 'como', 'modelo', 'y', 'símbolo', 'sexual']
+
+ORIGINAL: ['parte', ',', 'Pablo', 'consigue', 'trabajo', 'como', 'camarero', 'en', 'un', 'restaurante']
+PREDICTION: ['parte', ',', 'Pablo', 'consigue', 'trabajo', 'cómo', 'camarero', 'en', 'un', 'restaurante']
+
+ORIGINAL: ['Pablo', 've', 'en', 'las', 'noticias', 'cómo', 'Pedro', 'ha', 'despedido', 'a']
+PREDICTION: ['Pablo', 've', 'en', 'las', 'noticias', 'como', 'Pedro', 'ha', 'despedido', 'a']
+
+ORIGINAL: ['describió', 'a', 'Bieber', 'el', 'público', 'cómo', 'un', '``', 'fenómeno', 'juvenil']
+PREDICTION: ['describió', 'a', 'Bieber', 'el', 'público', 'como', 'un', '``', 'fenómeno', 'juvenil']
+
+ORIGINAL: ['capas', 'puede', 'ser', 'absoluta', ',', 'cómo', 'en', 'el', 'caso', 'de']
+PREDICTION: ['capas', 'puede', 'ser', 'absoluta', ',', 'como', 'en', 'el', 'caso', 'de']
+
+ORIGINAL: [',', 'o', 'no', 'absoluta', ',', 'como', 'es', 'el', 'caso', 'de']
+PREDICTION: [',', 'o', 'no', 'absoluta', ',', 'cómo', 'es', 'el', 'caso', 'de']
+
+ORIGINAL: [',', 'por', 'lo', 'dicho', ',', 'cómo', 'los', 'neopositivistas', 'lógicos', 'no']
+PREDICTION: [',', 'por', 'lo', 'dicho', ',', 'como', 'los', 'neopositivistas', 'lógicos', 'no']
+
+ORIGINAL: ['en', 'otras', 'ciudades', 'europeas', ',', 'cómo', 'por', 'ejemplo', ':', 'Existen']
+PREDICTION: ['en', 'otras', 'ciudades', 'europeas', ',', 'como', 'por', 'ejemplo', ':', 'Existen']
+
+ORIGINAL: ['y', 'que', 'tenían', 'retenidos', '``', 'como', 'rehenes', 'a', 'mujeres', 'y']
+PREDICTION: ['y', 'que', 'tenían', 'retenidos', '``', 'cómo', 'rehenes', 'a', 'mujeres', 'y']
+
+ORIGINAL: ['descartes', 'de', 'sus', 'previos', 'trabajos', 'como', 'Eres', 'un', 'Santo', 'y']
+PREDICTION: ['descartes', 'de', 'sus', 'previos', 'trabajos', 'cómo', 'Eres', 'un', 'Santo', 'y']
+
+ORIGINAL: ['expresándola', 'indirectamente', 'al', 'opresor', ',', 'como', 'lo', 'hace', 'el', 'pongo']
+PREDICTION: ['expresándola', 'indirectamente', 'al', 'opresor', ',', 'cómo', 'lo', 'hace', 'el', 'pongo']
+
+ORIGINAL: ['ciudadano', 'estadounidense', ',', 'ni', 'tampoco', 'como', 'judío', ',', 'sino', 'como']
+PREDICTION: ['ciudadano', 'estadounidense', ',', 'ni', 'tampoco', 'cómo', 'judío', ',', 'sino', 'cómo']
+
+ORIGINAL: ['tampoco', 'como', 'judío', ',', 'sino', 'como', 'ser', 'humano', '``', '.']
+PREDICTION: ['tampoco', 'cómo', 'judío', ',', 'sino', 'cómo', 'ser', 'humano', '``', '.']
+
+ORIGINAL: ['artículos', 'en', 'las', 'revistas', ',', 'cómo', 'impresionar', 'la', 'gente', 'en']
+PREDICTION: ['artículos', 'en', 'las', 'revistas', ',', 'como', 'impresionar', 'la', 'gente', 'en']
+
+ORIGINAL: ['sistemas', 'finalizados', 'y', 'para', 'controlar', 'como', 'se', 'reproducen', '.', 'Ejemplo']
+PREDICTION: ['sistemas', 'finalizados', 'y', 'para', 'controlar', 'cómo', 'se', 'reproducen', '.', 'Ejemplo']
+
+ORIGINAL: ['es', 'un', 'llagar', 'típico', 'y', 'como', 'se', 'trata', 'la', 'sidra']
+PREDICTION: ['es', 'un', 'llagar', 'típico', 'y', 'cómo', 'se', 'trata', 'la', 'sidra']
+
+ORIGINAL: ['confundidas', 'por', 'su', 'ambigüedad', ',', 'como', 'serían', 'las', 'de', '``']
+PREDICTION: ['confundidas', 'por', 'su', 'ambigüedad', ',', 'cómo', 'serían', 'las', 'de', '``']
+
+ORIGINAL: ['todo', 'aquel', 'que', 'no', 'fuera', 'como', 'ellos', ',', 'durante', 'su']
+PREDICTION: ['todo', 'aquel', 'que', 'no', 'fuera', 'cómo', 'ellos', ',', 'durante', 'su']
+
+ORIGINAL: ['^', '2', ')', ',', 'que', 'como', 'se', 'acaba', 'de', 'decir']
+PREDICTION: ['^', '2', ')', ',', 'que', 'cómo', 'se', 'acaba', 'de', 'decir']
+
+ORIGINAL: ['de', 'formación', 'estelar', ',', 'así', 'cómo', 'cúmulos', 'globulares', 'y', 'anillos']
+PREDICTION: ['de', 'formación', 'estelar', ',', 'así', 'como', 'cúmulos', 'globulares', 'y', 'anillos']
+
+ORIGINAL: ['su', 'alrededor', 'que', 'se', 'interpretan', 'cómo', 'efecto', 'de', 'la', 'atracción']
+PREDICTION: ['su', 'alrededor', 'que', 'se', 'interpretan', 'como', 'efecto', 'de', 'la', 'atracción']
+
+ORIGINAL: ['una', 'bolsa', ',', 'que', 'es', 'como', 'dar', 'con', 'la', 'vida']
+PREDICTION: ['una', 'bolsa', ',', 'que', 'es', 'cómo', 'dar', 'con', 'la', 'vida']
+
+ORIGINAL: ['negativas', 'a', 'lo', 'que', 'percibían', 'como', 'excesiva', 'dogmatización', 'propuesta', 'por']
+PREDICTION: ['negativas', 'a', 'lo', 'que', 'percibían', 'cómo', 'excesiva', 'dogmatización', 'propuesta', 'por']
+
+ORIGINAL: ['400', '%', 'Propuesta', 'para', 'juzgar', 'como', 'adultos', 'a', 'niños', 'y']
+PREDICTION: ['400', '%', 'Propuesta', 'para', 'juzgar', 'cómo', 'adultos', 'a', 'niños', 'y']
+
+ORIGINAL: ['países', 'superpoblados', 'sin', 'democracias', 'electorales', 'como', 'es', 'el', 'caso', 'de']
+PREDICTION: ['países', 'superpoblados', 'sin', 'democracias', 'electorales', 'cómo', 'es', 'el', 'caso', 'de']
+
+ORIGINAL: [',', 'su', 'madre', 'le', 'dijo', 'como', 'siempre', 'podría', 'contar', 'con']
+PREDICTION: [',', 'su', 'madre', 'le', 'dijo', 'cómo', 'siempre', 'podría', 'contar', 'con']
+
+ORIGINAL: ['tiempos', 'en', 'que', 'todos', 'eran', 'como', 'una', 'familia', '.', 'Ronald']
+PREDICTION: ['tiempos', 'en', 'que', 'todos', 'eran', 'cómo', 'una', 'familia', '.', 'Ronald']
+
+ORIGINAL: ['galaxias', 'menores', 'absorbidas', 'pueden', 'encontrarse', 'cómo', 'estructuras', 'de', 'gas', 'y']
+PREDICTION: ['galaxias', 'menores', 'absorbidas', 'pueden', 'encontrarse', 'como', 'estructuras', 'de', 'gas', 'y']
+
+ORIGINAL: ['cual', 'puede', 'tener', 'un', 'diámetro', 'cómo', 'ya', 'se', 'ha', 'explicado']
+PREDICTION: ['cual', 'puede', 'tener', 'un', 'diámetro', 'como', 'ya', 'se', 'ha', 'explicado']
+
+ORIGINAL: ['con', 'SONY', 'ATV', ',', 'así', 'cómo', 'producciones', 'discográficas', 'de', 'artistas']
+PREDICTION: ['con', 'SONY', 'ATV', ',', 'así', 'como', 'producciones', 'discográficas', 'de', 'artistas']
+
+ORIGINAL: ['cómo', 'producciones', 'discográficas', 'de', 'artistas', 'cómo', 'India', 'Martínez', '(', 'Sony']
+PREDICTION: ['como', 'producciones', 'discográficas', 'de', 'artistas', 'como', 'India', 'Martínez', '(', 'Sony']
+
+ORIGINAL: ['potentes', 'guitarras', 'eléctricas', 'en', 'canciones', 'cómo', '``', 'Think', 'Twice', '``']
+PREDICTION: ['potentes', 'guitarras', 'eléctricas', 'en', 'canciones', 'como', '``', 'Think', 'Twice', '``']
+
+ORIGINAL: ['como', 'binutils', 'para', 'realizar', 'tareas', 'como', 'identificar', 'archivos', 'objeto', 'u']
+PREDICTION: ['como', 'binutils', 'para', 'realizar', 'tareas', 'cómo', 'identificar', 'archivos', 'objeto', 'u']
+
+ORIGINAL: ['es', 'un', 'modelo', 'que', 'explica', 'como', 'se', 'produce', 'el', 'proceso']
+PREDICTION: ['es', 'un', 'modelo', 'que', 'explica', 'cómo', 'se', 'produce', 'el', 'proceso']
+
+ORIGINAL: ['se', 'ha', 'llegado', 'a', 'conocer', 'como', 'las', 'políticas', 'de', 'diferencias']
+PREDICTION: ['se', 'ha', 'llegado', 'a', 'conocer', 'cómo', 'las', 'políticas', 'de', 'diferencias']
+
+ORIGINAL: ['.', 'Allí', 'se', 'conoce', 'entonces', 'cómo', 'el', 'teatro', 'cumplía', 'una']
+PREDICTION: ['.', 'Allí', 'se', 'conoce', 'entonces', 'como', 'el', 'teatro', 'cumplía', 'una']
+
+ORIGINAL: ['Baby', '(', 'Big', 'Tymers', ')', 'cómo', 'los', 'Hot', 'Boys', '(']
+PREDICTION: ['Baby', '(', 'Big', 'Tymers', ')', 'como', 'los', 'Hot', 'Boys', '(']
+
+ORIGINAL: ['libios', 'enseñaron', 'a', 'los', 'griegos', 'cómo', 'uncir', 'cuatro', 'caballos', 'a']
+PREDICTION: ['libios', 'enseñaron', 'a', 'los', 'griegos', 'como', 'uncir', 'cuatro', 'caballos', 'a']
+
+ORIGINAL: ['``', 'Pinion', '``', 'que', 'sirve', 'cómo', 'una', 'introducción', 'antes', 'de']
+PREDICTION: ['``', 'Pinion', '``', 'que', 'sirve', 'como', 'una', 'introducción', 'antes', 'de']
+
+ORIGINAL: ['de', 'las', 'estructuras', 'generales', 'en', 'como', 'se', 'componen', 'estos', 'departamentos']
+PREDICTION: ['de', 'las', 'estructuras', 'generales', 'en', 'cómo', 'se', 'componen', 'estos', 'departamentos']
+
+ORIGINAL: ['especies', 'extintas', 'por', 'otras', '``', 'como', '``', 'un', 'proceso', 'natural']
+PREDICTION: ['especies', 'extintas', 'por', 'otras', '``', 'cómo', '``', 'un', 'proceso', 'natural']
+
+ORIGINAL: ['First', 'Nations', '``', ')', ',', 'como', 'se', 'las', 'conoce', 'hoy']
+PREDICTION: ['First', 'Nations', '``', ')', ',', 'cómo', 'se', 'las', 'conoce', 'hoy']
+
+ORIGINAL: ['de', 'cómo', 'la', 'disco', 'flue', 'como', 'el', 'vino', 'circunnavegó', 'pretensiones']
+PREDICTION: ['de', 'cómo', 'la', 'disco', 'flue', 'cómo', 'el', 'vino', 'circunnavegó', 'pretensiones']
+
+ORIGINAL: ['En', 'esta', 'figura', '2', 'vemos', 'como', 'se', 'retirarán', 'todas', 'las']
+PREDICTION: ['En', 'esta', 'figura', '2', 'vemos', 'cómo', 'se', 'retirarán', 'todas', 'las']
+
+ORIGINAL: ['su', 'Templo', '.', 'Steve', 'vuelve', 'como', 'un', 'viejo', 'a', 'la']
+PREDICTION: ['su', 'Templo', '.', 'Steve', 'vuelve', 'cómo', 'un', 'viejo', 'a', 'la']
+
+ORIGINAL: ['3', ')', ',', 'ó', '372,43', 'como', '372', '(', '0', ')']
+PREDICTION: ['3', ')', ',', 'ó', '372,43', 'cómo', '372', '(', '0', ')']
+
+ORIGINAL: ['Matilde', 'de', 'Hackeborn', ';', 'o', 'como', 'oblata', ',', 'ofrecida', 'a']
+PREDICTION: ['Matilde', 'de', 'Hackeborn', ';', 'o', 'cómo', 'oblata', ',', 'ofrecida', 'a']
+
+ORIGINAL: ['FM', ',', 'recordado', 'por', 'éxitos', 'como', 'Anoche', ',', 'Quiero', 'Estar']
+PREDICTION: ['FM', ',', 'recordado', 'por', 'éxitos', 'cómo', 'Anoche', ',', 'Quiero', 'Estar']
+
+ORIGINAL: ['civiles', '(', 'pazo', 's', ')', 'cómo', 'religiosas', '(', 'iglesias', ')']
+PREDICTION: ['civiles', '(', 'pazo', 's', ')', 'como', 'religiosas', '(', 'iglesias', ')']
+
+ORIGINAL: ['de', 'el', 'tercer', 'hombre', ',', 'cómo', 'El', 'piccolo', 'Caruso', ',']
+PREDICTION: ['de', 'el', 'tercer', 'hombre', ',', 'como', 'El', 'piccolo', 'Caruso', ',']
+
+ORIGINAL: ['llamó', 'a', 'la', 'particular', 'tonada', 'cómo', 'la', 'mejor', 'de', 'todas']
+PREDICTION: ['llamó', 'a', 'la', 'particular', 'tonada', 'como', 'la', 'mejor', 'de', 'todas']
+
+ORIGINAL: ['NGC', '4438', ',', 'también', 'conocidas', 'cómo', 'las', 'Galaxias', 'de', 'los']
+PREDICTION: ['NGC', '4438', ',', 'también', 'conocidas', 'como', 'las', 'Galaxias', 'de', 'los']
+
+ORIGINAL: ['presenta', 'a', 'homosexualidad', 'del', 'protagonista', 'cómo', 'una', 'enfermedad', ',', 'con']
+PREDICTION: ['presenta', 'a', 'homosexualidad', 'del', 'protagonista', 'como', 'una', 'enfermedad', ',', 'con']
+
+ORIGINAL: ['con', 'accesorios', 'incluidos', ',', 'tales', 'cómo', 'un', 'telón', 'con', 'sistema']
+PREDICTION: ['con', 'accesorios', 'incluidos', ',', 'tales', 'como', 'un', 'telón', 'con', 'sistema']
+
+ORIGINAL: ['interés', 'turístico', ',', 'tanto', 'esta', 'cómo', 'otras', 'zonas', 'colindantes', 'han']
+PREDICTION: ['interés', 'turístico', ',', 'tanto', 'esta', 'como', 'otras', 'zonas', 'colindantes', 'han']
+
+ORIGINAL: ['la', 'provincia', 'del', 'Callao', 'así', 'como', 'dirigir', 'un', 'proceso', 'de']
+PREDICTION: ['la', 'provincia', 'del', 'Callao', 'así', 'cómo', 'dirigir', 'un', 'proceso', 'de']
+
+ORIGINAL: ['dos', 'capítulos', 'especiales', ',', 'conocidos', 'cómo', '``', 'Mi', 'querido', 'demonio']
+PREDICTION: ['dos', 'capítulos', 'especiales', ',', 'conocidos', 'como', '``', 'Mi', 'querido', 'demonio']
+
+
