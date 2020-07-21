@@ -73,9 +73,9 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 - Melliza micro-accuracy range: **80%-99%** (more specific numbers will be presented at a later time)
 - Number of mellizas that were correctly diacriticized: **.8960**
-- Number of invariantly diacriticized tokens that were correct:  
-- Number of tokens that were correct when only mellizas were left undiacriticized:  **.9896**
-- Number of tokens that were correct when all tokens were left undiacriticized:  **.9607**  
+- Number of invariantly diacriticized tokens that were correctly diacriticized:  
+- Number of tokens that were correctly diacriticized when only mellizas were left undiacriticized:  **.9896**
+- Number of tokens that were correctly diacriticized when all tokens were left undiacriticized:  **.9607**  
 
 ## Future work 
 
