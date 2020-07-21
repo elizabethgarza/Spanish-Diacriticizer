@@ -18,7 +18,7 @@ class Diacriticize:
         os.chdir('..')
         os.chdir('data') 
         mellizas = pandas.read_csv('top_200_mellizas.csv', sep=',')
-        mellizas = mellizas.head(141)
+        mellizas = mellizas.head(199)
         max1_max2_tokens = mellizas['MAX1_MELLIZA'] + '\t'+ mellizas['MAX2_MELLIZA']
         i=0 
         for row in max1_max2_tokens: 
@@ -30,7 +30,7 @@ class Diacriticize:
             self.melliza_and_clsfr_dict[unidecode.unidecode(melliza1)] =  melliza_clsfr
             os.chdir('..')
                  
-        with open('invariantly_diacriticized_tokens_dict.json', 'r') as source: 
+        with open('invars.json', 'r') as source: 
             self.invariantly_diacriticized_tokens_dict = json.load(source)
     
     @staticmethod
