@@ -69,7 +69,9 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Evaluation and error analysis
 
-#TODO fill this in. 
+- Melliza micro-accuracy range: 88%-99% accuracies (more specific numbers will be presented at a later time)
+- Number of tokens that were correct when only mellizas were left undiacriticized:  .9896
+- Number of tokens that were correct when all tokens were left undiacriticized:  .9607  
 
 ## Future work 
 
