@@ -69,7 +69,7 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Evaluation and error analysis
 
-### Evaluation results
+### Dev set evaluation results
 
 ![Image 7-21-20 at 10 15 PM](https://user-images.githubusercontent.com/43279348/88134660-2e06bf00-cbb3-11ea-912a-99e4b5c9cd67.jpg)
 
