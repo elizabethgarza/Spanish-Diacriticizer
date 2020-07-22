@@ -130,7 +130,6 @@ Step 4:
 ### Dev set evaluation 
 
 
-![Image 7-22-20 at 3 00 PM](https://user-images.githubusercontent.com/43279348/88217372-73b39e00-cc2c-11ea-818c-5b7d5d13c604.jpg)
 
 
 ## Future work 
