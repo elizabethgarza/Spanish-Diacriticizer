@@ -58,6 +58,16 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Description of data
 
+A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  To download all Spanish wikipedia data used to train this model: 
+
+1.  go to: https://sites.google.com/site/rmyeid/projects/polyglot
+2.  scroll down to `Download Wikipedia Text Dumps`
+3.  download `es_wiki_text.tar.lzma`
+4.  compress the file in the terminal by running: 
+
+      `% unxz ~/Downloads/es_wiki_text.tar.lzma`    
+5.  decompress the file by clicking on it, and a new directory titled `es` will appear, inside of which will appear the data, titled `full.txt`  
+
 ### Description and distribution of token types in the data set.
 
 **Mellizas** refer to fraternal token twins like  {*el*, *él*}.  While most of these words are homographs (words that have different pronunciations for the same spelling like *live*), this term is useful for this project because a few mellizas are homophones (words that have the same pronunciation, but different meanings) like {*si*, *sí*}, {*cómo*, *como*} and {*sólo*, *solo*}.  In sum, the elements within melliza sets can be formally defined as--
@@ -76,9 +86,13 @@ The figure below uses a venn diagram to show the distribution of these token typ
 
 ![Image 7-22-20 at 1 51 AM](https://user-images.githubusercontent.com/43279348/88139573-f8b39e80-cbbd-11ea-9a0a-8295e99d8589.jpg)
 
-### Description of data set 
+### Melliza statistics.
 
-A total of 3710 mellizas were extracted from a 2.2 GB corpus of text from Wikipedia containing approximately 19 million Spanish sentences.
+- A total of 3710 mellizas were extracted from the corpus.
+
+#TODO: 
+ - [ ] provide a histogram of frequency distribution
+ - [ ] provide a snapshop of the csv table
  
 ## Methodology
 
