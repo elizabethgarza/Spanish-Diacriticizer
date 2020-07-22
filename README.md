@@ -61,8 +61,8 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Data collection
 
-#TODO fill this in. 
-
+![Image 7-22-20 at 12 33 AM](https://user-images.githubusercontent.com/43279348/88134859-bdac6d80-cbb3-11ea-8171-51a7a530211d.jpg)
+ 
 ## Methodology
 
 #TODO fill this in. 
