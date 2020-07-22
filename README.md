@@ -58,15 +58,7 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Description of data
 
-A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  To download all Spanish wikipedia data used to train this model: 
-
-1.  go to: https://sites.google.com/site/rmyeid/projects/polyglot
-2.  scroll down to `Download Wikipedia Text Dumps`
-3.  download `es_wiki_text.tar.lzma`
-4.  compress the file in the terminal by running: 
-
-      `% unxz ~/Downloads/es_wiki_text.tar.lzma`    
-5.  decompress the file by clicking on it, and a new directory titled `es` will appear, inside of which will appear the data, titled `full.txt`  
+A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  For instructions on how to download all Spanish wikipedia data, please refer to a file titled `instructions` in the `data`folder of this repository.
 
 ### Description and distribution of token types in the data set.
 
@@ -117,13 +109,13 @@ The figure below uses a venn diagram to show the distribution of these token typ
 **High priority**
 
 - On branch = 'csv-cleanup':
- - [ ] write an optional argument that prints evaluation results to either 'DEV_ACCURACY' or 'TEST_ACCURACY' on the csv file
- - [ ] add the two columns and number the entries
+  - [ ] write an optional argument that prints evaluation results to either 'DEV_ACCURACY' or 'TEST_ACCURACY' on the csv file
+  - [ ] add the two columns and number the entries
 
 - On branch = 'rerun-csv-code': 
-- [ ] re-run code to regenerate CSV file without the bad entries 
-- [ ] add a snippet to print out a histogram of melliza distribution 
-- [ ] update the data section of READ.ME 
+  - [ ] re-run code to regenerate CSV file without the bad entries 
+  - [ ] add a snippet to print out a histogram of melliza distribution 
+  - [ ] update the data section of READ.ME 
    
 **Medium priority**
   - [ ] Add optional argparse argument to `diacriticize.py`:
