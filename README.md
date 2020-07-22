@@ -64,6 +64,13 @@ To calculate the probability of classifying label_1 given one specific feature, 
 
 --where, *L1* refers to *esta*, and *sf* refers to any given sentence feature, say, sentence length.  (To calculate *P(L2 | sf)* one would simply have to subtract *P(L1 | sf)* from *1*.)  Calculating the probability of *L1*, given all sentence features, or *{SF}*, simply involves multiplying all probabilities for *L1*, given a particular sentence feature, like so-- 
 
+![Image 7-22-20 at 12 43 PM](https://user-images.githubusercontent.com/43279348/88204376-2aa61e80-cc19-11ea-8496-ea3f7a044d11.jpg)
+
+The model is considered naive because, “it assumes that the probability of each feature...is conditionally independent of every other feature” (Lecture 8), meaning that the value for *P(sfi | L1)* in *eq. 2* above would actually be--
+
+
+
+
 
 
 ## Description of data
