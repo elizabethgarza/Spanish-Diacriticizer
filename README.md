@@ -69,13 +69,9 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Evaluation and error analysis
 
-### Evaluation
+### Evaluation results
 
-- Melliza micro-accuracy range: **80%-99%** (more specific numbers will be presented at a later time)
-- Number of mellizas that were correctly diacriticized: **.8960**
-- Number of invariantly diacriticized tokens that were correctly diacriticized:  
-- Number of tokens that were correctly diacriticized when only mellizas were left undiacriticized:  **.9896**
-- Number of tokens that were correctly diacriticized when all tokens were left undiacriticized:  **.9607**  
+![Image 7-21-20 at 10 15 PM](https://user-images.githubusercontent.com/43279348/88134660-2e06bf00-cbb3-11ea-912a-99e4b5c9cd67.jpg)
 
 ## Future work 
 
