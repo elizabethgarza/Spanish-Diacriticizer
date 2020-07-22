@@ -128,9 +128,7 @@ Step 4:
 ## Evaluation and error analysis
 
 ### Dev set evaluation 
-
-
-
+![Image 7-22-20 at 5 08 PM](https://user-images.githubusercontent.com/43279348/88229011-0dd01200-cc3e-11ea-8eeb-3067bdad8124.jpg)
 
 ## Future work 
 
