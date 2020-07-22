@@ -76,6 +76,7 @@ A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  Fo
 
 The figure below uses a venn diagram to show the distribution of these token types.  Of particular note is that diacriticized tokens constitute ~10% of all tokens in a given set.  Of that 10%, only ~12% of those tokens are mellizas; the other ~88% are invariantly diacriticized tokens, as you can see below. 
 
+**Figure 1. A venn diagram showing the distribution of token types in the data**
 ![Image 7-22-20 at 1 51 AM](https://user-images.githubusercontent.com/43279348/88139573-f8b39e80-cbbd-11ea-9a0a-8295e99d8589.jpg)
 
 ### Melliza statistics.
