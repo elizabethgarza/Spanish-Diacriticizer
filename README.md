@@ -58,7 +58,7 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Description of data
 
-A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  For instructions on how to download all Spanish wikipedia data, please refer to a file titled `instructions` in the `data`folder of this repository.
+A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  For instructions on how to download all Spanish wikipedia data, please refer to https://github.com/elizabethgarza/nltk-Spanish-diacriticizer/blob/master/data/instructions_to_download_full_data_set
 
 ### Description and distribution of token types in the data set.
 
