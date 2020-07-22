@@ -54,7 +54,12 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Description of algorithm 
 
-#TODO fill this in.
+### General description of how naive Bayes applies to this task
+
+Classification problems in machine learning consist of classifying, or assigning labels to "ambiguous linguistic signals or events" (from Lecture 8 on http://wellformedness.com/courses/LING83800). In the Ex. 1 in **Background**, the model would have to decide whether to assign either label_1, *esta*, or label_2, *está*, to what would be considered an "ambiguous linguistic event". The model makes this decision by recalling what sentence features tend to be associated with either label by calculating probabilities.  
+
+To calculate the probability of classifying label_1 given one specific feature, the computer calculates--
+
 
 ## Description of data
 
