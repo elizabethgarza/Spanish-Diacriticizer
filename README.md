@@ -29,7 +29,7 @@ For some unidecoded words, like "espanol", the model simply has to perform a dic
 
 Unlike computers, humans would quickly be able to decide which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
 
-    Esa casa [esta] sucia. / That house [is] dirty.
+   *Esa casa [esta] sucia. / That house [is] dirty.     (ex. 1)*
 
 --a writer can quickly determine that the correct form of the word "esta" should be "está" because it functions as the verb, *is*, instead of the adjective *this*. 
 
@@ -56,7 +56,7 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ### General description of how naive Bayes applies to this task
 
-Classification problems in machine learning consist of classifying, or assigning labels to "ambiguous linguistic signals or events" (from Lecture 8 on http://wellformedness.com/courses/LING83800). In the Ex. 1 in **Background**, the model would have to decide whether to assign either label_1, *esta*, or label_2, *está*, to what would be considered an "ambiguous linguistic event". The model makes this decision by recalling what sentence features tend to be associated with either label by calculating probabilities.  
+Classification problems in machine learning consist of classifying, or assigning labels to "ambiguous linguistic signals or events" (from Lecture 8 on http://wellformedness.com/courses/LING83800). In the *ex. 1* in **Background**, the model would have to decide whether to assign either label_1, *esta*, or label_2, *está*, to what would be considered an "ambiguous linguistic event". The model makes this decision by recalling what sentence features tend to be associated with either label by calculating probabilities.  
 
 To calculate the probability of classifying label_1 given one specific feature, the computer calculates--
 
