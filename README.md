@@ -62,6 +62,8 @@ A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  Fo
 
 ### Description and distribution of token types in the data set.
 
+- Bolded below you will see a description of each of the token types found in the data:
+
 **Mellizas** refer to fraternal token twins like  {*el*, *él*}.  While most of these words are homographs (words that have different pronunciations for the same spelling like *live*), this term is useful for this project because a few mellizas are homophones (words that have the same pronunciation, but different meanings) like {*si*, *sí*}, {*cómo*, *como*} and {*sólo*, *solo*}.  In sum, the elements within melliza sets can be formally defined as--
 
 {x | x is a word that if undiacriticized would look identical to all other x’s}  
@@ -74,7 +76,7 @@ A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  Fo
 
 **Invariantly diacriticized tokens** refer to any token that always has a diacritic, like {*lapiz*, *pelicula*, *espanol*}, which excludes all mellizas. 
 
-The figure below uses a venn diagram to show the distribution of these token types.  Of particular note is that diacriticized tokens constitute ~10% of all tokens in a given set.  Of that 10%, only ~12% of those tokens are mellizas; the other ~88% are invariantly diacriticized tokens, as you can see below. 
+- The figure below uses a venn diagram to show the distribution of these token types.  Of particular note is that diacriticized tokens constitute ~10% of all tokens in a given set.  Of that 10%, only ~12% of those tokens are mellizas; the other ~88% are invariantly diacriticized tokens, as you can see below. 
 
 **Figure 1. A venn diagram showing the distribution of token types in the data**
 ![Image 7-22-20 at 1 51 AM](https://user-images.githubusercontent.com/43279348/88139573-f8b39e80-cbbd-11ea-9a0a-8295e99d8589.jpg)
