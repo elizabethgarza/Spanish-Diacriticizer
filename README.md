@@ -117,7 +117,13 @@ The figure below uses a venn diagram to show the distribution of these token typ
  
 ## Methodology
 
-#TODO fill this in. 
+*Pre-training phase* 
+
+Step 1:  Shuffle the lines in the corpus and then split into train, dev, and test sets 
+Step 2:  Extract all mellizas from the corpus.  Compute the frequencies of both diacriticized and undiacriticized mellizas in the data.  Print that data into a csv file for future reference.
+Step 3:  Train classifiers on the top 200 mellizas with the average highest frequencies.
+Step 4:  
+
 
 ## Evaluation and error analysis
 
