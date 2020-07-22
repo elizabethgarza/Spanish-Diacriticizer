@@ -60,6 +60,11 @@ Classification problems in machine learning consist of classifying, or assigning
 
 To calculate the probability of classifying label_1 given one specific feature, the computer calculates--
 
+![Image 7-22-20 at 12 40 PM](https://user-images.githubusercontent.com/43279348/88203984-a2277e00-cc18-11ea-9a21-4214ed176e7d.jpg)
+
+--where, *L1* refers to *esta*, and *sf* refers to any given sentence feature, say, sentence length.  (To calculate *P(L2 | sf)* one would simply have to subtract *P(L1 | sf)* from *1*.)  Calculating the probability of *L1*, given all sentence features, or *{SF}*, simply involves multiplying all probabilities for *L1*, given a particular sentence feature, like so-- 
+
+
 
 ## Description of data
 
