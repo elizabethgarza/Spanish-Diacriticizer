@@ -80,12 +80,7 @@ Examples of some relevant sentence features could include:  the type of punctuat
 
 --the sentence features, {SF}, would be:  
 
-
-
-
-
-
-
+![Image 7-22-20 at 12 51 PM](https://user-images.githubusercontent.com/43279348/88205043-33e3bb00-cc1a-11ea-8c63-e396941476a1.jpg)
 
 ## Description of data
 
