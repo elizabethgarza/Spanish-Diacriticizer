@@ -44,7 +44,7 @@ Outside of a grammatical context, there are also three simple pronunciation-base
 
 3. When rules #1 and #2 above are not followed, a written accent is used--e.g.
    *com-pró* is pronounced *com*–**pró**; 
-   *álbum* is pronounced *ál*–**bum**.
+   *álbum* is pronounced **ál**–*bum*.
 
 For a non-homophonic unidecoded word like *calculo*, which can appear in three different forms {*calculo*, *cálculo*, *calculó*}, humans could also think about how the word is pronounced to determine the correct spelling.
 
