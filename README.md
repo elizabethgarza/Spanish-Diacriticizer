@@ -27,7 +27,6 @@ The purpose of this project is to design model based on a supervised machine lea
 
 For some unidecoded words, like "espanol", the model simply has to perform a dictionary lookup to determine whether or not the *n* should have a diacritic. But for others, like *esta*, this operation will not suffice because there are two viable word forms stored in the value entry: *está* and *esta*. In such cases, the model has to be given more information about the words before it can predict whether or not to add a diacritic to the letter *a*.  
 
-
 Unlike computers, humans would quickly be able to decide which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
 
     Esa casa [esta] sucia. / That house [is] dirty.
@@ -49,9 +48,7 @@ Outside of a grammatical context, there are also three simple pronunciation-base
 
 For a non-homophonic unidecoded word like *calculo*, which can appear in three different forms {*calculo*, *cálculo*, *calculó*}, humans could also think about how the word is pronounced to determine the correct spelling.
 
-
 Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not be able to disambiguate frequently used homophones like {*si*, *sí*}, {*cómo*, *como*}, {*sólo*, *solo*}, etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
-
 
 One popular alternative which I've decided to use for this project is the Naive Bayes classification algorithm, which can learn to make predictions without explicit instruction. Aside from designing a model that correctly adds diacritics to unidecoded words in a sentence, the other purpose of this project is to explore the pros and cons of using both the NLTK and Scikit multinomial versions of this algorithm, the latter of which I will post at a later date.
 
@@ -59,7 +56,7 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 #TODO fill this in.
 
-## Data collection
+## Description of data
 
 ### Description and distribution of token types in the data set.
 
@@ -75,9 +72,13 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 **Invariantly diacriticized tokens** refer to any token that always has a diacritic, like {*lapiz*, *pelicula*, *espanol*}, which excludes all mellizas. 
 
-The figure below uses a venn diagram to show the distribution of these token types in the sample development set for which the evaluation results are presented below.  Of particular note is that diacriticized tokens constitute ~10% of all tokens in a given set.  Of that 10%, only ~12% of those tokens are mellizas; the other ~88% are invariantly diacriticized tokens, as you can see below. 
+The figure below uses a venn diagram to show the distribution of these token types.  Of particular note is that diacriticized tokens constitute ~10% of all tokens in a given set.  Of that 10%, only ~12% of those tokens are mellizas; the other ~88% are invariantly diacriticized tokens, as you can see below. 
 
 ![Image 7-22-20 at 1 51 AM](https://user-images.githubusercontent.com/43279348/88139573-f8b39e80-cbbd-11ea-9a0a-8295e99d8589.jpg)
+
+### Description of data set 
+
+A total of 3710 mellizas were extracted from a 2.2 GB corpus of text from Wikipedia containing approximately 19 million Spanish sentences.
  
 ## Methodology
 
