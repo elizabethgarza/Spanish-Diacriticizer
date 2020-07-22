@@ -76,6 +76,10 @@ The model is considered naive because, “it assumes that the probability of eac
 
 Examples of some relevant sentence features could include:  the type of punctuation used, the length of the sentence, what parts of speech tend to precede and follow the word *esta*, etc. Ultimately, it is up to the analyst to decide which features to focus on.  For this project, I decided to start with word context features, that is, which words occur up to four places to the left and right of the label.  Other  miscellaneous features include whether or not the label appears at the beginning or end of the sentence, and whether or not the label appears in isolation.  For instance, for the sentence and label pair-- 
 
+![Image 7-22-20 at 12 50 PM](https://user-images.githubusercontent.com/43279348/88204904-fc750e80-cc19-11ea-82db-3511cdbda23a.jpg)
+
+--the sentence features, {SF}, would be:  
+
 
 
 
