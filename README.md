@@ -68,6 +68,16 @@ To calculate the probability of classifying label_1 given one specific feature, 
 
 The model is considered naive because, “it assumes that the probability of each feature...is conditionally independent of every other feature” (Lecture 8), meaning that the value for *P(sfi | L1)* in *eq. 2* above would actually be--
 
+![Image 7-22-20 at 12 47 PM](https://user-images.githubusercontent.com/43279348/88204629-8bcdf200-cc19-11ea-95b8-ca478da7dc6c.jpg)
+
+--were it not for this assumption.  Indeed, although eq. 2 does simplify the calculations needed to make a prediction, it ignores the conditional interdependence of different sentence features, which likely decreases the overall accuracy of the predictions made by Naive Bayes.
+
+### Word context features
+
+Examples of some relevant sentence features could include:  the type of punctuation used, the length of the sentence, what parts of speech tend to precede and follow the word *esta*, etc. Ultimately, it is up to the analyst to decide which features to focus on.  For this project, I decided to start with word context features, that is, which words occur up to four places to the left and right of the label.  Other  miscellaneous features include whether or not the label appears at the beginning or end of the sentence, and whether or not the label appears in isolation.  For instance, for the sentence and label pair-- 
+
+
+
 
 
 
