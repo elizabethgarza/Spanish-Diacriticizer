@@ -61,7 +61,7 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Data collection
 
-![Image 7-22-20 at 12 42 AM](https://user-images.githubusercontent.com/43279348/88135150-5fcc5580-cbb4-11ea-88e0-67c8aad70ca8.jpg)
+![Image 7-22-20 at 12 58 AM](https://user-images.githubusercontent.com/43279348/88136187-bb97de00-cbb6-11ea-8393-32ed39acb1c5.jpg)
  
 ## Methodology
 
