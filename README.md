@@ -61,6 +61,22 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ## Data collection
 
+### Description and distribution of token types in the data set.
+
+**Mellizas** refer to fraternal token twins like  {*el*, *él*}.  While most of these words are homographs (words that have different pronunciations for the same spelling like *live*), this term is useful for this project because a few mellizas are homophones (words that have the same pronunciation, but different meanings) like {*si*, *sí*}, {*cómo*, *como*} and {*sólo*, *solo*}.  In sum, the elements within melliza sets can be formally defined as--
+
+{x | x is a word that if undiacriticized would look identical to all other x’s}  
+
+--meaning that all mellizas would look identical if they appeared in their undiacriticized forms.
+
+**Undiacriticized tokens** refer to tokens that never have diacritics, like {*libro*, *perro*, *gato*, *el*, *esta*...}, which includes undiacriticized mellizas.
+
+**Diacriticized tokens** refer to any token that has a diacritic, like {*lapiz*, *pelicula*, *espanol*, *el*, *esta*}, which includes diacriticized mellizas.  
+
+**Invariantly diacriticized tokens** refer to any token that always has a diacritic, like {*lapiz*, *pelicula*, *espanol*}, which excludes all mellizas. 
+
+The figure below uses a venn diagram to show the distribution of these token types in the sample development set for which the evaluation results are presented below.  Of particular note is that diacriticized tokens constitute ~10% of all tokens in a given set.  Of that 10%, only ~12% of those tokens are mellizas; the other ~88% are invariantly diacriticized tokens, as you can see below. 
+
 ![Image 7-22-20 at 12 58 AM](https://user-images.githubusercontent.com/43279348/88136187-bb97de00-cbb6-11ea-8393-32ed39acb1c5.jpg)
  
 ## Methodology
