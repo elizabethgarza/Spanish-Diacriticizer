@@ -108,11 +108,15 @@ The figure below shows the distribution of these token types.  Of particular not
 ### Melliza statistics.
 
 - A total of 3710 mellizas were extracted from the corpus after eliminating typos and all non-Spanish mellizas. 
-- The table in **Figure 2** below shows the frequency counts for the top 5 most frequenly used mellizas in the data.  In this case, total frequency was computed by simply summing the frequencies of both mellizas.  
+- The table in **Figure 2** below shows the frequency counts for an excerpt of the *pandas* dataframe that contains that top 200 most frequently occuring mellizas in the data.  
 
-**Figure 2** Top 5 most frequently used mellizas in the data.  
+**Figure 2** Top 200 most frequently occuring mellizas in the data.  
+![Image 7-23-20 at 7 35 PM](https://user-images.githubusercontent.com/43279348/88348624-ed768500-cd1b-11ea-8618-d9e35e737f90.jpg)
 
-![Image 7-23-20 at 6 59 PM](https://user-images.githubusercontent.com/43279348/88346631-ce292900-cd16-11ea-8c9c-769c6b7f95ce.jpg) 
+-The table in **Figure 3** below provides summary statistics, which reveal that mean total frequency is ~95K and that the mode is 9601, which is the total frequency count that you see at the very bottom of the table in **Figure 2** above.  In all, these summary statistics reveal that training around 200 classifiers will cover the bulk--but not all--of mellizas that will need to be diacriticized in the data.
+
+**Figure 3** 
+
  
 ## Methodology
 
