@@ -37,18 +37,18 @@ Unlike computers, humans can quickly determine which of the two words is correct
 Outside of a grammatical context, there are also three simple pronunciation-based rules which humans can rely on, as long as the word is not a homophone: 
 
 1. Words ending in a vowel, -n, or -s are stressed on the next to the last (penultimate) syllable--e.g.: 
-   *na-da* is pronounced **na**-*da*.
+   *na-da* / *nothing* is pronounced **na**-*da*.
 
 2. Words ending in any consonant except -n or -s are stressed on the last syllable.--e.g. 
-   *doc-tor* is pronounced *doc*–**tor**
+   *doc-tor* / *doctor* is pronounced *doc*–**tor**
 
 3. When rules #1 and #2 above are not followed, a written accent is used--e.g.
-   *com-pró* is pronounced *com*–**pró**; 
+   *com-pró* / *bought* is pronounced *com*–**pró**; 
    *álbum* is pronounced **ál**–*bum*.
 
 For a non-homophonic undiacritcized word like *calculo*, which can appear in three different forms {*calculo/calculation*, *cálculo/calculus*, *calculó/calculated*}, Spanish speaker could also think about how the word is pronounced to determine the correct spelling.
 
-Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not be able to disambiguate frequently used homophones like {*si*, *sí*}, {*cómo*, *como*}, {*sólo*, *solo*}, etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
+Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not be able to disambiguate frequently used homophones like {*si*, *sí*} / {*if* , *yes*}, {*cómo*, *como*} / {*how*, *like*}, {*sólo*, *solo*} / {*only*, *alone} , etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
 
 One popular alternative which I've decided to use for this project is the Naive Bayes classification algorithm, which can learn to make predictions without explicit instruction. Aside from designing a model that correctly adds diacritics to undiacriticized words in a sentence, the other purpose of this project is to explore the pros and cons of using both the NLTK and Scikit multinomial versions of this algorithm, the latter of which I will post at a later date.
 
@@ -76,7 +76,7 @@ The model is considered naive because, “it assumes that the probability of eac
 
 Examples of some relevant sentence features could include:  the type of punctuation used, the length of the sentence, what parts of speech tend to precede and follow the word *esta*, etc. Ultimately, it is up to the analyst to decide which features to focus on.  For this project, I decided to start with word context features--i.e. which words occur up to four places to the left and right of the label.  Other  miscellaneous features include whether or not the label appears at the beginning or end of the sentence, and whether or not the label appears in isolation.  For instance, for the sentence and label pair-- 
 
-  *('El perro no está aquí.', 'está')/('The dog is not here.', 'is')*
+  *('El perro no está aquí.', 'está') / ('The dog is not here.', 'is')  (ex. 2)*
 
 --the sentence features, *{SF}*, would be:  
 
@@ -90,15 +90,15 @@ A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  Fo
 
 Bolded below you will see a description of each of the token types found in the data:
 
-- **Mellizas** refer to fraternal token twins like  {*el*, *él*}.  While most of these words are homographs (words that have different pronunciations for the same spelling like *live*), this term is useful for this project because a few mellizas are homophones (words that have the same pronunciation, but different meanings) like {*si*, *sí*}, {*cómo*, *como*} and {*sólo*, *solo*}.  In sum, the elements within melliza sets can be formally defined as--
+- **Mellizas** refer to fraternal token twins like  {*el*, *él*} / {*the*, *he*} .  While most of these words are homographs (words that have different pronunciations for the same spelling like *live*), this term is useful for this project because a few mellizas are homophones (words that have the same pronunciation, but different meanings) like {*si*, *sí*} / {*if*, *yes*}, {*cómo*, *como*} / {*how* , *like*} and {*sólo*, *solo*} / {*only* , *alone*}.  In sum, the elements within melliza sets can be formally defined as--
 
   *{x | x is a word that if undiacriticized would look identical to all other undiacriticized x’s}.*  
 
-- **Undiacriticized tokens** refer to tokens that never have diacritics, like {*libro*, *perro*, *gato*, *el*, *esta*...}, which includes undiacriticized mellizas.
+- **Undiacriticized tokens** are tokens that don't have diacritics, like {*libro*, *perro*, *gato*, *el*, *esta*...} / {*book*, *dog*, *cat*, *the*, *this*}, which includes undiacriticized mellizas.
 
-- **Diacriticized tokens** refer to any token that has a diacritic, like {*lápiz*, *película, *español*, *él*, *está*}, which includes diacriticized mellizas.  
+- **Diacriticized tokens** are tokens that have a diacritic, like {*lápiz*, *película, *español*, *él*, *está*} / {*pencil*, *movie*, *Spanish*, *he*, *is*}, which includes diacriticized mellizas.  
 
-- **Invariantly diacriticized tokens** refer to any token that always has a diacritic, like {*lápiz*, *película*, *español*}, which excludes all mellizas. 
+- **Invariantly diacriticized tokens** are tokens that always have a diacritic, like {*lápiz*, *película*, *español*} / {*pencil*, *movie*, *Spanish*}, which excludes all mellizas. 
 
 The figure below shows the distribution of these token types.  Of particular note is that diacriticized tokens constitute ~10% of all tokens in a given set.  And of that 10%, only ~12% of those tokens are mellizas; the other ~88% are invariantly diacriticized tokens.
 
