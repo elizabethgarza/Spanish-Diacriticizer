@@ -185,7 +185,7 @@ As such, the revised decision-making process for a token like *panales* will loo
             If 'no', leave 'panales' as it is. 
      4. Does 'panales' have an 'n'? 
             If 'yes', use the `classify_ns` to decide whether or not the `n` should be diacriticized.  Then, continue on to the next question. 
-     Does 'panales' have any vowels? 
+     5. Does 'panales' have any vowels? 
             If 'yes', use the `classify_unknowns` to decide which vowel, if any, should be diacriticized and replace 'panales' with the prediction. 
             If 'no', leave 'panales' as it is. 
 
