@@ -15,7 +15,7 @@ The purpose of this project is to design a model that can predict whether or not
           cd ~/Desktop/nltk-Spanish-diacriticizer/src
           ./diacriticize.py "Esta nina no esta viendo la pelicula espanola."
      
-   You will get an output that looks something like this: 
+   You will get an output that looks like this: 
       
           Esta niña no está viendo la película española.
         
