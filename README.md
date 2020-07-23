@@ -145,7 +145,6 @@ The figure below shows the distribution of these token types.  Of particular not
 - [ ] Compute baseline and token accuracies and print results to the csv file. 
 - [ ] Strip diacritics from all tokens in `test` and diacriticize them, using `evaluate.py`. 
 - [ ] Compute the melliza token accuracy, invariantly diacriticize token accuracy, etc. 
-- [ ] And we're done.
 
 ## Evaluation and error analysis
 
@@ -168,15 +167,15 @@ If the model is asked to diacriticize every token in the undiacriticized sentenc
             If 'yes' replace the current suffix with invariantly diacriticzed suffix.
             If 'no', leave 'el' as it is. 
             
-The model will ask these questions for each token in the sentence until it reaches the end of the sentence.  To clarify, the "melliza dictionary" is a dictionary that contains keys and entries that consist of the top 200 classifiers and their corresponding classifiers, respectively; the "invariantly diacriticized token dictionary" contains keys and entries that consist of undiacriticized tokens and their diacriticized forms, respectively; and the "invariantly diacriticized suffix dictionary" contains keys and entries that consist of undiacriticized suffixed and their diacriticized forms, respectively.
+The model will ask these questions for each token in the sentence until it reaches the end.  To clarify, the "melliza dictionary" is a dictionary that contains keys and entries that consist of the top 200 classifiers and their corresponding classifiers, respectively; the "invariantly diacriticized token dictionary" contains keys and entries that consist of undiacriticized tokens and their diacriticized forms, respectively; and the "invariantly diacriticized suffix dictionary" contains keys and entries that consist of undiacriticized suffixed and their diacriticized forms, respectively.
 
-To return to the original dilemman at hand, why is the invariantly diacriticized token accuracy so low?  The reason is because it is impossible to quickly populate the invariant dictionary with all the invariantly diacriticized tokens that currently exist.  For example, if you ask the model to diacriticize *Agarra ese panal.* / *Grab that diaper.*, when it gets to the third token, *panal*, it will advance to the second question above, find *panal* in the dictionary, and give you the correct output, namely *Agarra ese pañal*.  But if you ask it to do the same with *Agarra esos panales.* / *Grab those diapers.*, it will give you the wrong output: *Agarra esos panales.*  The reason the model was successful with only the first sentence is because *pañal* happened to be found in the lexicon and corpus that I used to populate that dictionary, whereas its plural form *pañales* wasn't.  The chances that the I'll be able manually populate a dictionary with all forms every invariantly diacriticized token that currently exist are literally zero.  This particular example is a testament to the immense amount of labor that would be involved in manually populating that dictionary until it robust enough to significantly improve the accuracy. 
+To return to the original dilemman at hand, why is the invariantly diacriticized token accuracy so low?  The reason is because it is impossible to quickly populate the invariant dictionary with all the invariantly diacriticized tokens that currently exist.  For example, if you ask the model to diacriticize *Agarra ese panal.* / *Grab that diaper.*, when it gets to the third token, *panal*, it will advance to the second question above, find *panal* in the dictionary, and give you the correct output, namely *Agarra ese pañal*.  But if you ask it to do the same with *Agarra esos panales.* / *Grab those diapers.*, it will give you the wrong output: *Agarra esos panales.*  Reason being is that *pañal* happened to be found in the lexicon and corpus that I used to populate that dictionary, while its plural form *pañales* wasn't so lucky.  This suggests that the chances that I'll be able manually populate a dictionary with all forms of every invariantly diacriticized token that currently exist are null.  And this particular exapmle is a testament to the immense amount of labor that would be involved in populating that dictionary until it robust enough to significantly improve the accuracy.  
 
 ## Future work before evaluating the test set.
 
 To obviate this dilemma, my current plan is to create two more classifiers.  The first, which will be called, `classify_unknowns` will be trained on a set of invariantly diacriticized and undiacriticized tokens, to the exclusion of mellizas.  Each token will receive a label that indicates which vowel is diacriticized, if any at all.  For example, a token like *lápiz* / *pencil*, which contains two vowels will receive the label *1* because the first vowel is diacriticized; *película* / *movie* will be labelled with a *2* because the second vowel is diacriticized; and *perro* / *dog* will be *0* because there are no diacriticized vowels, etc.  The second classifier, called `classify_ns` will be trained on all tokens with either *n* or *ñ* so that the model will be able to make a good prediction when presented with tokens like *enseno*, which should be *enseñó* / *taught*.  
 
-So the revised decision-making process for a token like *panales* will look something like this: 
+As such, the revised decision-making process for a token like *panales* will look something like this: 
 
      Is 'panales' in the melliza dictionary? 
             If 'yes', look up 'panales' and grab its classifier.  Then, use the classifier to decide whether or not 'panales' should be diacriticized. Then,             replace the 'panales' with its diacriticized spelling. 
@@ -192,10 +191,9 @@ So the revised decision-making process for a token like *panales* will look some
      Does 'panales' have any vowels? 
             If 'yes', use the `classify_unknowns` to decide which vowel, if any, should be diacriticized.  Replace the current token with your prediction. 
             If 'no', leave the token as it is.
-            
-It turns out that *pañal* / *diaper* is currently in the invariantly diacriticized token dictionary, but its plural form *pañales* / *diapers* isn't.  Reason being that *pañal* happened to be found in the lexicon and corpus that I used to populate that dictionary, and *pañales* wasn't.  This particular example is a testament to the immense amount of labor that would be involved in manually populating that dictionary until it robust enough to significantly improve the accuracy.
 
-My hope is that training the two additional classifiers above will weaken the diacriticizer's dependence on the dictionaries described above. ...We shall see.
+
+Ultimately, my hope is that training two additional classifiers of this sort will lessen the diacriticizer's dependence on the dictionaries described above. 
 
 ## #TODOs
 
