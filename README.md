@@ -174,16 +174,16 @@ The second classifier, called `classify_ns` will be trained on all tokens with e
 
 As such, the revised decision-making process for a token like *panales* will look something like this: 
 
-     Is 'panales' in the melliza dictionary? 
+     1. Is 'panales' in the melliza dictionary? 
             If 'yes', use its classifier to decide whether or not it should be diacriticized. Then, replace 'panales' with its diacriticized form. 
             If 'no', continue to the next question. 
-     Is 'panales' in the invariantly diacriticized token dictionary? 
+     2. Is 'panales' in the invariantly diacriticized token dictionary? 
             If 'yes', replace 'panales' with its diacriticized form.
             If 'no', continue to the next question. 
-     Does 'panales' contain any of the invariantly diacriticized suffixes that can be found in the invariantly diacriticized suffix dictionary?
+     3. Does 'panales' contain any of the invariantly diacriticized suffixes that can be found in the invariantly diacriticized suffix dictionary?
             If 'yes', replace suffix with invariantly diacriticzed suffix.
             If 'no', leave 'panales' as it is. 
-     Does 'panales' have an 'n'? 
+     4. Does 'panales' have an 'n'? 
             If 'yes', use the `classify_ns` to decide whether or not the `n` should be diacriticized.  Then, continue on to the next question. 
      Does 'panales' have any vowels? 
             If 'yes', use the `classify_unknowns` to decide which vowel, if any, should be diacriticized and replace 'panales' with the prediction. 
