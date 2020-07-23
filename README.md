@@ -183,11 +183,11 @@ As such, the revised decision-making process for a token like *panales* will loo
             If 'yes', look up 'panales' and grab its classifier.  Then, use the classifier to decide whether or not 'panales' should be diacriticized. Then,             replace the 'panales' with its diacriticized spelling. 
             If 'no', continue to the next question. 
      Is 'panales' in the invariantly diacriticized token dictionary? 
-            If 'yes', look up 'enseno' and replace 'panales' with its diacriticized spelling.
+            If 'yes', look up 'panales' and replace 'panales' with its diacriticized spelling.
             If 'no', continue to the next question. 
      Does 'panales' contain any of the invariantly diacriticized suffixes in the invariantly diacriticized suffix dictionary?
             If 'yes', replace suffix with invariantly diacriticzed suffix.
-            If 'no', leave 'el' as it is. 
+            If 'no', leave 'panales' as it is. 
      Does 'panales' have an 'n'? 
             If 'yes', use the `classify_ns` to decide whether or not the `n` should be diacriticized.  Then, continue on to the next question. 
      Does 'panales' have any vowels? 
