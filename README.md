@@ -27,11 +27,11 @@ The purpose of this project is to design a model that can predict whether or not
 
 For some undiacriticized words, like *espanol*, a diacriticizer model would have to perform a simple dictionary lookup to determine whether or not the *n* should have a diacritic. But for others, like *esta*, this operation will not suffice because there are two viable word forms stored in the value entry: *está* and *esta*. In such cases, such a model has to be given more information about the words before it can predict whether or not to add a diacritic to the letter *a*.  
 
-Unlike computers, humans would quickly be able to decide which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
+Unlike computers, humans can quickly determine which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
 
    *Esa casa [esta] sucia. / That house [is] dirty.     (ex. 1)*
 
---a writer can quickly determine that the correct form of the word "esta" should be "está" because it functions as the verb, *is*, instead of the adjective *this*. 
+--a writer can quickly determine that the correct form of the word *esta* should be *está* because it functions as the verb, *is*, instead of the adjective *this*. 
 
 
 Outside of a grammatical context, there are also three simple pronunciation-based rules which humans can rely on, as long as the word is not a homophone: 
