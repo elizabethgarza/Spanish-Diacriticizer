@@ -27,11 +27,11 @@ The purpose of this project is to design a model that can predict whether or not
 
 For some undiacriticized words, like *espanol*, a diacriticizer model would have to perform a simple dictionary lookup to determine whether or not the *n* should have a diacritic. But for others, like *esta*, this operation will not suffice because there are two viable word forms stored in the value entry: *está* and *esta*. In such cases, such a model has to be given more information about the words before it can predict whether or not to add a diacritic to the letter *a*.  
 
-Unlike computers, humans can quickly determine which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
+Unlike computers, A Spanish speaking writer can quickly determine which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
 
    *Esa casa [esta] sucia. / That house [is] dirty.     (ex. 1)*
 
---a Spanish speaking writer can quickly determine that the correct form of the word *esta* should be *está* because it functions as the verb, *is*, instead of the adjective *this*. 
+--a writer can quickly determine that the correct form of the word *esta* should be *está* because it functions as the verb, *is*, instead of the adjective *this*. 
 
 
 Outside of a grammatical context, there are also three simple pronunciation-based rules which humans can rely on, as long as the word is not a homophone: 
@@ -46,7 +46,7 @@ Outside of a grammatical context, there are also three simple pronunciation-base
    *com-pró* / *bought* is pronounced *com*–**pró**; 
    *álbum* is pronounced **ál**–*bum*.
 
-For a non-homophonic undiacritcized word like *calculo*, which can appear in three different forms {*calculo/calculation*, *cálculo/calculus*, *calculó/calculated*}, Spanish speaker could also think about how the word is pronounced to determine the correct spelling.
+For a non-homophonic undiacritcized word like *calculo*, which can appear in three different forms {*calculo/calculation*, *cálculo/calculus*, *calculó/calculated*}, a Spanish speaker could also think about how the word is pronounced to determine the correct spelling.
 
 Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not be able to disambiguate frequently used homophones like {*si*, *sí*} / {*if* , *yes*}, {*cómo*, *como*} / {*how*, *like*}, {*sólo*, *solo*} / {*only*, *alone} , etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
 
