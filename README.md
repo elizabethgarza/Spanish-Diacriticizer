@@ -76,7 +76,7 @@ The model is considered naive because, “it assumes that the probability of eac
 
 Examples of some relevant sentence features could include:  the type of punctuation used, the length of the sentence, what parts of speech tend to precede and follow the word *esta*, etc. Ultimately, it is up to the analyst to decide which features to focus on.  For this project, I decided to start with word context features--i.e. which words occur up to four places to the left and right of the label.  Other  miscellaneous features include whether or not the label appears at the beginning or end of the sentence, and whether or not the label appears in isolation.  For instance, for the sentence and label pair-- 
 
- *('El perro no está aquí.', 'está')
+  *('El perro no está aquí.', 'está')*
 
 --the sentence features, *{SF}*, would be:  
 
@@ -92,9 +92,7 @@ Bolded below you will see a description of each of the token types found in the 
 
 - **Mellizas** refer to fraternal token twins like  {*el*, *él*}.  While most of these words are homographs (words that have different pronunciations for the same spelling like *live*), this term is useful for this project because a few mellizas are homophones (words that have the same pronunciation, but different meanings) like {*si*, *sí*}, {*cómo*, *como*} and {*sólo*, *solo*}.  In sum, the elements within melliza sets can be formally defined as--
 
-  *{x | x is a word that if undiacriticized would look identical to all other x’s}  
-
---meaning that all mellizas would look identical if they appeared in their undiacriticized forms.
+  *{x | x is a word that if undiacriticized would look identical to all other undiacriticized x’s}.*  
 
 - **Undiacriticized tokens** refer to tokens that never have diacritics, like {*libro*, *perro*, *gato*, *el*, *esta*...}, which includes undiacriticized mellizas.
 
