@@ -108,7 +108,7 @@ The figure below shows the distribution of these token types.  Of particular not
 ### Melliza statistics.
 
 - A total of 3710 mellizas were extracted from the corpus after eliminating typos and all non-Spanish mellizas. 
-- The table in **Figure 2** below shows the frequency counts for the top 5 monst frequenly mellizas in the data.  In this case, total frequency was computed by simply summing the frequencies of both mellizas.  
+- The table in **Figure 2** below shows the frequency counts for the top 5 most frequenly used mellizas in the data.  In this case, total frequency was computed by simply summing the frequencies of both mellizas.  
 
 **Figure 2** Top 5 most frequently used mellizas in the data.  
 
@@ -121,7 +121,7 @@ The figure below shows the distribution of these token types.  Of particular not
 - [ ] Shuffle the lines in the corpus and split into `train`, `dev`, and `test` sets.  The split should adhere to a 90-5-5 proportionality.
 - [ ] Extract mellizas from the corpus, and compute the frequencies of both diacriticized and undiacriticized mellizas in the data.  Make a table of the top 200 mellizas with the highest average frequencies. 
 - [ ] For each of the 200 mellizas, shuffle the lines in `train` from Step 1 and split into `micro_train`, `micro_dev`, and `micro_test`.  Each split should adhere to an 80-10-10 proportionality. 
-- [ ] Create a dictionary populated with invariantly diacriticized tokens by extracting tokens from any published Spanish texts that have been edited, along with any reputable lexicons.  The dictionary in this experiment, titled `invars.json` has thus far extracted tokens from the `Santiago Spanish lexicon` and the `fisher-CALLHOME` corpus, which contains transcripts of Spanish telephone conversations.  With those two sources, a dictionary with ~9000 entries.
+- [ ] Create a dictionary populated with invariantly diacriticized tokens by extracting tokens from any published Spanish texts that have been edited, along with any reputable lexicons.  The dictionary in this experiment, titled `invars.json` has thus far extracted tokens from the `Santiago Spanish lexicon` and the `fisher-CALLHOME` corpus, which contains transcripts of Spanish telephone conversations.  With those two sources, a dictionary with ~9000 entries has been created.
 - [ ] Preprocess `micro_train` by doing the following to each of the sentences in the set: 
   - tokenizing each sentence
   - labelling each sentence as either an undiacriticized melliza, or a diacriticied melliza
