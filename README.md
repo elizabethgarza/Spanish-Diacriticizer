@@ -107,11 +107,12 @@ The figure below shows the distribution of these token types.  Of particular not
 
 ### Melliza statistics.
 
-- A total of 3710 mellizas were extracted from the corpus.  The table in **Figure 2** below shows the frequency counts for the top 5 monst frequenly mellizas in the data.  In this case, total frequency was computed by simply summing the frequencies of both mellizas.  
+- A total of 3710 mellizas were extracted from the corpus after eliminating typos and all non-Spanish mellizas. 
+- The table in **Figure 2** below shows the frequency counts for the top 5 monst frequenly mellizas in the data.  In this case, total frequency was computed by simply summing the frequencies of both mellizas.  
 
 **Figure 2** Top 5 most frequently used mellizas in the data.  
 
-![Image 7-23-20 at 6 59 PM](https://user-images.githubusercontent.com/43279348/88346631-ce292900-cd16-11ea-8c9c-769c6b7f95ce.jpg)
+![Image 7-23-20 at 6 59 PM](https://user-images.githubusercontent.com/43279348/88346631-ce292900-cd16-11ea-8c9c-769c6b7f95ce.jpg) 
  
 ## Methodology
 
