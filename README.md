@@ -2,7 +2,7 @@
 
 ## Purpose 
 
-The purpose of this project is to design a model that can predict whether or not a letter in a Spanish word should have a diacritic--i.e. a *Spanish-diacriticizer*.  
+The purpose of this project is to design a model that can predict whether or not a letter in a Spanish word should have a diacritic--i.e. to design a *Spanish-diacriticizer*.  
 
 ## Usage
   
