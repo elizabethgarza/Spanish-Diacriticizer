@@ -117,6 +117,7 @@ The figure below shows the distribution of these token types.  Of particular not
 
 **Figure 3** 
 
+![Image 7-23-20 at 7 35 PM-1](https://user-images.githubusercontent.com/43279348/88348911-ab017800-cd1c-11ea-8e63-d1de685d6c6f.jpg)
  
 ## Methodology
 
