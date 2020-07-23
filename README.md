@@ -48,7 +48,7 @@ Outside of a grammatical context, there are also three simple pronunciation-base
 
 For a non-homophonic undiacritcized word like *calculo*, which can appear in three different forms {*calculo/calculation*, *cálculo/calculus*, *calculó/calculated*}, a Spanish speaker could also think about how the word is pronounced to determine the correct spelling.
 
-Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not be able to disambiguate frequently used homophones like {*si*, *sí*} / {*if* , *yes*}, {*cómo*, *como*} / {*how*, *like*}, {*sólo*, *solo*} / {*only*, *alone} , etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
+Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not be able to disambiguate frequently used homophones like {*si*, *sí*} / {*if* , *yes*}, {*cómo*, *como*} / {*how*, *like*}, {*sólo*, *solo*} / {*only*, *alone*}, etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
 
 One popular alternative which I've decided to use for this project is the Naive Bayes classification algorithm, which can learn to make predictions without explicit instruction. Aside from designing a model that correctly adds diacritics to undiacriticized words in a sentence, the other purpose of this project is to explore the pros and cons of using both the NLTK and Scikit multinomial versions of this algorithm, the latter of which I will post at a later date.
 
@@ -119,7 +119,7 @@ The figure below shows the distribution of these token types.  Of particular not
 - [ ] Shuffle the lines in the corpus and split into `train`, `dev`, and `test` sets.  The split should adhere to a 90-5-5 proportionality.
 - [ ] Extract mellizas from the corpus, and compute the frequencies of both diacriticized and undiacriticized mellizas in the data.  Make a table of the top 200 mellizas with the highest average frequencies. 
 - [ ] For each of the 200 mellizas, shuffle the lines in `train` from Step 1 and split into `micro_train`, `micro_dev`, and `micro_test`.  Each split should adhere to an 80-10-10 proportionality. 
-- [ ] Create a dictionary populated with invariantly diacriticized tokens by extracting tokens from any published Spanish texts that have been edited, along with any reputable lexicons.  The dictionary in this experiment, titled `invars.json` has thus far extracted tokens from the `Santiago` lexicon, and the `CALLHOMEfisher` corpus, which contains transcripts of Spanish telephone conversations.  Thus far, the dictionary has ~5000 entries.
+- [ ] Create a dictionary populated with invariantly diacriticized tokens by extracting tokens from any published Spanish texts that have been edited, along with any reputable lexicons.  The dictionary in this experiment, titled `invars.json` has thus far extracted tokens from the `Santiago Spanish lexicon` and the `fisher-CALLHOME` corpus, which contains transcripts of Spanish telephone conversations.  With those two sources, a dictionary with ~9000 entries.
 - [ ] Preprocess `micro_train` by doing the following to each of the sentences in the set: 
   - tokenizing each sentence
   - labelling each sentence as either an undiacriticized melliza, or a diacriticied melliza
@@ -127,73 +127,67 @@ The figure below shows the distribution of these token types.  Of particular not
 
 *Training phase*
 
-- [ ] For each melliza, train a Naive Bayes classifier on the preprocessed data from Step 4.  Store the classifier into a pickle file for later use.
-- [ ] Populate a melliza dictionary with keys and entries consisting of undiacriticized mellizas and their corresponding classifiers, respectively.
+- [ ] For each melliza, train a Naive Bayes classifier on the preprocessed data from Step 4 and store that classifier into a pickle file for later use.  Then, populate a melliza dictionary with keys and entries consisting of undiacriticized mellizas and their corresponding classifiers, respectively, using `train.py`.
 
 *Development phase* 
 
-- [ ] Strip diacritics from only melliza tokens in `micro_dev` and diacriticize them, using `micro_evaluate.py`.  
-- [ ] Compute baseline and token accuracies and print all errors to a separate file,
-- [ ] Extract undiacriticized suffix forms from the errors found in separate files and populate a dictionary with keys and entries for undiacriticized suffixes and their diacriticized counterparts, respectively.
-- [ ] Strip diacritics from all tokens in `dev` and diacriticize them, using `evaluate.py`.  
-- [ ] Compute the melliza token accuracy, invariantly diacriticized token accuracy, diacriticized token accuracy, baseline token accuracy, and token accuracy. 
+- [ ] Strip diacritics from only melliza tokens in `micro_dev` and diacriticize them.  Then, compute baseline and token accuracies and print all errors to a separate file, using `train.py`.   
+- [ ] Extract undiacriticized suffix forms from the errors found in separate files.  Then, populate a dictionary with keys and entries for undiacriticized suffixes and their diacriticized counterparts, respectively. (You can write a script to automate this process, but I think that a manual extraction is probably easier.)
+- [ ] Strip diacritics from all tokens in `dev` and diacriticize them. Then, compute the melliza token accuracy, invariantly diacriticized token accuracy, diacriticized token accuracy, baseline token accuracy, and token accuracy, using `evaluate.py`.
 - [ ] **Edit .py scripts, populate the `invars.json` dictionary with more entries, make new classifiers, and retrain current classifiers as needed to maximmize accuracies.**  (<------Currently at this stage!)
 
 *Testing phase*
 
-- [ ] Strip diacritics from only melliza tokens in `micro_test` and diacriticize them, using `micro-evaluate.py`
-- [ ] Compute baseline and token accuracies and print results to the csv file. 
-- [ ] Strip diacritics from all tokens in `test` and diacriticize them, using `evaluate.py`. 
-- [ ] Compute the melliza token accuracy, invariantly diacriticize token accuracy, etc. 
+- [ ] Strip diacritics from only melliza tokens in `micro_test` and diacriticize them.  Then, compute baseline and token accracies, using `micro-evaluate.py`.
+- [ ] Strip diacritics from all tokens in `test` and diacriticize them.  Then, compute the melliza token accuracy, invariantly diacriticized token accuracy, etc, using `evaluate.py`. 
 
 ## Evaluation and error analysis
 
-As I have indicated above, I'm still in the development phase of this experiment, so final evaluation results will be posted at a later time.  Posted below are the evaluation results of `Dev`.
+As I have indicated above, I'm still in the development phase of this experiment, so final evaluation results will be posted at a later time.  For the time being, though, I have posted the evaluation results for `Dev` for your reference.
 
 ### Dev set accuracies
 ![Image 7-22-20 at 5 08 PM](https://user-images.githubusercontent.com/43279348/88229011-0dd01200-cc3e-11ea-8eeb-3067bdad8124.jpg)
 
 ### Development phase error analysis
-The evaluations results above indicate that the invariantly diacriticized tokens are the most troublesome token type to correctly diacriticize, as the low accuracy of ~71% indicates.  The cause of this low accuracy is very obvious, but before I explain what it is, let me give you an outline of the decision making process that the model has to go through before it decides whether or not a token should be diacriticized.  
+The evaluation results above indicate that the invariantly diacriticized tokens are the most troublesome token type to correctly diacriticize, as the low accuracy of ~71% suggests.  The cause of this low accuracy is very obvious, but before I explain what it is, let me give you an outline of the decision making process that the model has to go through before it decides whether or not a token should be diacriticized.  
 
 If the model is asked to diacriticize every token in the undiacriticized sentence, *El nino compro un lapiz.* / *The boy bought a pencil.*, it will iterate through each of the tokens in the sentence by asking the same series of questions for each token.  For the first word, *el*, for example, it will ask: 
 
         1. Is 'el' in the melliza dictionary? 
-            If 'yes', grab the classifier that's stored in the entry for 'el'.  Use the classifier to decide whether or not 'el' should be diacriticized. 
+            If 'yes', use its classifier to decide whether or not 'el' should be diacriticized. Then, replace 'el' with its diacriticized form.
             If 'no', continue to the next question. 
-        2. Is 'el' an invariantly diacriticized token? 
-            If 'yes', look up 'el' in the invariantly diacriticized token dictionary, and replace 'el' with the value entry you find.
-        3. Does 'el' contain any invariantly diacriticized suffixes in the variantly diacriticized suffix dictionary?
+        2. Is 'el' in the invariantly diacriticized token dictionary? 
+            If 'yes', replace 'el' with diacriticized form.
+        3. Does 'el' contain any invariantly diacriticized suffixes that can be found in the variantly diacriticized suffix dictionary?
             If 'yes' replace the current suffix with invariantly diacriticzed suffix.
             If 'no', leave 'el' as it is. 
             
-The model will ask these questions for each token in the sentence until it reaches the end.  To clarify, the "melliza dictionary" is a dictionary that contains keys and entries that consist of the top 200 classifiers and their corresponding classifiers, respectively; the "invariantly diacriticized token dictionary" contains keys and entries that consist of undiacriticized tokens and their diacriticized forms, respectively; and the "invariantly diacriticized suffix dictionary" contains keys and entries that consist of undiacriticized suffixed and their diacriticized forms, respectively.
+After it runs through this series of questions for *el*, the model will ask them again for each of the other tokens in the sentence until it reaches the end.  To clarify, the "melliza dictionary" is a dictionary that contains keys and value entries that consist of the top 200 mellizas and their corresponding classifiers; the "invariantly diacriticized token dictionary" contains keys and value entries that consist of undiacriticized tokens and their diacriticized forms, respectively; and the "invariantly diacriticized suffix dictionary" contains keys and value entries that consist of undiacriticized suffixes and their diacriticized forms, respectively.
 
-To return to the original dilemman at hand, why is the invariantly diacriticized token accuracy so low?  The reason is because it is impossible to quickly populate the invariant dictionary with all the invariantly diacriticized tokens that currently exist.  For example, if you ask the model to diacriticize *Agarra ese panal.* / *Grab that diaper.*, when it gets to the third token, *panal*, it will advance to the second question above, find *panal* in the dictionary, and give you the correct output, namely *Agarra ese pañal*.  But if you ask it to do the same on *Agarra esos panales.* / *Grab those diapers.*, it will give you the wrong output: *Agarra esos panales.*  Reason being is that *pañal* happened to be found in the lexicon and corpus that I used to populate that dictionary, while its plural form *pañales* wasn't so lucky.  This suggests that the chances that I'll be able manually populate a dictionary with all forms of every invariantly diacriticized token that currently exists are null.  And this particular exapmle is a testament to the immense amount of labor that would be involved in populating that dictionary until it robust enough to significantly improve the accuracy.  
+Given this decision making process, the reason the invariantly diacriticized token accuracy is low is because it is impossible to quickly populate the invariant dictionary with all the invariantly diacriticized tokens that currently exist.  For example, if you ask the model to diacriticize *Agarra ese panal.* / *Grab that diaper.*, when it gets to the third token, *panal*, it will advance to the second question above, find *panal* in the dictionary, and give you the correct output, namely *Agarra ese pañal*.  But if you ask it to do the same on *Agarra esos panales.* / *Grab those diapers.*, it will give you the wrong output: *Agarra esos panales.*  Reason being is that *pañal* happened to be found in the lexicon and corpus that I used to populate that dictionary, while its plural form, *pañales*, wasn't.  Altogether, the chances that I'll be able manually populate a dictionary with all forms of every invariantly diacriticized token that currently exists are null. This example in partidular is a testament to the immense amount of labor that would be involved in populating that dictionary until it robust enough to significantly improve overall accuracy.  
 
 ## Future work before evaluating the test set.
 
-To obviate this dilemma, my current plan is to create two more classifiers.  The first, which will be called, `classify_unknowns` will be trained on a set of invariantly diacriticized and undiacriticized tokens, to the exclusion of mellizas.  Each token will receive a label that indicates which vowel is diacriticized, if any at all.  For example, a token like *lápiz* / *pencil*, which contains two vowels will receive the label *1* because the first vowel is diacriticized; *película* / *movie* will be labelled with a *2* because the second vowel is diacriticized; and *perro* / *dog* will be *0* because there are no diacriticized vowels, etc. This system of labelling will ask the model to classify words according to which syllable tends to be diacriticized, given a particular set of features, such as the word context features that I described above in the section titled **Sentence features, or {SF}**.
+To obviate this dilemma, my current plan is to create two more classifiers.  The first, which will be called, `classify_unknowns` will be trained on a set of invariantly diacriticized and undiacriticized tokens, to the exclusion of mellizas.  Each token will receive a label that indicates which vowel is diacriticized, if any at all.  For example, a token like *lápiz* / *pencil* will receive the label *1* because the first vowel is diacriticized; *película* / *movie* will be labelled with a *2* because the second vowel is diacriticized; and *perro* / *dog* will be *0* because there are no diacriticized vowels, etc. This system of labelling will ask the model to classify words according to which syllable tends to be diacriticized, given a particular set of features, like the ones I described above in the section titled **Sentence features, or {SF}**.
 
 The second classifier, called `classify_ns` will be trained on all tokens with either *n* or *ñ* so that the model will be able to make a good prediction when presented with tokens like *enseno*, which should be *enseñó* / *taught*.  
 
 As such, the revised decision-making process for a token like *panales* will look something like this: 
 
      Is 'panales' in the melliza dictionary? 
-            If 'yes', look up 'panales' and grab its classifier.  Then, use the classifier to decide whether or not 'panales' should be diacriticized. Then,             replace the 'panales' with its diacriticized spelling. 
+            If 'yes', use its classifier to decide whether or not it should be diacriticized. Then, replace 'panales' with its diacriticized form. 
             If 'no', continue to the next question. 
      Is 'panales' in the invariantly diacriticized token dictionary? 
-            If 'yes', look up 'panales' and replace 'panales' with its diacriticized spelling.
+            If 'yes', replace 'panales' with its diacriticized form.
             If 'no', continue to the next question. 
-     Does 'panales' contain any of the invariantly diacriticized suffixes in the invariantly diacriticized suffix dictionary?
+     Does 'panales' contain any of the invariantly diacriticized suffixes that can be found in the invariantly diacriticized suffix dictionary?
             If 'yes', replace suffix with invariantly diacriticzed suffix.
             If 'no', leave 'panales' as it is. 
      Does 'panales' have an 'n'? 
             If 'yes', use the `classify_ns` to decide whether or not the `n` should be diacriticized.  Then, continue on to the next question. 
      Does 'panales' have any vowels? 
-            If 'yes', use the `classify_unknowns` to decide which vowel, if any, should be diacriticized.  Replace the current token with your prediction. 
-            If 'no', leave the token as it is.
-
+            If 'yes', use the `classify_unknowns` to decide which vowel, if any, should be diacriticized and replace 'panales' with the prediction. 
+            If 'no', leave 'panales' as it is. 
 
 Ultimately, my hope is that training two additional classifiers of this sort will lessen the diacriticizer's dependence on the dictionaries described above. 
 
