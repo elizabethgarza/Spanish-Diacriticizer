@@ -113,7 +113,7 @@ The figure below shows the distribution of these token types.  Of particular not
 **Figure 2** Top 200 most frequently occuring mellizas in the data.  
 ![Image 7-23-20 at 7 35 PM](https://user-images.githubusercontent.com/43279348/88348624-ed768500-cd1b-11ea-8618-d9e35e737f90.jpg)
 
-- The table in **Figure 3** below provides summary statistics, which reveal that mean total frequency is ~95K and that the mode is 9601, which is the total frequency count that you see at the very bottom of the table in **Figure 2** above.  In all, these summary statistics reveal that training around 200 classifiers will cover the bulk--but not all--of the mellizas that will need to be diacriticized in the data.
+- The table in **Figure 3** below provides summary statistics for the total frequency for each melliza pair, which reveals that the mean total frequency is ~95K and the mode is 9601, which is the total frequency count that you see at the very bottom of the table in **Figure 2** above.  In all, these summary statistics reveal that training around 200 classifiers will cover the bulk--but not all--of the mellizas that will need to be diacriticized in the data.
 
 **Figure 3** 
 
