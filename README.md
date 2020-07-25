@@ -56,7 +56,17 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 ### General description of how naive Bayes applies to this task
 
-Classification problems in machine learning consist of classifying, or assigning labels to "ambiguous linguistic signals or events" (from Lecture 8 on http://wellformedness.com/courses/LING83800). In *ex. 1* above, the model would have to decide whether to assign either label_1, *esta*, or label_2, *está*, to what would be considered an "ambiguous linguistic event". The model makes this decision by recalling what sentence features tend to be associated with either label by calculating probabilities.  
+Classification problems in machine learning consist of classifying "ambiguous linguistic events" (from Lecture 8 on http://wellformedness.com/courses/LING83800). 
+In *ex. 1* above, the model would have to decide whether to assign either label_1, *esta*, or label_2, *está*, to what would be considered an "ambiguous linguistic event". The model makes this decision by recalling what sentence features tend to be associated with either label by calculating probabilities. 
+
+Examples of some relevant sentence features that the analyst may choose to include in the model consist of the following:  the type of punctuation used, the length of the sentence, what parts of speech tend to precede and follow the word *esta*, etc.  For this project, I decided to start with word context features--i.e. which words occur up to four places to the left and right of the label, in addition to whether or not the label appears at the beginning or end of the sentence, and whether or not the label appears in isolation.  For instance, for the sentence and label pair-- 
+
+  *('El perro no está aquí.', 'está') / ('The dog is not here.', 'is')  (ex. 2)*
+
+--the sentence features, *{SF}*, would be:  
+
+![Image 7-23-20 at 12 26 PM](https://user-images.githubusercontent.com/43279348/88312341-05c8ae80-cce0-11ea-94cf-1cc319fd1474.jpg)
+
 
 To evaluate the probability of classifying label_1, or *L1* given one specific feature, the computer calculates--
 
@@ -71,16 +81,6 @@ The model is considered naive because, “it assumes that the probability of eac
 ![Image 7-22-20 at 12 47 PM](https://user-images.githubusercontent.com/43279348/88204629-8bcdf200-cc19-11ea-95b8-ca478da7dc6c.jpg)
 
 --were it not for this assumption.  Indeed, although eq. 2 does simplify the calculations needed to make a prediction, it ignores the conditional interdependence of different sentence features, which is likely to decrease the overall accuracy of the predictions made by Naive Bayes.
-
-### Sentence features, or *{SF}*
-
-Examples of some relevant sentence features that the analyst may choose to include in the model consist of the following:  the type of punctuation used, the length of the sentence, what parts of speech tend to precede and follow the word *esta*, etc.  For this project, I decided to start with word context features--i.e. which words occur up to four places to the left and right of the label, in addition to whether or not the label appears at the beginning or end of the sentence, and whether or not the label appears in isolation.  For instance, for the sentence and label pair-- 
-
-  *('El perro no está aquí.', 'está') / ('The dog is not here.', 'is')  (ex. 2)*
-
---the sentence features, *{SF}*, would be:  
-
-![Image 7-23-20 at 12 26 PM](https://user-images.githubusercontent.com/43279348/88312341-05c8ae80-cce0-11ea-94cf-1cc319fd1474.jpg)
 
 ## Description of data
 
