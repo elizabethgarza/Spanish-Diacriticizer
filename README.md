@@ -50,7 +50,7 @@ For a non-homophonic undiacritcized word like *calculo*, which can appear in thr
 
 Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not disambiguate frequently used homophones such as {*si*, *sí*} / {*if* , *yes*}, {*cómo*, *como*} / {*how*, *like*}, {*sólo*, *solo*} / {*only*, *alone*}, etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
 
-One popular alternative which I've decided to use for this project is the Naive Bayes classification algorithm, which can learn to make predictions without explicit instruction. Aside from designing a model that correctly adds diacritics to undiacriticized words in a sentence, the other purpose of this project is to explore the pros and cons of using both the NLTK and Scikit multinomial versions of this algorithm, the latter of which I will post at a later date.
+One popular alternative which I've decided to use for this project is the Naive Bayes classification algorithm, which can learn to make predictions without explicit instruction. Aside from designing a model that correctly adds diacritics to undiacriticized words in a sentence, the other purpose of this project is to explore the pros and cons of using both the NLTK and Scikit multinomial versions of this algorithm, which will be posted at a later date.
 
 ## Description of algorithm 
 
