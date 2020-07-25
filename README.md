@@ -25,7 +25,7 @@ The purpose of this project is to design a model that can predict whether or not
      
 ## Background 
 
-For some undiacriticized words, like *espanol*, a diacriticizer model would normally have to perform a simple dictionary lookup to determine whether or not the *n* should have a diacritic. But for other words, like *esta*, this operation would not suffice because there are two viable word forms: *está* and *esta*. In cases such as these, the model has to be given additional information about the word before it can predict whether or not to add a diacritic to the letter *a*.  
+For some undiacriticized words, like *espanol*, a diacriticizer model would normally have to perform a simple dictionary lookup to determine whether or not the *n* should have a diacritic. But for other words, like *esta*, this operation would not suffice because there are two viable word forms: *está* and *esta*. In cases such as these, the model must be given additional information about the word before it can predict whether or not to add a diacritic to the letter *a*.  
 
 Unlike computers, a Spanish speaking writer can determine which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
 
