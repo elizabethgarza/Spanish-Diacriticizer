@@ -25,7 +25,7 @@ The purpose of this project is to design a model that can predict whether or not
      
 ## Background 
 
-For some undiacriticized words, like *espanol*, a diacriticizer model would have to perform a simple dictionary lookup to determine whether or not the *n* should have a diacritic. But for others, like *esta*, this operation will not suffice because there are two viable word forms stored in the value entry: *está* and *esta*. In such cases, such a model has to be given more information about the words before it can predict whether or not to add a diacritic to the letter *a*.  
+For some undiacriticized words, like *espanol*, a diacriticizer model would normally have to perform a simple dictionary lookup to determine whether or not the *n* should have a diacritic. But for other words, like *esta*, this operation would not suffice because there are two viable word forms: *está* and *esta*. In cases such as these, the model has to be given additional information about the word before it can predict whether or not to add a diacritic to the letter *a*.  
 
 Unlike computers, a Spanish speaking writer can determine which of the two words is correct by analyzing the word’s grammatical context.  For example, in this sentence--
 
@@ -34,7 +34,7 @@ Unlike computers, a Spanish speaking writer can determine which of the two words
 --a writer can quickly determine that the correct form of the word *esta* should be *está* because it functions as the verb, *is*, instead of the adjective *this*. 
 
 
-Outside of a grammatical context, there are also three simple pronunciation-based rules which humans can rely on, as long as the word is not a homophone: 
+In addition to a grammatical context, there are three simple pronunciation-based rules which humans can rely on, as long as the word is not a homophone: 
 
 1. Words ending in a vowel, -n, or -s are stressed on the next to the last (penultimate) syllable--e.g.: 
    *na-da* / *nothing* is pronounced **na**-*da*.
@@ -46,9 +46,9 @@ Outside of a grammatical context, there are also three simple pronunciation-base
    *com-pró* / *bought* is pronounced *com*–**pró**; 
    *álbum* is pronounced **ál**–*bum*.
 
-For a non-homophonic undiacritcized word like *calculo*, which can appear in three different forms {*calculo/calculation*, *cálculo/calculus*, *calculó/calculated*}, a Spanish speaker could also think about how the word is pronounced to determine the correct spelling.
+For a non-homophonic undiacritcized word like *calculo*, which can appear in three different forms {*calculo/calculation*, *cálculo/calculus*, *calculó/calculated*}, a Spanish speaker might also think about how the word is pronounced in order to determine the correct spelling.
 
-Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not be able to disambiguate frequently used homophones like {*si*, *sí*} / {*if* , *yes*}, {*cómo*, *como*} / {*how*, *like*}, {*sólo*, *solo*} / {*only*, *alone*}, etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
+Because the computer will only be able to interpret written text, the pronunciation-based rules described above will not be helpful for this task.  (Even if it could, using these rules in isolation would not disambiguate frequently used homophones such as {*si*, *sí*} / {*if* , *yes*}, {*cómo*, *como*} / {*how*, *like*}, {*sólo*, *solo*} / {*only*, *alone*}, etc.)  And while one could write an algorithm based on grammatical rules, such a system would quickly become too complex to be feasibly executed. 
 
 One popular alternative which I've decided to use for this project is the Naive Bayes classification algorithm, which can learn to make predictions without explicit instruction. Aside from designing a model that correctly adds diacritics to undiacriticized words in a sentence, the other purpose of this project is to explore the pros and cons of using both the NLTK and Scikit multinomial versions of this algorithm, the latter of which I will post at a later date.
 
@@ -58,7 +58,7 @@ One popular alternative which I've decided to use for this project is the Naive 
 
 Classification problems in machine learning consist of classifying, or assigning labels to "ambiguous linguistic signals or events" (from Lecture 8 on http://wellformedness.com/courses/LING83800). In *ex. 1* above, the model would have to decide whether to assign either label_1, *esta*, or label_2, *está*, to what would be considered an "ambiguous linguistic event". The model makes this decision by recalling what sentence features tend to be associated with either label by calculating probabilities.  
 
-To calculate the probability of classifying label_1, or *L1* given one specific feature, the computer calculates--
+To evaluate the probability of classifying label_1, or *L1* given one specific feature, the computer calculates--
 
 ![Image 7-22-20 at 12 40 PM](https://user-images.githubusercontent.com/43279348/88203984-a2277e00-cc18-11ea-9a21-4214ed176e7d.jpg)
 
@@ -70,11 +70,11 @@ The model is considered naive because, “it assumes that the probability of eac
 
 ![Image 7-22-20 at 12 47 PM](https://user-images.githubusercontent.com/43279348/88204629-8bcdf200-cc19-11ea-95b8-ca478da7dc6c.jpg)
 
---were it not for this assumption.  Indeed, although eq. 2 does simplify the calculations needed to make a prediction, it ignores the conditional interdependence of different sentence features, which likely decreases the overall accuracy of the predictions made by Naive Bayes.
+--were it not for this assumption.  Indeed, although eq. 2 does simplify the calculations needed to make a prediction, it ignores the conditional interdependence of different sentence features, which is likely to decrease the overall accuracy of the predictions made by Naive Bayes.
 
 ### Sentence features, or *{SF}*
 
-Examples of some relevant sentence features could include:  the type of punctuation used, the length of the sentence, what parts of speech tend to precede and follow the word *esta*, etc. Ultimately, it is up to the analyst to decide which features to focus on.  For this project, I decided to start with word context features--i.e. which words occur up to four places to the left and right of the label.  Other  miscellaneous features include whether or not the label appears at the beginning or end of the sentence, and whether or not the label appears in isolation.  For instance, for the sentence and label pair-- 
+Examples of some relevant sentence features that the analyst may choose to include in the model consist of the following:  the type of punctuation used, the length of the sentence, what parts of speech tend to precede and follow the word *esta*, etc.  For this project, I decided to start with word context features--i.e. which words occur up to four places to the left and right of the label, in addition to whether or not the label appears at the beginning or end of the sentence, and whether or not the label appears in isolation.  For instance, for the sentence and label pair-- 
 
   *('El perro no está aquí.', 'está') / ('The dog is not here.', 'is')  (ex. 2)*
 
@@ -88,9 +88,9 @@ A 2.2 GB wikipedia corpus of ~19 million lines was used for this experiment.  Fo
 
 ### Description and distribution of token types in the data set.
 
-Bolded below you will see a description of each of the token types found in the data:
+Below you will findsee a description of each of the token types found in the data (indicated by bold text):
 
-- **Mellizas** refer to fraternal token twins like  {*el*, *él*} / {*the*, *he*} .  While most of these words are homographs (words that have different pronunciations for the same spelling like *live*), this term is useful for this project because a few mellizas are homophones (words that have the same pronunciation, but different meanings) like {*si*, *sí*} / {*if*, *yes*}, {*cómo*, *como*} / {*how* , *like*} and {*sólo*, *solo*} / {*only* , *alone*}.  In sum, the elements within melliza sets can be formally defined as--
+- **Mellizas** refer to fraternal token twins like  {*el*, *él*} / {*the*, *he*} .  While most of these words are homographs (words that have different pronunciations for the same spelling like *live*), this term is useful for this project because a few mellizas are homophones (words that are pronounced the same, but different meanings) like {*si*, *sí*} / {*if*, *yes*}, {*cómo*, *como*} / {*how* , *like*} and {*sólo*, *solo*} / {*only* , *alone*}.  In sum, the elements within melliza sets can be formally defined as--
 
   *{x | x is a word that if undiacriticized would look identical to all other undiacriticized x’s}.*  
 
@@ -169,15 +169,31 @@ If the model is asked to diacriticize every token in the undiacriticized sentenc
             If 'yes' replace the current suffix with invariantly diacriticzed suffix.
             If 'no', leave 'el' as it is. 
             
-After it runs through this series of questions for *el*, the model will ask them again for each of the other tokens in the sentence until it reaches the end.  To clarify, the "melliza dictionary" is a dictionary that contains keys and value entries that consist of the top 200 mellizas and their corresponding classifiers; the "invariantly diacriticized token dictionary" contains keys and value entries that consist of undiacriticized tokens and their diacriticized forms, respectively; and the "invariantly diacriticized suffix dictionary" contains keys and value entries that consist of undiacriticized suffixes and their diacriticized forms, respectively.
+After it runs through this series of questions for *el*, the model will repeat this process for the remaining tokens in the sentence.  To clarify, the "melliza dictionary" is a dictionary that contains keys and value entries that consist of the top 200 mellizas and their corresponding classifiers; the "invariantly diacriticized token dictionary" contains keys and value entries that consist of undiacriticized tokens and their diacriticized forms, respectively; and the "invariantly diacriticized suffix dictionary" contains keys and value entries that consist of undiacriticized suffixes and their diacriticized forms, respectively.
 
-Given this decision making process, the reason the invariantly diacriticized token accuracy is low is because it is impossible to quickly populate the invariant dictionary with all the invariantly diacriticized tokens that currently exist.  For example, if you ask the model to diacriticize *Agarra ese panal.* / *Grab that diaper.*, when it gets to the third token, *panal*, it will advance to the second question above, find *panal* in the dictionary, and give you the correct output, namely *Agarra ese pañal*.  But if you ask it to do the same on *Agarra esos panales.* / *Grab those diapers.*, it will give you the wrong output: *Agarra esos panales.*  Reason being is that *pañal* happened to be found in the lexicon and corpus that I used to populate that dictionary, while its plural form, *pañales*, wasn't.  Altogether, the chances that I'll be able manually populate a dictionary with all forms of every invariantly diacriticized token that currently exists are null. This example in partidular is a testament to the immense amount of labor that would be involved in populating that dictionary until it robust enough to significantly improve overall accuracy.  
+Given this decision making process, the reason the invariantly diacriticized token accuracy is low is because it is impossible to quickly populating the invariant dictionary with all the invariantly diacriticized tokens that currently exist.  For example, if you try to diacriticize *Agarra ese panal.* / *Grab that diaper* by running the following command--
+
+    ` % ./diacriticize.py 'Agarra ese panal.' 
+
+--when the model gets to the third token, *panal*, it will advance to the second question above, find *panal* in the dictionary, and give you the correct output, namely-- 
+
+    ` % Agarra ese pañal.
+
+But if you ask it to do the same with *Agarra esos panales.* / *Grab those diapers.*-- 
+
+    ` % ./diacriticize.py 'Agarra esos panales.'
+
+--it will give you the wrong output-- 
+
+      % Agarra esos panales.
+      
+This error surfaces because *pañal* happened to be present in either the lexicon or the corpus that I used to populate that dictionary, while its plural form, *pañales*, wasn't.  This example in partidular is a testament to the immense amount of labor that would be involved in populating that dictionary until it robust enough to significantly improve overall accuracy.  And altogether, the chances that I'll be able manually populate a dictionary with all forms of every invariantly diacriticized token that currently exists are null. 
 
 ## Future work before evaluating the test set.
 
-To obviate this dilemma, my current plan is to create two more classifiers.  The first, which will be called, `classify_unknowns` will be trained on a set of invariantly diacriticized and undiacriticized tokens, to the exclusion of mellizas.  Each token will receive a label that indicates which vowel is diacriticized, if any at all.  For example, a token like *lápiz* / *pencil* will receive the label *1* because the first vowel is diacriticized; *película* / *movie* will be labelled with a *2* because the second vowel is diacriticized; and *perro* / *dog* will be *0* because there are no diacriticized vowels, etc. This system of labelling will ask the model to classify words according to which syllable tends to be diacriticized, given a particular set of features, like the ones I described above in the section titled **Sentence features, or {SF}**.
+To lessen the diacriticizer's dependence on the dictionaries described above, my current plan is to create two more classifiers.  The first, which will be defined as, `classify_unknowns` will be trained on a set of invariantly diacriticized and undiacriticized tokens, to the exclusion of mellizas.  Each token will receive a label that indicates which vowel is diacriticized, if any at all.  For example, a token like *lápiz* / *pencil* will receive the label *1* because the first vowel is diacriticized; *película* / *movie* will be labelled with a *2* because the second vowel is diacriticized; and *perro* / *dog* will be *0* because there are no diacriticized vowels, etc. This system of labelling will ask the model to classify words according to which syllable tends to be diacriticized, given a particular set of sentence features, or *{SF}*.
 
-The second classifier, called `classify_ns` will be trained on all tokens with either *n* or *ñ* so that the model will be able to make a good prediction when presented with tokens like *enseno*, which should be *enseñó* / *taught*.  
+The second classifier, called `classify_ns` will be trained on all tokens with either *n* or *ñ* so that the model will be able to make a good prediction when presented with tokens like *enseno* / *taught*, which should be diacriticized to *enseñó*.  
 
 As such, the revised decision-making process for a token like *panales* will look something like this: 
 
@@ -188,15 +204,13 @@ As such, the revised decision-making process for a token like *panales* will loo
             If 'yes', replace 'panales' with its diacriticized form.
             If 'no', continue to the next question. 
      3. Does 'panales' contain any of the invariantly diacriticized suffixes that can be found in the invariantly diacriticized suffix dictionary?
-            If 'yes', replace suffix with invariantly diacriticzed suffix.
+            If 'yes', replace the suffix with the invariantly diacriticzed suffix.
             If 'no', leave 'panales' as it is. 
      4. Does 'panales' have an 'n'? 
             If 'yes', use the `classify_ns` to decide whether or not the `n` should be diacriticized.  Then, continue on to the next question. 
      5. Does 'panales' have any vowels? 
             If 'yes', use the `classify_unknowns` to decide which vowel, if any, should be diacriticized and replace 'panales' with the prediction. 
             If 'no', leave 'panales' as it is. 
-
-Ultimately, my hope is that training two additional classifiers of this sort will lessen the diacriticizer's dependence on the dictionaries described above. 
 
 ## #TODOs
 
